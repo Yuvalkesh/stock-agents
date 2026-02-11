@@ -14,6 +14,9 @@ on:
     - cron: '30 21 * * 1-5'   # 04:30 PM EST — Post-market review
   workflow_dispatch: {}         # Manual trigger button
 
+permissions:
+  contents: write
+
 jobs:
   trade:
     runs-on: ubuntu-latest
