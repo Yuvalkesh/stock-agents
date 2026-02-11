@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from anthropic import Anthropic
+from openai import OpenAI
 
 import config
 from config import MEMORY_PATH
@@ -18,11 +18,11 @@ from memory_logger import write_file
 
 logger = logging.getLogger(__name__)
 
-client = Anthropic(api_key=config.ANTHROPIC_API_KEY)
+client = OpenAI(api_key=config.OPENAI_API_KEY)
 
 
 def generate_monthly_review(year: int, month: int) -> str:
-    """Generate a comprehensive monthly review using Claude."""
+    """Generate a comprehensive monthly review using OpenAI."""
     month_str = f"{year}-{month:02d}"
 
     # Gather all trade journals for the month
@@ -74,13 +74,15 @@ Generate a comprehensive monthly review with:
 """
 
     try:
-        response = client.messages.create(
-            model=config.CLAUDE_MODEL,
-            max_tokens=config.CLAUDE_MAX_TOKENS,
-            system=system_prompt,
-            messages=[{"role": "user", "content": user_prompt}],
+        response = client.chat.completions.create(
+            model=config.LLM_MODEL,
+            max_tokens=config.LLM_MAX_TOKENS,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
         )
-        review_content = response.content[0].text
+        review_content = response.choices[0].message.content
     except Exception as e:
         logger.error(f"Error generating monthly review: {e}")
         review_content = f"# Monthly Review — {month_str}\n\nError generating review: {e}"
@@ -121,13 +123,15 @@ Provide:
 """
 
     try:
-        response = client.messages.create(
-            model=config.CLAUDE_MODEL,
+        response = client.chat.completions.create(
+            model=config.LLM_MODEL,
             max_tokens=1024,
-            system=system_prompt,
-            messages=[{"role": "user", "content": user_prompt}],
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
         )
-        return response.content[0].text
+        return response.choices[0].message.content
     except Exception as e:
         logger.error(f"Error generating post-mortem: {e}")
         return f"Error generating post-mortem: {e}"

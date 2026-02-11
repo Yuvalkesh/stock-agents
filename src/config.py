@@ -8,7 +8,7 @@ load_dotenv()
 
 
 # --- API Keys ---
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 ALPACA_API_KEY = os.getenv("ALPACA_API_KEY", "")
 ALPACA_SECRET_KEY = os.getenv("ALPACA_SECRET_KEY", "")
 NEWS_API_KEY = os.getenv("NEWS_API_KEY", "")  # Finnhub
@@ -24,9 +24,9 @@ PORTFOLIO_PATH = VAULT_PATH / "P-portfolio"
 REFERENCES_PATH = VAULT_PATH / "R-references"
 STRATEGY_PATH = VAULT_PATH / "S-strategy"
 
-# --- Claude Model ---
-CLAUDE_MODEL = "claude-sonnet-4-5-20250929"
-CLAUDE_MAX_TOKENS = 4096
+# --- LLM Model ---
+LLM_MODEL = "gpt-4o"
+LLM_MAX_TOKENS = 4096
 
 # --- Alpaca ---
 ALPACA_PAPER = True  # Always paper trading

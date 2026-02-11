@@ -1,10 +1,10 @@
-"""Runs each agent through Claude API with vault context."""
+"""Runs each agent through OpenAI API with vault context."""
 
 import json
 import logging
 from typing import Any
 
-from anthropic import Anthropic
+from openai import OpenAI
 
 import config
 from vault_reader import (
@@ -22,21 +22,23 @@ from vault_reader import (
 
 logger = logging.getLogger(__name__)
 
-client = Anthropic(api_key=config.ANTHROPIC_API_KEY)
+client = OpenAI(api_key=config.OPENAI_API_KEY)
 
 
-def _call_claude(system_prompt: str, user_prompt: str) -> str:
-    """Send a prompt to Claude and return the response text."""
+def _call_llm(system_prompt: str, user_prompt: str) -> str:
+    """Send a prompt to OpenAI and return the response text."""
     try:
-        response = client.messages.create(
-            model=config.CLAUDE_MODEL,
-            max_tokens=config.CLAUDE_MAX_TOKENS,
-            system=system_prompt,
-            messages=[{"role": "user", "content": user_prompt}],
+        response = client.chat.completions.create(
+            model=config.LLM_MODEL,
+            max_tokens=config.LLM_MAX_TOKENS,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
         )
-        return response.content[0].text
+        return response.choices[0].message.content
     except Exception as e:
-        logger.error(f"Claude API error: {e}")
+        logger.error(f"OpenAI API error: {e}")
         raise
 
 
@@ -93,7 +95,7 @@ def run_agent_1(
         "Now produce your Investment Brief. Follow your output format exactly."
     )
 
-    return _call_claude(system_prompt, user_prompt)
+    return _call_llm(system_prompt, user_prompt)
 
 
 # ------------------------------------------------------------------ #
@@ -143,7 +145,7 @@ def run_agent_2(
         "For each ticker, assess whether each strategy has a confirmed setup."
     )
 
-    return _call_claude(system_prompt, user_prompt)
+    return _call_llm(system_prompt, user_prompt)
 
 
 # ------------------------------------------------------------------ #
@@ -177,7 +179,7 @@ def run_agent_3(
         "Calculate exact trade parameters including position sizing."
     )
 
-    return _call_claude(system_prompt, user_prompt)
+    return _call_llm(system_prompt, user_prompt)
 
 
 # ------------------------------------------------------------------ #
@@ -219,7 +221,7 @@ def run_agent_4(
         )
     user_prompt += "Now produce your Trade Decision. Follow your output format exactly."
 
-    return _call_claude(system_prompt, user_prompt)
+    return _call_llm(system_prompt, user_prompt)
 
 
 # ------------------------------------------------------------------ #
@@ -266,7 +268,7 @@ def run_agent_5(
         "Follow your output format exactly."
     )
 
-    return _call_claude(system_prompt, user_prompt)
+    return _call_llm(system_prompt, user_prompt)
 
 
 # ------------------------------------------------------------------ #

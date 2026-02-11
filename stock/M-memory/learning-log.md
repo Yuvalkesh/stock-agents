@@ -30,6 +30,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-02-11 13:33
 **ERROR**: Pipeline failed on 2026-02-11 13:33:51.302183: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CY2D8WkqD8KmBq7D97g3y'}
 
+
+### 2026-02-11 14:02
+**ERROR**: Pipeline failed on 2026-02-11 14:02:14.263152: Invalid format specifier '.1f if latest_rsi else 'N/A'' for object of type 'float'
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 

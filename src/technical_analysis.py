@@ -206,7 +206,7 @@ class TechnicalAnalyzer:
                 f"Squeeze={'YES' if is_squeeze else 'NO'} (BW={latest_bw:.4f}, min={bw_min:.4f}), "
                 f"Breakout={'YES' if breakout else 'NO'}, "
                 f"Volume={'1.5x+' if vol_confirms else 'WEAK'}, "
-                f"RSI(14)={latest_rsi:.1f if latest_rsi else 'N/A'}"
+                f"RSI(14)={f'{latest_rsi:.1f}' if latest_rsi else 'N/A'}"
             ),
             "values": {
                 "bandwidth": round(latest_bw, 4) if latest_bw else None,
@@ -277,7 +277,7 @@ class TechnicalAnalyzer:
                 f"EMA10 vs EMA50={'BULLISH' if ema_bullish else 'BEARISH'}, "
                 f"Pullback zone={'YES' if pullback_zone else 'NO'}, "
                 f"Above EMA10={'YES' if above_ema10 else 'NO'}, "
-                f"RSI(14)={latest_rsi:.1f if latest_rsi else 'N/A'}"
+                f"RSI(14)={f'{latest_rsi:.1f}' if latest_rsi else 'N/A'}"
             ),
             "values": {
                 "ema10": round(latest_ema10, 2),
