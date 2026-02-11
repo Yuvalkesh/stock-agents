@@ -2,7 +2,7 @@
 Stock Trading Multi-Agent System — Main Orchestrator
 
 Runs the full 5-agent pipeline with loop-back mechanism.
-Modes: scan, execute, monitor, review, full
+Modes: scan, execute, monitor, review, full, scout
 """
 
 import argparse
@@ -35,6 +35,12 @@ from memory_logger import (
     append_to_learning_log,
 )
 from performance_analyzer import generate_monthly_review
+from email_notifier import (
+    send_morning_report,
+    send_trade_executed_alert,
+    send_end_of_day_report,
+    send_rising_stars_report,
+)
 
 # Logging setup
 logging.basicConfig(
@@ -404,7 +410,7 @@ def main():
     )
     parser.add_argument(
         "--mode",
-        choices=["scan", "execute", "monitor", "review", "full", "scheduled", "manual"],
+        choices=["scan", "execute", "monitor", "review", "full", "scout", "scheduled", "manual"],
         default="full",
         help="Pipeline mode to run",
     )
@@ -419,17 +425,51 @@ def main():
 
     orchestrator = TradingOrchestrator()
 
+    date_str = datetime.now().strftime("%Y-%m-%d")
+
     try:
-        if mode == "scan":
+        if mode == "scout":
+            from rising_stars_scanner import run_rising_stars_scan
+            results = run_rising_stars_scan()
+            result = {"status": "scouted", "found": len(results)}
+            send_rising_stars_report(date_str, results)
+
+        elif mode == "scan":
+            # Run rising stars scout on Mondays
+            if datetime.now().weekday() == 0:  # Monday
+                from rising_stars_scanner import run_rising_stars_scan
+                logger.info("Monday — running Rising Stars Scout...")
+                scout_results = run_rising_stars_scan()
+                send_rising_stars_report(date_str, scout_results)
             result = orchestrator.run_scan()
+            send_morning_report(date_str, result)
+
         elif mode == "execute":
             result = orchestrator.run_execute()
+            exec_results = result.get("results", [])
+            if exec_results:
+                send_trade_executed_alert(date_str, exec_results)
+
         elif mode == "monitor":
             result = orchestrator.run_monitor()
+
         elif mode == "review":
             result = orchestrator.run_review()
+            send_end_of_day_report(date_str)
+
         elif mode == "full":
+            # Run rising stars scout on Mondays
+            if datetime.now().weekday() == 0:  # Monday
+                from rising_stars_scanner import run_rising_stars_scan
+                logger.info("Monday — running Rising Stars Scout...")
+                scout_results = run_rising_stars_scan()
+                send_rising_stars_report(date_str, scout_results)
             result = orchestrator.run_full()
+            send_morning_report(date_str, result.get("scan", {}))
+            exec_results = result.get("execute", {}).get("results", [])
+            if exec_results:
+                send_trade_executed_alert(date_str, exec_results)
+            send_end_of_day_report(date_str)
         else:
             result = orchestrator.run_full()
 

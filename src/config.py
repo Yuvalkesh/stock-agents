@@ -12,6 +12,8 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 ALPACA_API_KEY = os.getenv("ALPACA_API_KEY", "")
 ALPACA_SECRET_KEY = os.getenv("ALPACA_SECRET_KEY", "")
 NEWS_API_KEY = os.getenv("NEWS_API_KEY", "")  # Finnhub
+RESEND_API_KEY = os.getenv("RESEND_API_KEY", "")
+NOTIFICATION_EMAIL = os.getenv("NOTIFICATION_EMAIL", "yuval.kesh@gmail.com")
 
 # --- Paths ---
 PROJECT_ROOT = Path(__file__).parent.parent
