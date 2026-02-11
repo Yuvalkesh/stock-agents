@@ -1,0 +1,46 @@
+name: Stock Trading Bot
+
+on:
+  schedule:
+    # All times in UTC (EST + 5)
+    - cron: '0 11 * * 1-5'    # 06:00 AM EST — Morning scan + agent pipeline
+    - cron: '30 14 * * 1-5'   # 09:30 AM EST — Execute approved trades
+    - cron: '0 15 * * 1-5'    # 10:00 AM EST — Position check
+    - cron: '0 16 * * 1-5'    # 11:00 AM EST — Position check
+    - cron: '0 17 * * 1-5'    # 12:00 PM EST — Position check
+    - cron: '0 18 * * 1-5'    # 01:00 PM EST — Position check
+    - cron: '0 19 * * 1-5'    # 02:00 PM EST — Position check
+    - cron: '0 20 * * 1-5'    # 03:00 PM EST — Position check
+    - cron: '30 21 * * 1-5'   # 04:30 PM EST — Post-market review
+  workflow_dispatch: {}         # Manual trigger button
+
+jobs:
+  trade:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run trading bot
+        working-directory: src
+        run: python main.py --mode ${{ github.event.schedule && 'scheduled' || 'manual' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+
+      - name: Commit vault updates
+        run: |
+          git config user.name "Stock Bot"
+          git config user.email "bot@stockagents.local"
+          git add stock/
+          git diff --staged --quiet || git commit -m "Bot: $(date +%Y-%m-%d_%H:%M) update"
+          git push
