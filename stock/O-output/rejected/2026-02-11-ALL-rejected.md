@@ -3,21 +3,21 @@
 ```markdown
 # Trade Decision — GOOGL — 2026-02-11
 
-## Score: 7/10
+## Score: 6/10
 
 ### Scoring Breakdown
 | # | Criterion | Score | Evidence |
 |---|-----------|-------|----------|
-| 1 | Strategy confirmed | 2 | Connors RSI(2) strategy confirmed with RSI and volume |
-| 2 | News + tech agree | 2 | Both bullish, Google-Wiz deal and AI investments aligned |
-| 3 | Macro aligned | 1 | Positive market regime for tech and innovation investments |
-| 4 | R:R >= 2:1 | 0 | R:R ratio is 1.5:1 which is below the minimum threshold |
-| 5 | Volume confirms | 0 | Volume at 1.03x, below 1.2x requirement |
-| 6 | Risk rules pass | 0 | Initial position exceeded 15% rule, recommendation is to adjust. Adjusted position meets rules. |
-| 7 | No earnings | 1 | No earnings within 3 days |
-| 8 | High confidence | 1 | Given confidence rating is HIGH |
+| 1 | Strategy confirmed | 2 | Connors RSI(2) confirmed setup |
+| 2 | News + tech agree | 2 | Both directionally bullish |
+| 3 | Macro aligned | 1 | Positive regime based on immediate news impact |
+| 4 | R:R >= 2:1 | 0 | Actual ratio is 0.53:1 |
+| 5 | Volume confirms | 0 | rvol is 0.73x, below threshold |
+| 6 | Risk rules pass | 1 | Position fits within risk/money management guidelines |
+| 7 | No earnings | 1 | Next earnings date is beyond 3 trading days |
+| 8 | High confidence | 0 | Confidence rating is MEDIUM |
 
-| **Total** | | **7/10** | |
+| **Total** | | **6/10** | |
 
 ## Decision: PASS
 
@@ -27,30 +27,29 @@
 | Symbol | GOOGL |
 | Direction | LONG |
 | Strategy | Connors RSI(2) |
-| Entry | $318.58 |
-| Stop Loss | $298.24 |
-| Take Profit | Not specified (strategy rule needed) |
-| Shares | 48 |
-| Risk Amount | $974.56 (0.96% of account) |
-| R:R Ratio | 1.5:1 |
+| Entry | $311.43 |
+| Stop Loss | $290.01 |
+| Take Profit | $322.81 |
+| Shares | 47 |
+| Risk Amount | $1,000 (1.0% of account) |
+| R:R Ratio | 0.53:1 |
 
 ### Trade Thesis
-The bullish alignment due to strategic tech developments and AI investments strengthens confidence. The strategy is well-suited to the current market regime, with market sentiment heavily supporting the direction.
+The Connors RSI(2) indicates a valid bullish setup in conjunction with recent positive news catalysts related to AI developments and financial maneuvers by Google. However, volume is insufficient for strong trade confirmation, and the R:R ratio is below the minimum required threshold.
 
 ### Kill Conditions
-- If macroeconomic news impacts technology sector negatively
-- If volume does not increase to at least 1.2x after entry
-- If RSI fails to exhibit expected bullish pattern
+- If overall market sentiment turns against tech stocks
+- If GOOGL volume remains below 1.0x rvol for more than two days
+- If broader market volatility conditions change adversely
 
 ### Portfolio Context
 - Current positions: 0
 - Total exposure: 0%
-- Correlation with existing positions: N/A (no current positions)
+- Correlation with existing positions: Not applicable as there are no current positions
 
 ### Reference Comparison
-- Similar to past trade: N/A (no past trades logged yet)
-- Lesson applied: None (no learning log entries yet)
+- Similar to past trade: None
+- Lesson applied: None, as there is no applicable past trade
+```
 
-```
-The decision is PASS due to a score below our minimum required threshold of 8 for trade execution. Though elements of the trade are favorable, volume confirmation and R:R criteria are not met, and risk management required adjustments.
-```
+**Key takeaway:** While the setup meets certain criteria, the lack of volume and inadequate R:R ratio do not permit action. It is crucial to adhere strictly to the scoring system and risk management rules. Patience and discipline take precedence — we wait for setups that clearly align with our strong probabilistic edge.
