@@ -129,12 +129,32 @@ def run_agent_2(
                 for k, v in strat_result["values"].items():
                     ticker_data += f"  - {k}: {v}\n"
 
+        # Include pre-computed trade parameters for confirmed setups
+        trade_params = analysis.get("trade_params", {})
+        if trade_params:
+            ticker_data += f"\n**Pre-Computed Trade Parameters (use these exact values):**\n"
+            for strat_name, params in trade_params.items():
+                ticker_data += f"\n_{strat_name}_:\n"
+                ticker_data += f"  - Entry: ${params['entry']}\n"
+                ticker_data += f"  - Stop Loss: ${params['stop_loss']} ({params['stop_basis']})\n"
+                ticker_data += f"  - Take Profit: ${params['take_profit']} ({params['target_basis']})\n"
+                ticker_data += f"  - Risk/Share: ${params['risk_per_share']}\n"
+                ticker_data += f"  - Reward/Share: ${params['reward_per_share']}\n"
+                ticker_data += f"  - R:R Ratio: {params['rr_ratio']}:1\n"
+                ticker_data += (
+                    f"  - Min R:R for this strategy: {params['min_rr_required']}:1 "
+                    f"({'PASS' if params['meets_min_rr'] else 'FAIL'})\n"
+                )
+
     system_prompt = (
         "You are the Stock Analyst agent in a swing trading system.\n\n"
         f"## Your Agent Definition\n{agent_def}\n\n"
         f"## Strategy DNA (exact parameters)\n{strategy_dna}\n\n"
         "Follow your output format EXACTLY as specified in your agent definition. "
-        "Output valid markdown. Be precise with numbers."
+        "Output valid markdown. Be precise with numbers.\n\n"
+        "CRITICAL: When trade parameters (Entry, Stop Loss, Take Profit, R:R Ratio) "
+        "are provided as 'Pre-Computed Trade Parameters', you MUST use those exact values. "
+        "Do NOT recalculate them. These are computed by the system with verified arithmetic."
     )
 
     user_prompt = (
@@ -142,7 +162,9 @@ def run_agent_2(
         f"Here is the computed technical analysis for each ticker:\n"
         f"{ticker_data}\n\n"
         "Now produce your Technical Analysis Report. Follow your output format exactly. "
-        "For each ticker, assess whether each strategy has a confirmed setup."
+        "For each ticker, assess whether each strategy has a confirmed setup. "
+        "For confirmed setups, use the Pre-Computed Trade Parameters exactly as given — "
+        "do not recalculate Entry, Stop Loss, Take Profit, or R:R Ratio."
     )
 
     return _call_llm(system_prompt, user_prompt)
@@ -167,7 +189,10 @@ def run_agent_3(
         f"## Risk Management Rules\n{risk_rules}\n\n"
         "Follow your output format EXACTLY. Calculate position sizing using "
         f"1% risk per trade on account equity of ${account_equity:,.2f}. "
-        "Output valid markdown."
+        "Output valid markdown.\n\n"
+        "CRITICAL: When Agent 02 provides Entry, Stop Loss, Take Profit, and R:R Ratio "
+        "values, you MUST copy those exact values into your output. Do NOT recalculate them. "
+        "Only calculate Position Size = floor(account_risk / risk_per_share)."
     )
 
     user_prompt = (
@@ -176,7 +201,8 @@ def run_agent_3(
         f"## Agent 02 — Technical Analysis Report\n{agent2_output}\n\n"
         f"## Account Equity: ${account_equity:,.2f}\n\n"
         "Now produce your Merged Analysis. Follow your output format exactly. "
-        "Calculate exact trade parameters including position sizing."
+        "Copy the Entry, Stop Loss, Take Profit, and R:R Ratio exactly from Agent 02. "
+        "Calculate position sizing: shares = floor(1% of equity / risk per share)."
     )
 
     return _call_llm(system_prompt, user_prompt)

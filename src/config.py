@@ -38,7 +38,16 @@ MAX_RISK_PER_TRADE = 0.01       # 1% of equity
 MAX_SINGLE_POSITION = 0.15      # 15% of equity
 MAX_TOTAL_EXPOSURE = 0.70       # 70% of equity
 MAX_OPEN_POSITIONS = 6
-MIN_RR_RATIO = 2.0              # Minimum risk:reward
+MIN_RR_RATIO = 2.0              # Default minimum risk:reward
+# Strategy-specific R:R minimums — high win-rate strategies compensate
+# with frequency, so they don't need 2:1 R:R to be profitable.
+STRATEGY_MIN_RR = {
+    "connors_rsi":       0.5,   # ~75% win rate, mean reversion
+    "macd_rsi":          1.5,   # ~73% win rate, momentum
+    "bollinger_squeeze": 2.0,   # ~65% win rate, breakout
+    "ma_crossover":      2.0,   # ~60% win rate, trend-following
+    "vix_fear":          0.5,   # ~80% win rate, fear reversal
+}
 MAX_DAILY_LOSS = 0.03           # 3% of equity
 MAX_MONTHLY_DRAWDOWN = 0.10     # 10% of equity
 EARNINGS_BUFFER_DAYS = 3

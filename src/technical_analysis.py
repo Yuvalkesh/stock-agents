@@ -7,6 +7,8 @@ import numpy as np
 import pandas as pd
 import ta
 
+import config
+
 logger = logging.getLogger(__name__)
 
 
@@ -334,6 +336,106 @@ class TechnicalAnalyzer:
         }
 
     # ------------------------------------------------------------------ #
+    # Trade Parameter Calculation (Python math, not LLM math)
+    # ------------------------------------------------------------------ #
+    @staticmethod
+    def compute_trade_params(
+        strategy_name: str,
+        strategy_result: dict[str, Any],
+        price: float,
+        atr: float,
+        support: float,
+        resistance: float,
+    ) -> dict[str, Any] | None:
+        """Compute entry, stop, target, and R:R for a confirmed setup.
+
+        Returns None if the setup is not confirmed or params can't be computed.
+        All arithmetic is done here so the LLM never has to do math.
+        """
+        if not strategy_result.get("setup") or not atr or atr <= 0:
+            return None
+
+        entry = round(price, 2)
+
+        if strategy_name == "connors_rsi":
+            # Stop: 2x ATR(14) below entry
+            stop_loss = round(entry - 2 * atr, 2)
+            # Target: 5-day SMA (exit when price closes above it)
+            target = strategy_result.get("exit_target")
+            if target is None or target <= entry:
+                # Fallback: use resistance if 5-day SMA is below entry
+                target = resistance
+            target = round(float(target), 2)
+            stop_basis = "2x ATR(14) below entry"
+            target_basis = "close above 5-day SMA"
+
+        elif strategy_name == "macd_rsi":
+            # Stop: 1.5x ATR(14) below entry
+            stop_loss = round(entry - 1.5 * atr, 2)
+            # Target: resistance level (exit on MACD bearish cross or RSI>80)
+            target = round(resistance, 2)
+            stop_basis = "1.5x ATR(14) below entry"
+            target_basis = "resistance (exit on MACD bearish cross or RSI>80)"
+
+        elif strategy_name == "bollinger_squeeze":
+            # Stop: lower Bollinger Band at entry
+            lower_bb = strategy_result.get("stop_level")
+            stop_loss = round(float(lower_bb), 2) if lower_bb else round(entry - 2 * atr, 2)
+            # Target: middle Bollinger Band or 2x bandwidth from entry
+            target = strategy_result.get("exit_target")
+            if target is None or target <= entry:
+                target = resistance
+            target = round(float(target), 2)
+            stop_basis = "lower Bollinger Band at entry"
+            target_basis = "close below middle BB (20 SMA)"
+
+        elif strategy_name == "ma_crossover":
+            # Stop: 1.5x ATR or below 50 EMA, whichever is tighter
+            ema50 = strategy_result.get("values", {}).get("ema50")
+            atr_stop = entry - 1.5 * atr
+            ema_stop = float(ema50) if ema50 else 0
+            stop_loss = round(max(atr_stop, ema_stop), 2)
+            # Target: resistance
+            target = round(resistance, 2)
+            stop_basis = "1.5x ATR(14) or below 50 EMA (tighter)"
+            target_basis = "resistance (exit on EMA bearish cross)"
+
+        elif strategy_name == "vix_fear":
+            # Stop: 3% below for SPY, 4% for QQQ
+            stop_pct = 0.03  # default SPY
+            stop_loss = round(entry * (1 - stop_pct), 2)
+            target = round(resistance, 2)
+            stop_basis = "3% below entry"
+            target_basis = "VIX closes below 10-day SMA"
+
+        else:
+            return None
+
+        risk = round(entry - stop_loss, 2)
+        reward = round(target - entry, 2)
+
+        if risk <= 0:
+            return None
+
+        rr_ratio = round(reward / risk, 2) if risk > 0 else 0
+
+        min_rr = config.STRATEGY_MIN_RR.get(strategy_name, config.MIN_RR_RATIO)
+        meets_min_rr = rr_ratio >= min_rr
+
+        return {
+            "entry": entry,
+            "stop_loss": stop_loss,
+            "take_profit": target,
+            "risk_per_share": risk,
+            "reward_per_share": reward,
+            "rr_ratio": rr_ratio,
+            "min_rr_required": min_rr,
+            "meets_min_rr": meets_min_rr,
+            "stop_basis": stop_basis,
+            "target_basis": target_basis,
+        }
+
+    # ------------------------------------------------------------------ #
     # Full Analysis for a Ticker
     # ------------------------------------------------------------------ #
     def analyze_ticker(
@@ -387,6 +489,20 @@ class TechnicalAnalyzer:
             name for name, result in strategies.items() if result.get("setup")
         ]
 
+        # Pre-compute trade parameters for confirmed setups
+        trade_params = {}
+        for setup_name in confirmed:
+            params = self.compute_trade_params(
+                strategy_name=setup_name,
+                strategy_result=strategies[setup_name],
+                price=round(latest_price, 2),
+                atr=round(latest_atr, 2) if latest_atr else 0,
+                support=round(support, 2),
+                resistance=round(resistance, 2),
+            )
+            if params:
+                trade_params[setup_name] = params
+
         return {
             "ticker": ticker,
             "price": round(latest_price, 2),
@@ -399,4 +515,5 @@ class TechnicalAnalyzer:
             "strategies": strategies,
             "confirmed_setups": confirmed,
             "has_setup": len(confirmed) > 0,
+            "trade_params": trade_params,
         }
