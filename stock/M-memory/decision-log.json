@@ -1,0 +1,15 @@
+[
+  {
+    "date": "2026-02-13",
+    "ticker": "AAPL",
+    "strategy": "connors_rsi",
+    "entry_price": 261.73,
+    "stop_loss": 248.69,
+    "take_profit": 272.68,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  }
+]
