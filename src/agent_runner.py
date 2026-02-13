@@ -18,6 +18,8 @@ from vault_reader import (
     read_best_trades,
     read_worst_trades,
     read_previous_agent_output,
+    read_watchlist,
+    read_latest_rising_stars,
 )
 
 logger = logging.getLogger(__name__)
@@ -56,6 +58,8 @@ def run_agent_1(
     """Run the Head of Investment agent."""
     agent_def = read_agent_definition(1)
     learning_log = read_learning_log()
+    watchlist = read_watchlist()
+    rising_stars = read_latest_rising_stars()
 
     news_summary = "\n".join(
         f"- [{a['ticker']}] {a['headline']} ({a['source']})"
@@ -92,8 +96,19 @@ def run_agent_1(
         f"## General Market News\n{general_summary}\n\n"
         f"## Upcoming Earnings\n{earnings_summary or 'None in next 5 days for watchlist.'}\n\n"
         f"## Current Portfolio\n{portfolio}\n\n"
-        "Now produce your Investment Brief. Follow your output format exactly."
+        f"## Watchlist\n{watchlist}\n\n"
     )
+
+    if rising_stars:
+        user_prompt += (
+            f"## Recent Rising Stars Discoveries\n{rising_stars}\n\n"
+            "IMPORTANT: Consider the Rising Stars tickers above alongside the usual "
+            "watchlist. These were identified by the automated scanner as showing "
+            "breakout potential. Include at least 1-2 rising star tickers in your "
+            "analysis if their sector aligns with today's macro bias.\n\n"
+        )
+
+    user_prompt += "Now produce your Investment Brief. Follow your output format exactly."
 
     return _call_llm(system_prompt, user_prompt)
 

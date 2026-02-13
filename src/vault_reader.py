@@ -1,6 +1,7 @@
 """Reads markdown files from the Obsidian vault for agent context."""
 
 import logging
+import re
 from pathlib import Path
 from typing import Optional
 
@@ -54,6 +55,28 @@ def read_risk_rules() -> str:
 
 def read_watchlist() -> str:
     return read_core_file("watchlist")
+
+
+def read_watchlist_tickers() -> list[str]:
+    """Parse all tradable tickers from watchlist.md (including rising stars)."""
+    content = read_watchlist()
+    tickers = []
+    skip = {"Ticker", "Name", "Sector", "Notes", "Purpose"}
+    for line in content.split("\n"):
+        # Match table rows like "| AAPL | Apple | ..."
+        match = re.match(r"^\|\s*([A-Z][A-Z0-9.-]{0,5})\s*\|", line)
+        if match:
+            ticker = match.group(1)
+            if ticker not in skip and not ticker.startswith("^"):
+                tickers.append(ticker)
+    # Deduplicate while preserving order
+    seen = set()
+    unique = []
+    for t in tickers:
+        if t not in seen:
+            seen.add(t)
+            unique.append(t)
+    return unique
 
 
 def read_pipeline_routing() -> str:
@@ -130,6 +153,20 @@ def read_previous_agent_output(date_str: str, agent_number: int) -> str:
     if not filename:
         return ""
     return read_file(OUTPUT_PATH / "trades" / date_str / filename)
+
+
+def read_latest_rising_stars() -> str:
+    """Read the most recent rising stars scan report."""
+    scans_dir = OUTPUT_PATH / "scans"
+    if not scans_dir.exists():
+        return ""
+    # Find the most recent scan directory
+    scan_dates = sorted(scans_dir.iterdir(), reverse=True)
+    for scan_dir in scan_dates:
+        rs_file = scan_dir / "rising-stars.md"
+        if rs_file.exists():
+            return read_file(rs_file)
+    return ""
 
 
 def get_trade_output_dir(date_str: str) -> Path:

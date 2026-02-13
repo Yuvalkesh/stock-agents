@@ -12,6 +12,7 @@ from datetime import datetime
 from typing import Any
 
 from config import MAX_LOOPBACKS, DEFAULT_WATCHLIST
+from vault_reader import read_watchlist_tickers
 from data_fetcher import DataFetcher
 from technical_analysis import TechnicalAnalyzer
 from agent_runner import (
@@ -70,9 +71,11 @@ class TradingOrchestrator:
         """Run the full scan pipeline: fetch data → 5 agents → decisions."""
         logger.info(f"=== MORNING SCAN — {self.date_str} ===")
 
-        # Step 0: Fetch all data
+        # Step 0: Fetch all data (including rising stars tickers)
         logger.info("Step 0: Fetching data...")
-        data = self.fetcher.fetch_all()
+        all_tickers = read_watchlist_tickers() or DEFAULT_WATCHLIST
+        logger.info(f"Full watchlist: {len(all_tickers)} tickers (incl. rising stars)")
+        data = self.fetcher.fetch_all(tickers=all_tickers)
 
         # Get account info for sizing
         account = self.executor.get_account()
