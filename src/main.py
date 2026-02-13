@@ -36,6 +36,7 @@ from memory_logger import (
     append_to_learning_log,
 )
 from performance_analyzer import generate_monthly_review
+from decision_tracker import log_decision, review_past_decisions
 from email_notifier import (
     send_morning_report,
     send_trade_executed_alert,
@@ -71,7 +72,21 @@ class TradingOrchestrator:
         """Run the full scan pipeline: fetch data → 5 agents → decisions."""
         logger.info(f"=== MORNING SCAN — {self.date_str} ===")
 
-        # Step 0: Fetch all data (including rising stars tickers)
+        # Step 0a: Review past decisions before scanning
+        logger.info("Step 0a: Reviewing past decisions in hindsight...")
+        try:
+            findings = review_past_decisions()
+            if findings:
+                missed = sum(1 for f in findings if f["outcome"] == "MISSED_WIN")
+                good = sum(1 for f in findings if f["outcome"] == "GOOD_PASS")
+                logger.info(
+                    f"Hindsight review: {missed} missed opportunities, "
+                    f"{good} good passes — logged to learning log"
+                )
+        except Exception as e:
+            logger.warning(f"Hindsight review failed (non-fatal): {e}")
+
+        # Step 0b: Fetch all data (including rising stars tickers)
         logger.info("Step 0: Fetching data...")
         all_tickers = read_watchlist_tickers() or DEFAULT_WATCHLIST
         logger.info(f"Full watchlist: {len(all_tickers)} tickers (incl. rising stars)")
@@ -152,6 +167,18 @@ class TradingOrchestrator:
         }
         if not confirmed_tickers:
             logger.info("No setups confirmed by technical analysis. Done.")
+            # Log tickers that were analyzed but had no setup
+            for ticker, analysis in ticker_analyses.items():
+                log_decision(
+                    date_str=self.date_str,
+                    ticker=ticker,
+                    strategy="none",
+                    entry_price=analysis.get("price", 0),
+                    stop_loss=0,
+                    take_profit=0,
+                    decision="no_setups",
+                    reason="No technical setup confirmed by any strategy",
+                )
             return {"status": "no_setups", "tickers_analyzed": len(ticker_analyses)}
 
         logger.info(
@@ -172,7 +199,8 @@ class TradingOrchestrator:
         # Step 4 + 5: Agent 4 (Decision) + Agent 5 (Gatekeeper) with loop-backs
         # ---------------------------------------------------------- #
         return self._run_decision_loop(
-            agent3_output, account, data, self.date_str
+            agent3_output, account, data, self.date_str,
+            confirmed_tickers=confirmed_tickers,
         )
 
     def _run_decision_loop(
@@ -181,6 +209,7 @@ class TradingOrchestrator:
         account: dict[str, Any],
         data: dict[str, Any],
         date_str: str,
+        confirmed_tickers: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
         """Run Agent 4 → Agent 5 with loop-back mechanism."""
         loopback_count = 0
@@ -209,6 +238,19 @@ class TradingOrchestrator:
                     date_str, "ALL",
                     f"# Rejected by Agent 4 (MegaBot)\n\n{agent4_output}"
                 )
+                # Log each confirmed ticker as a passed decision
+                for ticker, analysis in (confirmed_tickers or {}).items():
+                    for strat, params in analysis.get("trade_params", {}).items():
+                        log_decision(
+                            date_str=date_str,
+                            ticker=ticker,
+                            strategy=strat,
+                            entry_price=params["entry"],
+                            stop_loss=params["stop_loss"],
+                            take_profit=params["take_profit"],
+                            decision="pass",
+                            reason=f"Agent 4 PASS — scored below threshold",
+                        )
                 return {"status": "pass", "reason": "Agent 4 PASS"}
 
             # ---- Agent 5: Gatekeeper Boss ---- #
@@ -263,6 +305,19 @@ class TradingOrchestrator:
                     f"## Agent 4 Decision\n{agent4_output}\n\n"
                     f"## Gatekeeper Verdict\n{agent5_output}"
                 )
+                # Log each confirmed ticker as a rejected decision
+                for ticker, analysis in (confirmed_tickers or {}).items():
+                    for strat, params in analysis.get("trade_params", {}).items():
+                        log_decision(
+                            date_str=date_str,
+                            ticker=ticker,
+                            strategy=strat,
+                            entry_price=params["entry"],
+                            stop_loss=params["stop_loss"],
+                            take_profit=params["take_profit"],
+                            decision="rejected",
+                            reason=f"Gatekeeper NO-GO",
+                        )
                 return {"status": "rejected", "reason": "Gatekeeper NO-GO"}
 
         # Save approved trades for execution
