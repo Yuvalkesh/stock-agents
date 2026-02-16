@@ -52,14 +52,15 @@
 | XLV | Health Care Select | Healthcare | Healthcare sector ETF |
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| CSCO | — | — | Added by Rising Stars Scout |
 | MCD | — | — | Added by Rising Stars Scout |
-| CAT | — | — | Added by Rising Stars Scout |
-| BMY | — | — | Added by Rising Stars Scout |
 | PEP | — | — | Added by Rising Stars Scout |
+| TXN | — | — | Added by Rising Stars Scout |
+| CAT | — | — | Added by Rising Stars Scout |
+| HON | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |
