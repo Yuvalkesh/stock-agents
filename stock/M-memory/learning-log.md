@@ -34,6 +34,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-02-11 14:02
 **ERROR**: Pipeline failed on 2026-02-11 14:02:14.263152: Invalid format specifier '.1f if latest_rsi else 'N/A'' for object of type 'float'
 
+
+### 2026-02-18 11:36
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: AAPL is flat at $263.88 (+0.82%) after 2 days. Strategy: connors_rsi.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
