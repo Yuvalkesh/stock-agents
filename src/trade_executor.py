@@ -138,6 +138,29 @@ class TradeExecutor:
                 f"Stop: ${stop_loss_price} | Target: ${take_profit_price}"
             )
 
+            # Validate bracket order has all legs (stop + target)
+            try:
+                order_detail = self.trading_client.get_order_by_id(order.id)
+                legs = order_detail.legs or []
+                if len(legs) < 2:
+                    logger.error(
+                        f"BRACKET INCOMPLETE: {symbol} — only {len(legs)} legs "
+                        f"(expected 2: stop + target). Cancelling order."
+                    )
+                    self.cancel_order(str(order.id))
+                    return {
+                        "success": False,
+                        "error": f"Bracket order incomplete — {len(legs)}/2 legs confirmed",
+                    }
+                logger.info(
+                    f"Bracket validated: {symbol} — {len(legs)} legs confirmed"
+                )
+            except Exception as val_err:
+                logger.warning(
+                    f"Could not validate bracket legs for {symbol}: {val_err}. "
+                    f"Order submitted but legs unverified."
+                )
+
             return {
                 "success": True,
                 "order_id": str(order.id),

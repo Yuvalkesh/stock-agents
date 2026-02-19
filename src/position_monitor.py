@@ -38,6 +38,13 @@ class PositionMonitor:
             f"equity=${account['equity']:,.2f}"
         )
 
+    def register_trade_stop(self, symbol: str, stop_loss: float) -> None:
+        """Store the stop_loss for a position so R-multiple uses actual risk."""
+        if symbol in self._known_positions:
+            self._known_positions[symbol]["stop_loss"] = stop_loss
+        else:
+            self._known_positions[symbol] = {"stop_loss": stop_loss}
+
     def check_for_closed_trades(self) -> list[dict[str, Any]]:
         """
         Compare current positions to known positions.
@@ -59,10 +66,11 @@ class PositionMonitor:
                     "direction": known.get("side", "long"),
                     "strategy": known.get("strategy", "unknown"),
                     "entry_date": known.get("entry_date", "unknown"),
+                    "stop_loss": known.get("stop_loss", 0),
                 })
                 del self._known_positions[symbol]
 
-        # Update known positions
+        # Update known positions (preserve stop_loss if already stored)
         for pos in current_positions:
             if pos["symbol"] not in self._known_positions:
                 self._known_positions[pos["symbol"]] = pos
@@ -92,8 +100,12 @@ class PositionMonitor:
         else:
             pnl = (entry_price - current_price) * shares
 
-        # Calculate R-multiple (assume 1% risk of entry as 1R)
-        risk_per_share = entry_price * 0.01  # Rough 1R estimate
+        # Calculate R-multiple using actual stop distance from bracket order
+        stop_loss = trade.get("stop_loss", 0)
+        if stop_loss and stop_loss > 0:
+            risk_per_share = abs(entry_price - stop_loss)
+        else:
+            risk_per_share = entry_price * 0.01  # Fallback: 1% estimate
         r_multiple = pnl / (risk_per_share * shares) if risk_per_share * shares > 0 else 0
 
         trade_data = {

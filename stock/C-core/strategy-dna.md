@@ -3,10 +3,10 @@
 ## Strategy 1: Connors RSI(2) Mean Reversion
 
 ### Theory
-When a stock in a long-term uptrend pulls back sharply (RSI(2) < 20), it tends to snap back. We buy the dip and exit on the first sign of recovery.
+When a stock in a long-term uptrend pulls back sharply (RSI(2) < 10), it tends to snap back. We buy the dip and exit on the first sign of recovery.
 
 ### Entry Conditions (ALL must be true)
-- RSI(2) < 20 (short-term oversold)
+- RSI(2) < 10 (short-term extreme oversold — Connors standard)
 - Price > 200-day SMA (confirming long-term uptrend)
 - Stock is above $10 (liquidity filter)
 - Relative volume > 1.0x (some activity)
@@ -19,7 +19,7 @@ When a stock in a long-term uptrend pulls back sharply (RSI(2) < 20), it tends t
 | Parameter | Value |
 |-----------|-------|
 | RSI Period | 2 |
-| RSI Threshold | < 20 |
+| RSI Threshold | < 10 |
 | Trend Filter | 200 SMA |
 | Exit Signal | Close > 5-day SMA |
 | Stop Loss | 2x ATR(14) below entry |
@@ -83,12 +83,12 @@ When MACD crosses bullish AND RSI is in the "sweet spot" (35-75), the stock has 
 ## Strategy 3: Bollinger Band Squeeze Breakout
 
 ### Theory
-When Bollinger Bandwidth hits a 3-month low, volatility is compressed. When price breaks out of the upper band with volume, a significant move is starting.
+When Bollinger Bandwidth hits a 6-month low, volatility is compressed. When price breaks out of the upper band with volume, a significant move is starting.
 
 ### Entry Conditions (ALL must be true)
-- Bollinger Bandwidth (20,2) at 3-month low (volatility squeeze)
+- Bollinger Bandwidth (20,2) at 6-month low (volatility squeeze)
 - Price breaks above upper Bollinger Band
-- Volume on breakout > 1.2x 20-day average volume
+- Volume on breakout > 1.5x 20-day average volume
 - RSI(14) > 50 (confirming bullish bias)
 
 ### Exit Conditions
@@ -101,8 +101,8 @@ When Bollinger Bandwidth hits a 3-month low, volatility is compressed. When pric
 |-----------|-------|
 | BB Period | 20 |
 | BB Std Dev | 2 |
-| Squeeze Lookback | 63 days (3 months) |
-| Volume Threshold | 1.2x average |
+| Squeeze Lookback | 126 days (6 months) |
+| Volume Threshold | 1.5x average |
 | Stop Loss | Lower BB at entry |
 | Typical Hold | 3-10 days |
 | Historical Win Rate | ~65% |
@@ -126,7 +126,7 @@ When the faster moving average (10 EMA) crosses above the slower (50 EMA), a new
 
 ### Entry Conditions (ALL must be true)
 - 10 EMA crosses above 50 EMA (bullish crossover within last 10 days)
-- Price pulls back to touch or approach 10 EMA (within 1.5% of 10 EMA)
+- Price pulls back to touch or approach 10 EMA (within 1.0% of 10 EMA)
 - Price bounces — closes above 10 EMA after the pullback
 - Volume on bounce > 1.0x average (some confirmation)
 - RSI(14) > 45 (not in bearish territory)
@@ -142,7 +142,7 @@ When the faster moving average (10 EMA) crosses above the slower (50 EMA), a new
 | Fast MA | 10 EMA |
 | Slow MA | 50 EMA |
 | Crossover Recency | Within 10 days |
-| Pullback Zone | Within 1.5% of 10 EMA |
+| Pullback Zone | Within 1.0% of 10 EMA |
 | Stop Loss | 1.5x ATR(14) or below 50 EMA |
 | Typical Hold | 5-15 days |
 | Historical Win Rate | ~60% |
@@ -162,10 +162,10 @@ When the faster moving average (10 EMA) crosses above the slower (50 EMA), a new
 ## Strategy 5: VIX Buy-the-Fear
 
 ### Theory
-When VIX spikes 15%+ above its 10-day SMA, panic is overdone. Buy SPY/QQQ and hold until fear subsides.
+When VIX spikes 20%+ above its 10-day SMA, panic is overdone. Buy SPY/QQQ and hold until fear subsides.
 
 ### Entry Conditions (ALL must be true)
-- VIX closes 15% or more above its 10-day SMA
+- VIX closes 20% or more above its 10-day SMA (CVR3 standard)
 - S&P 500 is above its 200-day SMA (not a bear market)
 - Only trade SPY or QQQ (liquid, diversified)
 - No major systemic risk event (pandemic, financial crisis — use judgment)
@@ -178,7 +178,7 @@ When VIX spikes 15%+ above its 10-day SMA, panic is overdone. Buy SPY/QQQ and ho
 | Parameter | Value |
 |-----------|-------|
 | VIX SMA Period | 10 days |
-| VIX Spike Threshold | 15% above SMA |
+| VIX Spike Threshold | 20% above SMA |
 | Eligible Tickers | SPY, QQQ only |
 | Trend Filter | S&P 500 > 200 SMA |
 | Stop Loss | 3% (SPY) / 4% (QQQ) |

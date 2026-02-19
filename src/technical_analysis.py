@@ -86,13 +86,13 @@ class TechnicalAnalyzer:
             return {"strategy": "connors_rsi", "setup": False, "reason": "Insufficient data"}
 
         above_200sma = latest_price > latest_sma200
-        rsi_oversold = latest_rsi2 < 20
+        rsi_oversold = latest_rsi2 < 10
 
         return {
             "strategy": "connors_rsi",
             "setup": above_200sma and rsi_oversold,
             "reason": (
-                f"RSI(2)={latest_rsi2:.1f} ({'< 20 OVERSOLD' if rsi_oversold else '>= 20'}), "
+                f"RSI(2)={latest_rsi2:.1f} ({'< 10 OVERSOLD' if rsi_oversold else '>= 10'}), "
                 f"Price vs 200 SMA={'ABOVE' if above_200sma else 'BELOW'}"
             ),
             "values": {
@@ -189,10 +189,10 @@ class TechnicalAnalyzer:
         if any(v is None or (isinstance(v, float) and np.isnan(v)) for v in [latest_upper, latest_bw]):
             return {"strategy": "bollinger_squeeze", "setup": False, "reason": "Insufficient data"}
 
-        # 3-month low bandwidth (63 trading days)
-        bw_lookback = min(63, len(bb["bandwidth"]))
+        # 6-month low bandwidth (126 trading days)
+        bw_lookback = min(126, len(bb["bandwidth"]))
         bw_min = float(bb["bandwidth"].iloc[-bw_lookback:].min())
-        is_squeeze = latest_bw <= bw_min * 1.05  # Within 5% of 3-month low
+        is_squeeze = latest_bw <= bw_min * 1.05  # Within 5% of 6-month low
 
         # Breakout above upper band
         breakout = latest_price > latest_upper
@@ -200,7 +200,7 @@ class TechnicalAnalyzer:
         # Volume confirmation
         avg_vol = float(volume.rolling(20).mean().iloc[-1]) if len(volume) >= 20 else 0
         curr_vol = float(volume.iloc[-1])
-        vol_confirms = curr_vol > avg_vol * 1.2 if avg_vol > 0 else False
+        vol_confirms = curr_vol > avg_vol * 1.5 if avg_vol > 0 else False
 
         rsi_bullish = latest_rsi is not None and latest_rsi > 50
 
@@ -210,7 +210,7 @@ class TechnicalAnalyzer:
             "reason": (
                 f"Squeeze={'YES' if is_squeeze else 'NO'} (BW={latest_bw:.4f}, min={bw_min:.4f}), "
                 f"Breakout={'YES' if breakout else 'NO'}, "
-                f"Volume={'1.2x+' if vol_confirms else 'WEAK'}, "
+                f"Volume={'1.5x+' if vol_confirms else 'WEAK'}, "
                 f"RSI(14)={f'{latest_rsi:.1f}' if latest_rsi else 'N/A'}"
             ),
             "values": {
@@ -261,8 +261,8 @@ class TechnicalAnalyzer:
         # Currently 10 EMA > 50 EMA
         ema_bullish = latest_ema10 > latest_ema50
 
-        # Pullback to 10 EMA (within 1.5%)
-        pullback_zone = abs(latest_price - latest_ema10) / latest_ema10 < 0.015
+        # Pullback to 10 EMA (within 1.0%)
+        pullback_zone = abs(latest_price - latest_ema10) / latest_ema10 < 0.01
         above_ema10 = latest_price >= latest_ema10
 
         # Volume check
@@ -310,7 +310,7 @@ class TechnicalAnalyzer:
         if vix_val is None or sma10 is None:
             return {"strategy": "vix_fear", "setup": False, "reason": "No VIX data"}
 
-        fear_signal = spike_pct >= 15
+        fear_signal = spike_pct >= 20
 
         # Check S&P 500 > 200 SMA
         sp_above_200 = False
@@ -327,7 +327,7 @@ class TechnicalAnalyzer:
             "setup": fear_signal and sp_above_200,
             "reason": (
                 f"VIX={vix_val}, 10d SMA={sma10}, "
-                f"Spike={spike_pct:.1f}% ({'>=15% FEAR' if fear_signal else '<15%'}), "
+                f"Spike={spike_pct:.1f}% ({'>=20% FEAR' if fear_signal else '<20%'}), "
                 f"S&P vs 200 SMA={'ABOVE' if sp_above_200 else 'BELOW'}"
             ),
             "values": {

@@ -41,10 +41,18 @@ Shares = Risk Amount / Stop Distance
 Position Value = Shares × Entry Price
 ```
 
+### Conviction-Based Sizing
+| Conviction Score | Risk Per Trade | Rationale |
+|-----------------|---------------|-----------|
+| 6-7/10          | 0.5% of equity | Lower conviction = reduced exposure |
+| 8-10/10         | 1.0% of equity | High conviction = full risk allocation |
+
+Agent 04 sets the conviction score. Agent 05 (Gatekeeper) validates that position size matches conviction. This is a professional SOS (Strength of Signal) approach — marginal setups get smaller bets.
+
 ### Position Size Validation
 1. `Shares × Entry Price` must be <= 15% of equity
 2. `Total exposure + new position` must be <= 70% of equity
-3. `Risk Amount` must be <= 1% of equity
+3. `Risk Amount` must match conviction tier (0.5% for 6-7/10, 1.0% for 8+/10)
 4. If any check fails, reduce shares until all pass
 
 ## Stop Loss Rules

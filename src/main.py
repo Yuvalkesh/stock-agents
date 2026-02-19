@@ -37,6 +37,7 @@ from memory_logger import (
 )
 from performance_analyzer import generate_monthly_review
 from decision_tracker import log_decision, review_past_decisions
+from monthly_equity_tracker import get_monthly_drawdown_pct
 from email_notifier import (
     send_morning_report,
     send_trade_executed_alert,
@@ -265,7 +266,7 @@ class TradingOrchestrator:
                 agent4_output=agent4_output,
                 account_equity=account["equity"],
                 daily_pnl_pct=account["daily_pnl_pct"],
-                monthly_drawdown_pct=0,  # TODO: track monthly drawdown
+                monthly_drawdown_pct=get_monthly_drawdown_pct(account["equity"]),
                 open_positions_count=len(positions),
                 total_exposure_pct=total_exposure,
                 date_str=date_str,
@@ -379,6 +380,10 @@ class TradingOrchestrator:
 
             if result["success"]:
                 logger.info(f"Order placed: {result['order_id']}")
+                # Register stop loss for R-multiple tracking
+                self.monitor.register_trade_stop(
+                    trade["symbol"], trade["stop_loss"]
+                )
             else:
                 logger.error(f"Order failed: {result.get('error')}")
 

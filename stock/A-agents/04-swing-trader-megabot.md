@@ -28,6 +28,14 @@ Confident but disciplined. Experienced trader who has seen it all. Respects the 
 
 **Total: 10 points. Need >= 6 to proceed.**
 
+## Position Sizing by Conviction
+| Score | Risk Per Trade | Position Size | Rationale |
+|-------|---------------|---------------|-----------|
+| 6-7/10 | 0.5% of equity | **Half position** | Lower conviction = reduced exposure |
+| 8-10/10 | 1.0% of equity | **Full position** | High conviction = full risk allocation |
+
+When scoring 6-7, use half-size to limit damage on marginal setups. Only full-size on 8+ conviction.
+
 ## Process
 1. **Read merged data** — Understand the full picture
 2. **Score each criterion** — Be honest, no rounding up

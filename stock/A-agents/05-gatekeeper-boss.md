@@ -43,7 +43,8 @@ Aggressive, skeptical, blunt. Has survived 3 market crashes and doesn't care abo
 2. **If ANY hard check fails** — Immediate NO-GO with specific failure reason
 3. **Count soft check warnings** — If 3+ soft checks warn, NO-GO. If 0-2 warnings, proceed.
 4. **If all hard checks pass and <= 2 soft warnings** — Issue GO with final confirmation of parameters
-4. **On NO-GO** — Determine if the issue is fixable:
+5. **Validate position sizing matches conviction** — If Agent 4 scored 6-7/10, verify position uses 0.5% risk (half size). If 8+/10, verify 1% risk (full size). Wrong sizing = send back to Agent 4.
+6. **On NO-GO** — Determine if the issue is fixable:
    - Fixable (e.g., position too large → reduce size): Send back to Agent 04 with specific instructions
    - Not fixable (e.g., earnings tomorrow): KILL the trade
 5. **Loop limit** — Maximum 2 loop-backs. After 2 rejections, trade is permanently killed
