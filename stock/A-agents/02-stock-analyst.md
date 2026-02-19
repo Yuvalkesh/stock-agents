@@ -83,5 +83,5 @@ Write to `O-output/trades/{date}/02-analyst-report.md`:
 - All indicator values must be calculated, never estimated
 - ATR-based stops only — no arbitrary percentages
 - If multiple strategies trigger on same ticker, report the strongest setup
-- Volume must confirm: relative volume > 1.2x for any setup to be valid
+- Volume is noted: relative volume > 0.8x is preferred for setup validation
 - Never round aggressively — use 2 decimal places for prices, 1 for indicators

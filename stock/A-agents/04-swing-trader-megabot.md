@@ -13,20 +13,20 @@ Confident but disciplined. Experienced trader who has seen it all. Respects the 
 - Current portfolio: `P-portfolio/current-positions.md`
 - Learning log: `M-memory/learning-log.md`
 
-## Scoring System (Minimum 8/10 to Trade)
+## Scoring System (Minimum 6/10 to Trade)
 
 | # | Criterion | Points | How to Verify |
 |---|-----------|--------|---------------|
 | 1 | Strategy setup fully confirmed by Agent 02 | 2 | All parameters met per `strategy-dna.md` |
 | 2 | News sentiment and technicals agree on direction | 2 | Both bullish or both bearish in Agent 03 |
 | 3 | News/macro aligned with trade direction | 1 | Market regime supports the trade type |
-| 4 | Risk:Reward ratio >= 2:1 | 1 | Calculated in Agent 03 |
-| 5 | Volume confirmation (rvol >= 1.2x) | 1 | From Agent 02 data |
+| 4 | R:R meets strategy minimum | 1 | Per strategy-specific min in `config.py` |
+| 5 | Volume confirmation (rvol >= 0.8x) | 1 | From Agent 02 data |
 | 6 | Position fits risk management rules | 1 | <= 1% risk, <= 15% of account |
 | 7 | No earnings within 3 trading days | 1 | From Agent 01 earnings calendar |
 | 8 | Confidence rating is HIGH | 1 | From Agent 03 |
 
-**Total: 10 points. Need >= 8 to proceed.**
+**Total: 10 points. Need >= 6 to proceed.**
 
 ## Process
 1. **Read merged data** — Understand the full picture
@@ -38,8 +38,8 @@ Confident but disciplined. Experienced trader who has seen it all. Respects the 
 7. **Make final decision** — BUY, SHORT, or PASS
 
 ## Decision
-- **BUY** — Long position with exact parameters (score >= 8)
-- **SHORT** — Short position with exact parameters (score >= 8)
+- **BUY** — Long position with exact parameters (score >= 6)
+- **SHORT** — Short position with exact parameters (score >= 6)
 - **PASS** — Score too low, setup incomplete, or portfolio doesn't support it
 
 ## Output Format
@@ -56,8 +56,8 @@ Write to `O-output/trades/{date}/04-trade-decision.md`:
 | 1 | Strategy confirmed | {0 or 2} | {which strategy, key values} |
 | 2 | News + tech agree | {0 or 2} | {alignment summary} |
 | 3 | Macro aligned | {0 or 1} | {regime and fit} |
-| 4 | R:R >= 2:1 | {0 or 1} | {actual ratio} |
-| 5 | Volume confirms | {0 or 1} | {rvol value} |
+| 4 | R:R meets strategy min | {0 or 1} | {actual ratio vs required} |
+| 5 | Volume confirms | {0 or 1} | {rvol value, >= 0.8x} |
 | 6 | Risk rules pass | {0 or 1} | {position size vs limits} |
 | 7 | No earnings | {0 or 1} | {next earnings date} |
 | 8 | High confidence | {0 or 1} | {confidence rating} |
@@ -99,7 +99,7 @@ Write to `O-output/trades/{date}/04-trade-decision.md`:
 
 ## Key Rules
 - Never score above what the data supports — optimism kills traders
-- If score is 7, the answer is PASS, not "close enough"
+- If score is 5, the answer is PASS, not "close enough"
 - Always define kill conditions — every trade needs an escape plan beyond the stop
 - Check for correlation with existing positions — don't stack the same bet
 - If learning log shows a pattern of losing on similar setups, add extra scrutiny

@@ -86,13 +86,13 @@ class TechnicalAnalyzer:
             return {"strategy": "connors_rsi", "setup": False, "reason": "Insufficient data"}
 
         above_200sma = latest_price > latest_sma200
-        rsi_oversold = latest_rsi2 < 10
+        rsi_oversold = latest_rsi2 < 20
 
         return {
             "strategy": "connors_rsi",
             "setup": above_200sma and rsi_oversold,
             "reason": (
-                f"RSI(2)={latest_rsi2:.1f} ({'< 10 OVERSOLD' if rsi_oversold else '>= 10'}), "
+                f"RSI(2)={latest_rsi2:.1f} ({'< 20 OVERSOLD' if rsi_oversold else '>= 20'}), "
                 f"Price vs 200 SMA={'ABOVE' if above_200sma else 'BELOW'}"
             ),
             "values": {
@@ -128,14 +128,17 @@ class TechnicalAnalyzer:
         if any(v is None or (isinstance(v, float) and np.isnan(v)) for v in [latest_rsi, latest_macd, latest_sma50]):
             return {"strategy": "macd_rsi", "setup": False, "reason": "Insufficient data"}
 
-        # MACD bullish crossover: histogram just turned positive
-        macd_cross = (
-            latest_hist is not None
-            and prev_hist is not None
-            and latest_hist > 0
-            and prev_hist <= 0
-        )
-        rsi_in_range = 40 <= latest_rsi <= 70
+        # MACD bullish crossover: histogram turned positive in last 3 bars
+        macd_cross = False
+        hist = macd["histogram"]
+        if len(hist) >= 4:
+            for offset in range(1, 4):  # check last 3 bars
+                curr = float(hist.iloc[-offset])
+                prev = float(hist.iloc[-offset - 1])
+                if curr > 0 and prev <= 0:
+                    macd_cross = True
+                    break
+        rsi_in_range = 35 <= latest_rsi <= 75
         above_sma50 = latest_price > latest_sma50
 
         # Volume confirmation
@@ -186,10 +189,10 @@ class TechnicalAnalyzer:
         if any(v is None or (isinstance(v, float) and np.isnan(v)) for v in [latest_upper, latest_bw]):
             return {"strategy": "bollinger_squeeze", "setup": False, "reason": "Insufficient data"}
 
-        # 6-month low bandwidth (126 trading days)
-        bw_lookback = min(126, len(bb["bandwidth"]))
+        # 3-month low bandwidth (63 trading days)
+        bw_lookback = min(63, len(bb["bandwidth"]))
         bw_min = float(bb["bandwidth"].iloc[-bw_lookback:].min())
-        is_squeeze = latest_bw <= bw_min * 1.05  # Within 5% of 6-month low
+        is_squeeze = latest_bw <= bw_min * 1.05  # Within 5% of 3-month low
 
         # Breakout above upper band
         breakout = latest_price > latest_upper
@@ -197,7 +200,7 @@ class TechnicalAnalyzer:
         # Volume confirmation
         avg_vol = float(volume.rolling(20).mean().iloc[-1]) if len(volume) >= 20 else 0
         curr_vol = float(volume.iloc[-1])
-        vol_confirms = curr_vol > avg_vol * 1.5 if avg_vol > 0 else False
+        vol_confirms = curr_vol > avg_vol * 1.2 if avg_vol > 0 else False
 
         rsi_bullish = latest_rsi is not None and latest_rsi > 50
 
@@ -207,7 +210,7 @@ class TechnicalAnalyzer:
             "reason": (
                 f"Squeeze={'YES' if is_squeeze else 'NO'} (BW={latest_bw:.4f}, min={bw_min:.4f}), "
                 f"Breakout={'YES' if breakout else 'NO'}, "
-                f"Volume={'1.5x+' if vol_confirms else 'WEAK'}, "
+                f"Volume={'1.2x+' if vol_confirms else 'WEAK'}, "
                 f"RSI(14)={f'{latest_rsi:.1f}' if latest_rsi else 'N/A'}"
             ),
             "values": {
@@ -244,10 +247,10 @@ class TechnicalAnalyzer:
         if any(v is None or (isinstance(v, float) and np.isnan(v)) for v in [latest_ema10, latest_ema50]):
             return {"strategy": "ma_crossover", "setup": False, "reason": "Insufficient data"}
 
-        # Check for bullish crossover in last 5 days
+        # Check for bullish crossover in last 10 days
         bullish_cross = False
-        if len(ema10) >= 6 and len(ema50) >= 6:
-            for i in range(-5, 0):
+        if len(ema10) >= 11 and len(ema50) >= 11:
+            for i in range(-10, 0):
                 if (
                     float(ema10.iloc[i - 1]) <= float(ema50.iloc[i - 1])
                     and float(ema10.iloc[i]) > float(ema50.iloc[i])
@@ -258,8 +261,8 @@ class TechnicalAnalyzer:
         # Currently 10 EMA > 50 EMA
         ema_bullish = latest_ema10 > latest_ema50
 
-        # Pullback to 10 EMA (within 0.5%)
-        pullback_zone = abs(latest_price - latest_ema10) / latest_ema10 < 0.005
+        # Pullback to 10 EMA (within 1.5%)
+        pullback_zone = abs(latest_price - latest_ema10) / latest_ema10 < 0.015
         above_ema10 = latest_price >= latest_ema10
 
         # Volume check
@@ -307,7 +310,7 @@ class TechnicalAnalyzer:
         if vix_val is None or sma10 is None:
             return {"strategy": "vix_fear", "setup": False, "reason": "No VIX data"}
 
-        fear_signal = spike_pct >= 20
+        fear_signal = spike_pct >= 15
 
         # Check S&P 500 > 200 SMA
         sp_above_200 = False
@@ -324,7 +327,7 @@ class TechnicalAnalyzer:
             "setup": fear_signal and sp_above_200,
             "reason": (
                 f"VIX={vix_val}, 10d SMA={sma10}, "
-                f"Spike={spike_pct:.1f}% ({'>=20% FEAR' if fear_signal else '<20%'}), "
+                f"Spike={spike_pct:.1f}% ({'>=15% FEAR' if fear_signal else '<15%'}), "
                 f"S&P vs 200 SMA={'ABOVE' if sp_above_200 else 'BELOW'}"
             ),
             "values": {

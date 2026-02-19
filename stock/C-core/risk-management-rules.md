@@ -10,7 +10,7 @@ These rules are non-negotiable. The Gatekeeper (Agent 05) enforces every single 
 | Max risk per trade | 1% of equity | A single bad trade can never hurt us badly |
 | Max single position size | 15% of equity | No concentration risk |
 | Stop loss required | ATR-based, always set | Every trade has a defined exit |
-| Min R:R ratio | 2:1 | Only take trades where upside > downside |
+| Min R:R ratio | Strategy-specific (0.5-1.5) | Only take trades where upside justifies risk per strategy |
 | Earnings buffer | No trade within 3 trading days of earnings | Binary events are gambling, not trading |
 
 ### Portfolio-Level Rules

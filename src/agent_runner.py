@@ -292,7 +292,8 @@ def run_agent_5(
         f"## Account Status\n{account_status}\n\n"
         f"## Pending Orders\n{pending_orders}\n\n"
         "Follow your output format EXACTLY. Run EVERY check. "
-        "If ANY check fails, the verdict is NO-GO. NO exceptions. "
+        "Use the two-tier system: Hard checks must ALL pass (immediate NO-GO on failure). "
+        "Soft checks (5, 10, 12, 14) produce warnings — up to 2 warnings allowed, 3+ = NO-GO. "
         "Output valid markdown."
     )
 
@@ -364,6 +365,11 @@ def parse_agent1_decision(agent1_output: str) -> dict[str, Any]:
                     "RISK", "MIXED", "STAND", "DOWN", "PROCEED",
                     "SETUP", "NO", "ON", "OFF", "TO", "OR", "IF",
                     "TODAY", "DATE", "NONE", "ALL",
+                    "MACD", "VWAP", "BB", "ADX", "BTC", "MA",
+                    "ABOVE", "BELOW", "BULLISH", "BEARISH",
+                    "SIGNAL", "STRONG", "WEAK", "MODERATE",
+                    "STABLE", "SECTOR", "CATALYST", "STRATEGY",
+                    "MOVE", "EXPECTED", "TREND", "BIAS",
                 }
                 if m not in skip_words and m not in tickers:
                     tickers.append(m)
