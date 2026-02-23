@@ -38,6 +38,74 @@ _No entries yet. Will be populated after first trades._
 ### 2026-02-18 11:36
 **HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: AAPL is flat at $263.88 (+0.82%) after 2 days. Strategy: connors_rsi.
 
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: BTC dropped to $29.97 (-1.51%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: WMT dropped to $122.99 (-8.14%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: HD dropped to $382.25 (-2.25%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: NVDA is at $189.82 (+3.83% from entry) after 4 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: MCD is flat at $329.23 (+0.50%) after 4 days. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: PEP is flat at $164.94 (-0.60%) after 4 days. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: TXN dropped to $219.73 (-2.84%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: MA is at $526.41 (+1.55% from entry) after 4 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: BTC dropped to $29.97 (-1.51%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: WMT dropped to $122.99 (-8.14%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: HD dropped to $382.25 (-2.25%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: MCD is flat at $329.23 (+0.50%) after 4 days. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: PEP is flat at $164.94 (-0.60%) after 4 days. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: TXN dropped to $219.73 (-2.84%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: CAT dropped to $759.74 (-1.87%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: HON is at $243.97 (+1.07% from entry) after 4 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-02-23 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: WMT hit stop $123.88 (-3.86%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 

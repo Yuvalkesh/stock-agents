@@ -53,14 +53,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| MCD | — | — | Added by Rising Stars Scout |
 | PEP | — | — | Added by Rising Stars Scout |
+| MCD | — | — | Added by Rising Stars Scout |
 | TXN | — | — | Added by Rising Stars Scout |
 | CAT | — | — | Added by Rising Stars Scout |
-| HON | — | — | Added by Rising Stars Scout |
+| DE | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |
