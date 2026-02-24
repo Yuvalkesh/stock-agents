@@ -106,6 +106,34 @@ _No entries yet. Will be populated after first trades._
 ### 2026-02-23 11:38
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: WMT hit stop $123.88 (-3.86%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
 
+
+### 2026-02-24 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: BTC dropped to $28.51 (-2.70%) after 3 days. We correctly passed. Strategy: none.
+
+
+### 2026-02-24 11:38
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: WMT is flat at $125.81 (-0.64%) after 3 days. Strategy: none.
+
+
+### 2026-02-24 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: HD dropped to $376.99 (-1.70%) after 3 days. We correctly passed. Strategy: none.
+
+
+### 2026-02-24 11:38
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: NVDA is at $191.55 (+1.90% from entry) after 3 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-02-24 11:38
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: AAPL is flat at $266.18 (+0.69%) after 3 days. Strategy: none.
+
+
+### 2026-02-24 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: AI dropped to $9.79 (-7.64%) after 3 days. We correctly passed. Strategy: none.
+
+
+### 2026-02-24 11:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MSFT dropped to $384.47 (-3.79%) after 3 days. We correctly passed. Strategy: none.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
