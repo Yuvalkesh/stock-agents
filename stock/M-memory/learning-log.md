@@ -134,6 +134,18 @@ _No entries yet. Will be populated after first trades._
 ### 2026-02-24 11:38
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MSFT dropped to $384.47 (-3.79%) after 3 days. We correctly passed. Strategy: none.
 
+
+### 2026-02-25 11:38
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: HD reached target $385.28 (+1.77%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-02-25 11:38
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: NVDA is at $192.85 (+2.63% from entry) after 3 days. Hasn't hit target ($194.49) or stop ($185.20) yet. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover.
+
+
+### 2026-02-25 11:38
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: MCD reached target $335.67 (+2.62%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
