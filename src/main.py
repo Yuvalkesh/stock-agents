@@ -30,6 +30,8 @@ from memory_logger import (
     save_agent_output,
     save_rejected_trade,
     save_scan_output,
+    save_approved_trades_json,
+    load_approved_trades_json,
     update_positions_file,
     update_account_status,
     update_pending_orders,
@@ -332,6 +334,7 @@ class TradingOrchestrator:
                 date_str,
                 f"# Approved Trades — {date_str}\n\n{trades_summary}"
             )
+            save_approved_trades_json(date_str, approved_trades)
             return {"status": "approved", "trades": approved_trades}
 
         return {"status": "no_trades"}
@@ -343,21 +346,15 @@ class TradingOrchestrator:
         """Execute any approved trades from the scan."""
         logger.info(f"=== EXECUTE MODE — {self.date_str} ===")
 
-        # Read the scan output for today
-        from vault_reader import get_scan_output_dir
-        scan_dir = get_scan_output_dir(self.date_str)
-        scan_file = scan_dir / "daily-scan.md"
+        # Read approved trades saved by the morning scan
+        approved_trades = load_approved_trades_json(self.date_str)
 
-        if not scan_file.exists():
-            logger.info("No scan output found. Running scan first...")
-            scan_result = self.run_scan()
-            if scan_result.get("status") != "approved":
-                return {"status": "no_trades", "scan_result": scan_result}
-            approved_trades = scan_result.get("trades", [])
+        if approved_trades:
+            logger.info(
+                f"Loaded {len(approved_trades)} approved trade(s) from morning scan."
+            )
         else:
-            # Parse approved trades from scan output
-            # In practice, we'd store these as JSON; for now, re-run scan
-            logger.info("Scan output exists. Running full pipeline...")
+            logger.info("No approved trades JSON found. Running scan first...")
             scan_result = self.run_scan()
             if scan_result.get("status") != "approved":
                 return {"status": "no_trades", "scan_result": scan_result}

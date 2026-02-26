@@ -55,6 +55,28 @@ def save_scan_output(date_str: str, content: str) -> Path:
     return path
 
 
+def save_approved_trades_json(date_str: str, trades: list) -> Path:
+    """Save approved trades as JSON so execute can read them without re-running the scan."""
+    import json
+    scan_dir = get_scan_output_dir(date_str)
+    path = scan_dir / "approved-trades.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(trades, indent=2), encoding="utf-8")
+    logger.info(f"Wrote: {path}")
+    return path
+
+
+def load_approved_trades_json(date_str: str) -> list | None:
+    """Load approved trades saved by the morning scan. Returns None if not found."""
+    import json
+    from vault_reader import get_scan_output_dir
+    path = get_scan_output_dir(date_str) / "approved-trades.json"
+    if not path.exists():
+        return None
+    trades = json.loads(path.read_text(encoding="utf-8"))
+    return trades if trades else None
+
+
 # ------------------------------------------------------------------ #
 # Trade Journal
 # ------------------------------------------------------------------ #
