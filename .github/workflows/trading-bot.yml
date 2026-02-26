@@ -31,9 +31,19 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Determine mode
+        run: |
+          case "${{ github.event.schedule }}" in
+            "0 11 * * 1-5")  echo "BOT_MODE=scan"    >> $GITHUB_ENV ;;
+            "30 14 * * 1-5") echo "BOT_MODE=execute"  >> $GITHUB_ENV ;;
+            "30 21 * * 1-5") echo "BOT_MODE=review"   >> $GITHUB_ENV ;;
+            "")               echo "BOT_MODE=manual"   >> $GITHUB_ENV ;;
+            *)                echo "BOT_MODE=monitor"  >> $GITHUB_ENV ;;
+          esac
+
       - name: Run trading bot
         working-directory: src
-        run: python main.py --mode ${{ github.event.schedule && 'scheduled' || 'manual' }}
+        run: python main.py --mode ${{ env.BOT_MODE }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
