@@ -1,3 +1,5 @@
+# Rejected by Agent 4 (MegaBot)
+
 ```markdown
 # Trade Decision — TXN — 2026-02-26
 

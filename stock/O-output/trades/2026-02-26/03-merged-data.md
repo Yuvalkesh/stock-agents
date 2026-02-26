@@ -1,32 +1,32 @@
 ```markdown
 # Merged Analysis — 2026-02-26
 
-## Trade Candidate: DE
+## Trade Candidate: TXN
 
 ### Alignment Summary
-| Factor    | News (Agent 01)                              | Technicals (Agent 02)  | Aligned? |
-|-----------|----------------------------------------------|------------------------|----------|
-| Direction | Bullish                                      | Bullish                | YES      |
-| Catalyst  | Near 52-week high; strong market interest    | MA Crossover           | YES      |
-| Timing    | Developing                                   | Immediate              | YES      |
-| Volume    | Expected increase                            | 0.99x                  | NO       |
+| Factor | News (Agent 01) | Technicals (Agent 02) | Aligned? |
+|--------|----------------|----------------------|----------|
+| Direction | Bullish | Bullish | YES |
+| Catalyst | Strong recent relative strength | Connors RSI(2) Setup | YES |
+| Timing | Patient | Immediate | YES |
+| Volume | No specific increase expected | 0.11x | NO |
 
 ### Contradictions
-- Volume alignment is weak; technicals indicate average volume which doesn't fully support the bullish sentiment from news.
+The Connors RSI(2) setup is confirmed, but the risk-reward ratio does not meet the required minimum for execution. Relative volume is weak, failing to support trade conviction.
 
 ### Trade Parameters
-| Parameter       | Value       | Basis                          |
-|-----------------|-------------|--------------------------------|
-| Direction       | LONG        | News and technicals alignment  |
-| Strategy        | MA Crossover| From Agent 02                  |
-| Entry Price     | $623.61     | Market order                   |
-| Stop Loss       | $593.96     | ATR(14) x 1.5                  |
-| Target Price    | $674.19     | Resistance level               |
-| Risk per Share  | $29.65      | Entry - Stop                   |
-| R:R Ratio       | 1.71:1      |                                |
-| Position Size   | 34 shares   | 1% account risk / risk per share|
-| Position Value  | $21,194.74  | 20.73% of account              |
-| Max Loss        | $1,007.46   | 0.98% of account               |
+| Parameter | Value | Basis |
+|-----------|-------|-------|
+| Direction | LONG | Strong sector bias and Connors RSI(2) setup |
+| Strategy | Connors RSI(2) | From Agent 02 |
+| Entry Price | $210.96 | Market order |
+| Stop Loss | $197.52 | ATR(14) x 2.0 |
+| Target Price | $215.56 | Short target based on strategy |
+| Risk per Share | $13.44 | Entry - Stop |
+| R:R Ratio | 0.34:1 | |
+| Position Size | 76 shares | floor(1% of equity / risk per share) |
+| Position Value | $16,034.96 | 15.7% of account |
+| Max Loss | $1,021.44 | 1% of account |
 
 ### Risk Flags
 - [ ] Earnings within 3 days: NO
@@ -35,10 +35,8 @@
 - [ ] Total exposure would exceed 70%: NO
 
 ### Confidence Rating
-**MEDIUM**
-While the technical and news directions align, the volume does not strongly support the signal, reducing the overall confidence. The position size also exceeds the 15% maximum account exposure, which needs to be rectified to proceed.
+**LOW**
+The Connors RSI(2) setup does not meet the risk-reward threshold. Additionally, the relative volume is weak, and the suggested position size exceeds the maximum single position size limit of the account.
 
 ---
 ```
-
-Note: Since the position size exceeds the 15% of account value limit, adjustments are needed to meet the requirements set in the risk management rules.

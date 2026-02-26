@@ -716,5 +716,18 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-02-26",
+    "ticker": "TXN",
+    "strategy": "connors_rsi",
+    "entry_price": 210.96,
+    "stop_loss": 197.52,
+    "take_profit": 215.56,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
