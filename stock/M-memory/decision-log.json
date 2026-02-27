@@ -729,5 +729,83 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-02-27",
+    "ticker": "CAT",
+    "strategy": "none",
+    "entry_price": 752.93,
+    "stop_loss": 0,
+    "take_profit": 0,
+    "decision": "no_setups",
+    "reason": "No technical setup confirmed by any strategy",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-02-27",
+    "ticker": "DE",
+    "strategy": "none",
+    "entry_price": 619.46,
+    "stop_loss": 0,
+    "take_profit": 0,
+    "decision": "no_setups",
+    "reason": "No technical setup confirmed by any strategy",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-02-27",
+    "ticker": "NVDA",
+    "strategy": "none",
+    "entry_price": 184.89,
+    "stop_loss": 0,
+    "take_profit": 0,
+    "decision": "no_setups",
+    "reason": "No technical setup confirmed by any strategy",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-02-27",
+    "ticker": "MSFT",
+    "strategy": "none",
+    "entry_price": 401.72,
+    "stop_loss": 0,
+    "take_profit": 0,
+    "decision": "no_setups",
+    "reason": "No technical setup confirmed by any strategy",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-02-27",
+    "ticker": "AI",
+    "strategy": "none",
+    "entry_price": 8.4,
+    "stop_loss": 0,
+    "take_profit": 0,
+    "decision": "no_setups",
+    "reason": "No technical setup confirmed by any strategy",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-02-27",
+    "ticker": "GOOGL",
+    "strategy": "none",
+    "entry_price": 307.38,
+    "stop_loss": 0,
+    "take_profit": 0,
+    "decision": "no_setups",
+    "reason": "No technical setup confirmed by any strategy",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
