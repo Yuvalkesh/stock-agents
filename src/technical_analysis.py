@@ -148,7 +148,7 @@ class TechnicalAnalyzer:
 
         return {
             "strategy": "macd_rsi",
-            "setup": macd_cross and rsi_in_range and above_sma50 and vol_confirms,
+            "setup": macd_cross and rsi_in_range and above_sma50,
             "reason": (
                 f"MACD cross={'YES' if macd_cross else 'NO'}, "
                 f"RSI(14)={latest_rsi:.1f} ({'in range' if rsi_in_range else 'out of range'}), "
@@ -200,7 +200,7 @@ class TechnicalAnalyzer:
         # Volume confirmation
         avg_vol = float(volume.rolling(20).mean().iloc[-1]) if len(volume) >= 20 else 0
         curr_vol = float(volume.iloc[-1])
-        vol_confirms = curr_vol > avg_vol * 1.5 if avg_vol > 0 else False
+        vol_confirms = curr_vol > avg_vol * 1.2 if avg_vol > 0 else False
 
         rsi_bullish = latest_rsi is not None and latest_rsi > 50
 
@@ -261,8 +261,8 @@ class TechnicalAnalyzer:
         # Currently 10 EMA > 50 EMA
         ema_bullish = latest_ema10 > latest_ema50
 
-        # Pullback to 10 EMA (within 1.0%)
-        pullback_zone = abs(latest_price - latest_ema10) / latest_ema10 < 0.01
+        # Pullback to 10 EMA (within 2.5%)
+        pullback_zone = abs(latest_price - latest_ema10) / latest_ema10 < 0.025
         above_ema10 = latest_price >= latest_ema10
 
         # Volume check
@@ -393,14 +393,12 @@ class TechnicalAnalyzer:
             target_basis = "close below middle BB (20 SMA)"
 
         elif strategy_name == "ma_crossover":
-            # Stop: 1.5x ATR or below 50 EMA, whichever is tighter
-            ema50 = strategy_result.get("values", {}).get("ema50")
-            atr_stop = entry - 1.5 * atr
-            ema_stop = float(ema50) if ema50 else 0
-            stop_loss = round(max(atr_stop, ema_stop), 2)
+            # Stop: 1.5x ATR below entry (always — EMA stop was causing
+            # positions to blow up when EMA50 was just $1-2 below price)
+            stop_loss = round(entry - 1.5 * atr, 2)
             # Target: resistance
             target = round(resistance, 2)
-            stop_basis = "1.5x ATR(14) or below 50 EMA (tighter)"
+            stop_basis = "1.5x ATR(14) below entry"
             target_basis = "resistance (exit on EMA bearish cross)"
 
         elif strategy_name == "vix_fear":
