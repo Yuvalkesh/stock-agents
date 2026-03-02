@@ -926,5 +926,57 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-03-02",
+    "ticker": "PEP",
+    "strategy": "ma_crossover",
+    "entry_price": 168.6,
+    "stop_loss": 163.71,
+    "take_profit": 171.48,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-03-02",
+    "ticker": "LIN",
+    "strategy": "ma_crossover",
+    "entry_price": 506.11,
+    "stop_loss": 492.01,
+    "take_profit": 510.65,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-03-02",
+    "ticker": "MCD",
+    "strategy": "ma_crossover",
+    "entry_price": 340.68,
+    "stop_loss": 332.7,
+    "take_profit": 341.75,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-03-02",
+    "ticker": "DE",
+    "strategy": "ma_crossover",
+    "entry_price": 635.28,
+    "stop_loss": 606.81,
+    "take_profit": 674.19,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
