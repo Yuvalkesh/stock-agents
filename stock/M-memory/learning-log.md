@@ -186,6 +186,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-03-02 11:30
 **HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: MSFT is flat at $392.74 (+0.96%) after 3 days. Strategy: none.
 
+
+### 2026-03-03 11:29
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: TXN reached target $215.56 (+2.18%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
