@@ -828,8 +828,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 722.1799926757812,
+      "high_since": 755.72998046875,
+      "low_since": 706.5999755859375,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-02-27",
@@ -841,8 +849,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 619.219970703125,
+      "high_since": 636.4500122070312,
+      "low_since": 609.2100219726562,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-02-27",
@@ -854,8 +870,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 180.0500030517578,
+      "high_since": 183.4600067138672,
+      "low_since": 174.63999938964844,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-02-27",
@@ -867,8 +891,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 403.92999267578125,
+      "high_since": 406.70001220703125,
+      "low_since": 389.8800048828125,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-02-27",
@@ -880,8 +912,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_PARTIAL",
+    "review_details": {
+      "current_price": 9.100000381469727,
+      "high_since": 9.279999732971191,
+      "low_since": 7.724999904632568,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-02-27",
@@ -893,8 +933,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 303.5799865722656,
+      "high_since": 312.3699951171875,
+      "low_since": 296.7099914550781,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-02-27",
@@ -906,8 +954,16 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 722.1799926757812,
+      "high_since": 755.72998046875,
+      "low_since": 706.5999755859375,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-02-27",
@@ -919,8 +975,16 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 619.219970703125,
+      "high_since": 636.4500122070312,
+      "low_since": 609.2100219726562,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-03-02",
@@ -1098,6 +1162,32 @@
     "entry_price": 188.05,
     "stop_loss": 182.7,
     "take_profit": 191.56,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-03-04",
+    "ticker": "LIN",
+    "strategy": "ma_crossover",
+    "entry_price": 501.68,
+    "stop_loss": 486.49,
+    "take_profit": 510.65,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-03-04",
+    "ticker": "MCD",
+    "strategy": "ma_crossover",
+    "entry_price": 332.17,
+    "stop_loss": 323.86,
+    "take_profit": 339.85,
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
