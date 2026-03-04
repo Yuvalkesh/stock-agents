@@ -1,21 +1,31 @@
 ```markdown
-# Trade Decision — 2026-03-04
+# Trade Decision — No Trade — 2026-03-04
 
-## Score: N/A /10
+## Score: 0/10
 
 ### Scoring Breakdown
-No trade candidates scored. None of the analyzed tickers presented an actionable technical setup required to score the trade per the outlined criteria.
+| # | Criterion | Score | Evidence |
+|---|-----------|-------|----------|
+| 1 | Strategy confirmed | 0 | No valid setups detected in analysis |
+| 2 | News + tech agree | 0 | No trade candidates with agreement found |
+| 3 | Macro aligned | 0 | No trade candidates identified |
+| 4 | R:R meets strategy min | 0 | No trade candidates identified |
+| 5 | Volume confirms | 0 | No trade candidates identified |
+| 6 | Risk rules pass | 0 | No trade candidates identified |
+| 7 | No earnings | 0 | No trade candidates identified |
+| 8 | High confidence | 0 | No trade candidates identified |
+| **Total** | | **0/10** | |
 
 ## Decision: PASS
 
 ### Trade Parameters
-No viable trade was determined.
+_No trade parameters as no valid candidates were identified._
 
 ### Trade Thesis
-Despite bullish sentiment in news across PEP, LIN, and MCD, no technical setups provided a credible basis for initiating a trade. Lack of alignment between news-driven momentum and technical indicators disqualifies these opportunities.
+No trades are recommended as there are no valid setups identified by Agent 03's analysis, indicating no alignment in strategy, sentiment, or technicals.
 
 ### Kill Conditions
-Not applicable as no trades are being initiated.
+_Not applicable as no trades are considered._
 
 ### Portfolio Context
 - Current positions: 0
@@ -23,6 +33,6 @@ Not applicable as no trades are being initiated.
 - Correlation with existing positions: Not applicable
 
 ### Reference Comparison
-- No similar past trades due to lack of technical setups.
-- Lesson applied: Continued adherence to disciplined entry criteria reinforces past lessons logged in the learning log: "The best trade is the one not taken when the setup isn't perfect."
+- Similar to past trade: Not applicable
+- Lesson applied: Consistent with avoiding trades when no valid setup is found.
 ```
