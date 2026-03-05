@@ -6,30 +6,29 @@
 ### Price Data
 | Metric | Value |
 |--------|-------|
-| Current Price | $262.52 |
+| Current Price | $258.80 |
 | Day Change | N/A% |
 | 20-Day Avg Volume | N/A |
 | Today's Volume | N/A |
-| Relative Volume | 0.82x |
-| ATR(14) | $6.39 |
+| Relative Volume | 0.23x |
+| ATR(14) | $6.22 |
 
 ### Key Levels
 | Level | Price | Distance |
 |-------|-------|----------|
-| Resistance 1 | $280.65 | 6.91% |
-| Support 1 | $255.45 | -2.70% |
-| 200 SMA | $243.28 | -7.32% |
-| 50 EMA | $264.66 | 0.82% |
-| 10 EMA | $265.93 | 1.30% |
+| Resistance 1 | $280.65 | N/A% |
+| Support 1 | $255.45 | N/A% |
+| 200 SMA | $243.52 | N/A% |
+| 50 EMA | $264.37 | N/A% |
+| 10 EMA | $264.63 | N/A% |
 
 ### Strategy Scorecard
 | Strategy | Status | Key Values | Verdict |
 |----------|--------|------------|---------|
-| Connors RSI(2) | RSI(2)=10.1 | RSI(2)=10.1, Price vs 200 SMA=ABOVE | NO SETUP |
-| MACD + RSI | MACD cross=NO | MACD cross=NO, RSI(14)=46.0 | NO SETUP |
-| Bollinger Squeeze | Squeeze=NO | Bandwidth=9.4157, Breakout=NO | NO SETUP |
-| MA Crossover | Crossover=NO | 10 EMA vs 50 EMA=BULLISH | NO SETUP |
-| VIX Fear | N/A | N/A | NO SETUP |
+| Connors RSI(2) | Values | RSI(2)=3.1, Price vs 200 SMA=Above | NO SETUP (R:R Ratio FAIL) |
+| MACD + RSI | Values | MACD cross=No, RSI(14)=42.3 | NO SETUP |
+| Bollinger Squeeze | Values | Bandwidth=9.51, Breakout=No | NO SETUP |
+| MA Crossover | Values | 10 EMA vs 50 EMA=Bearish | NO SETUP |
 
 ### Decision
 **NO SETUP**
@@ -41,30 +40,29 @@
 ### Price Data
 | Metric | Value |
 |--------|-------|
-| Current Price | $9.29 |
+| Current Price | $9.50 |
 | Day Change | N/A% |
 | 20-Day Avg Volume | N/A |
 | Today's Volume | N/A |
-| Relative Volume | 0.76x |
-| ATR(14) | $0.82 |
+| Relative Volume | 0.16x |
+| ATR(14) | $0.80 |
 
 ### Key Levels
 | Level | Price | Distance |
 |-------|-------|----------|
-| Resistance 1 | $12.06 | 29.85% |
-| Support 1 | $7.72 | -16.88% |
-| 200 SMA | $17.9 | 92.65% |
-| 50 EMA | $12.04 | 29.57% |
-| 10 EMA | $9.42 | 1.40% |
+| Resistance 1 | $12.06 | N/A% |
+| Support 1 | $7.72 | N/A% |
+| 200 SMA | $17.82 | N/A% |
+| 50 EMA | $11.94 | N/A% |
+| 10 EMA | $9.43 | N/A% |
 
 ### Strategy Scorecard
 | Strategy | Status | Key Values | Verdict |
 |----------|--------|------------|---------|
-| Connors RSI(2) | RSI(2)=76.8 | RSI(2)=76.8, Price vs 200 SMA=BELOW | NO SETUP |
-| MACD + RSI | MACD cross=NO | MACD cross=NO, RSI(14)=40.1 | NO SETUP |
-| Bollinger Squeeze | Squeeze=NO | Bandwidth=40.0778, Breakout=NO | NO SETUP |
-| MA Crossover | Crossover=NO | 10 EMA vs 50 EMA=BEARISH | NO SETUP |
-| VIX Fear | N/A | N/A | NO SETUP |
+| Connors RSI(2) | Values | RSI(2)=84.9, Price vs 200 SMA=Below | NO SETUP |
+| MACD + RSI | Values | MACD cross=Yes, RSI(14)=42.0 | NO SETUP |
+| Bollinger Squeeze | Values | Bandwidth=39.90, Breakout=No | NO SETUP |
+| MA Crossover | Values | 10 EMA vs 50 EMA=Bearish | NO SETUP |
 
 ### Decision
 **NO SETUP**
@@ -76,65 +74,29 @@
 ### Price Data
 | Metric | Value |
 |--------|-------|
-| Current Price | $405.2 |
+| Current Price | $408.10 |
 | Day Change | N/A% |
 | 20-Day Avg Volume | N/A |
 | Today's Volume | N/A |
-| Relative Volume | 0.89x |
-| ATR(14) | $11.12 |
+| Relative Volume | 0.22x |
+| ATR(14) | $10.84 |
 
 ### Key Levels
 | Level | Price | Distance |
 |-------|-------|----------|
-| Resistance 1 | $422.72 | 4.32% |
-| Support 1 | $381.71 | -5.79% |
-| 200 SMA | $483.09 | 19.22% |
-| 50 EMA | $439.95 | 8.56% |
-| 10 EMA | $400.3 | -1.21% |
+| Resistance 1 | $422.72 | N/A% |
+| Support 1 | $381.71 | N/A% |
+| 200 SMA | $482.87 | N/A% |
+| 50 EMA | $438.42 | N/A% |
+| 10 EMA | $401.72 | N/A% |
 
 ### Strategy Scorecard
 | Strategy | Status | Key Values | Verdict |
 |----------|--------|------------|---------|
-| Connors RSI(2) | RSI(2)=82.8 | RSI(2)=82.8, Price vs 200 SMA=BELOW | NO SETUP |
-| MACD + RSI | MACD cross=NO | MACD cross=NO, RSI(14)=45.1 | NO SETUP |
-| Bollinger Squeeze | Squeeze=NO | Bandwidth=7.2208, Breakout=NO | NO SETUP |
-| MA Crossover | Crossover=NO | 10 EMA vs 50 EMA=BEARISH | NO SETUP |
-| VIX Fear | N/A | N/A | NO SETUP |
-
-### Decision
-**NO SETUP**
-
----
-
-## Ticker: AMZN
-
-### Price Data
-| Metric | Value |
-|--------|-------|
-| Current Price | $216.82 |
-| Day Change | N/A% |
-| 20-Day Avg Volume | N/A |
-| Today's Volume | N/A |
-| Relative Volume | 0.83x |
-| ATR(14) | $6.61 |
-
-### Key Levels
-| Level | Price | Distance |
-|-------|-------|----------|
-| Resistance 1 | $238.86 | 10.14% |
-| Support 1 | $196.00 | -9.60% |
-| 200 SMA | $224.38 | 3.48% |
-| 50 EMA | $225.86 | 4.17% |
-| 10 EMA | $210.26 | -3.02% |
-
-### Strategy Scorecard
-| Strategy | Status | Key Values | Verdict |
-|----------|--------|------------|---------|
-| Connors RSI(2) | RSI(2)=93.4 | RSI(2)=93.4, Price vs 200 SMA=BELOW | NO SETUP |
-| MACD + RSI | MACD cross=NO | MACD cross=NO, RSI(14)=51.7 | NO SETUP |
-| Bollinger Squeeze | Squeeze=NO | Bandwidth=14.5953, Breakout=NO | NO SETUP |
-| MA Crossover | Crossover=NO | 10 EMA vs 50 EMA=BEARISH | NO SETUP |
-| VIX Fear | N/A | N/A | NO SETUP |
+| Connors RSI(2) | Values | RSI(2)=90.5, Price vs 200 SMA=Below | NO SETUP |
+| MACD + RSI | Values | MACD cross=No, RSI(14)=47.0 | NO SETUP |
+| Bollinger Squeeze | Values | Bandwidth=6.83, Breakout=No | NO SETUP |
+| MA Crossover | Values | 10 EMA vs 50 EMA=Bearish | NO SETUP |
 
 ### Decision
 **NO SETUP**
@@ -146,33 +108,74 @@
 ### Price Data
 | Metric | Value |
 |--------|-------|
-| Current Price | $303.13 |
+| Current Price | $299.61 |
 | Day Change | N/A% |
 | 20-Day Avg Volume | N/A |
 | Today's Volume | N/A |
-| Relative Volume | 0.7x |
-| ATR(14) | $8.82 |
+| Relative Volume | 0.23x |
+| ATR(14) | $8.49 |
 
 ### Key Levels
 | Level | Price | Distance |
 |-------|-------|----------|
-| Resistance 1 | $343.31 | 13.25% |
-| Support 1 | $296.25 | -2.27% |
-| 200 SMA | $251.54 | -17.03% |
-| 50 EMA | $320.13 | 5.61% |
-| 10 EMA | $308.14 | 1.65% |
+| Resistance 1 | $332.69 | N/A% |
+| Support 1 | $296.25 | N/A% |
+| 200 SMA | $252.21 | N/A% |
+| 50 EMA | $319.98 | N/A% |
+| 10 EMA | $306.59 | N/A% |
 
 ### Strategy Scorecard
 | Strategy | Status | Key Values | Verdict |
 |----------|--------|------------|---------|
-| Connors RSI(2) | RSI(2)=15.4 | RSI(2)=15.4, Price vs 200 SMA=ABOVE | NO SETUP |
-| MACD + RSI | MACD cross=NO | MACD cross=NO, RSI(14)=38.4 | NO SETUP |
-| Bollinger Squeeze | Squeeze=NO | Bandwidth=11.6124, Breakout=NO | NO SETUP |
-| MA Crossover | Crossover=NO | 10 EMA vs 50 EMA=BEARISH | NO SETUP |
-| VIX Fear | N/A | N/A | NO SETUP |
+| Connors RSI(2) | Values | RSI(2)=5.8, Price vs 200 SMA=Above | NO SETUP (R:R Ratio FAIL) |
+| MACD + RSI | Values | MACD cross=No, RSI(14)=35.7 | NO SETUP |
+| Bollinger Squeeze | Values | Bandwidth=10.47, Breakout=No | NO SETUP |
+| MA Crossover | Values | 10 EMA vs 50 EMA=Bearish | NO SETUP |
 
 ### Decision
 **NO SETUP**
+
+---
+
+## Ticker: PEP
+
+### Price Data
+| Metric | Value |
+|--------|-------|
+| Current Price | $161.94 |
+| Day Change | N/A% |
+| 20-Day Avg Volume | N/A |
+| Today's Volume | N/A |
+| Relative Volume | 0.13x |
+| ATR(14) | $3.22 |
+
+### Key Levels
+| Level | Price | Distance |
+|-------|-------|----------|
+| Resistance 1 | $171.48 | N/A% |
+| Support 1 | $160.63 | N/A% |
+| 200 SMA | $143.64 | N/A% |
+| 50 EMA | $154.33 | N/A% |
+| 10 EMA | $165.48 | N/A% |
+
+### Strategy Scorecard
+| Strategy | Status | Key Values | Verdict |
+|----------|--------|------------|---------|
+| Connors RSI(2) | Values | RSI(2)=4.5, Price vs 200 SMA=Above | SETUP CONFIRMED (PASS) |
+| MACD + RSI | Values | MACD cross=No, RSI(14)=49.1 | NO SETUP |
+| Bollinger Squeeze | Values | Bandwidth=5.84, Breakout=No | NO SETUP |
+| MA Crossover | Values | 10 EMA vs 50 EMA=Bullish | NO SETUP |
+
+### Suggested Parameters
+| Parameter | Value |
+|-----------|-------|
+| Entry | $161.94 |
+| Stop Loss | $155.50 (ATR-based) |
+| Target | $165.56 |
+| R:R Ratio | 0.56:1 |
+
+### Decision
+**SETUP CONFIRMED [Connors RSI(2)]**
 
 ---
 
@@ -181,76 +184,40 @@
 ### Price Data
 | Metric | Value |
 |--------|-------|
-| Current Price | $614.04 |
+| Current Price | $600.00 |
 | Day Change | N/A% |
 | 20-Day Avg Volume | N/A |
 | Today's Volume | N/A |
-| Relative Volume | 0.52x |
-| ATR(14) | $18.50 |
+| Relative Volume | 0.10x |
+| ATR(14) | $18.19 |
 
 ### Key Levels
 | Level | Price | Distance |
 |-------|-------|----------|
-| Resistance 1 | $674.19 | 9.80% |
-| Support 1 | $548.00 | -10.76% |
-| 200 SMA | $500.08 | -18.56% |
-| 50 EMA | $543.56 | -11.49% |
-| 10 EMA | $622.05 | 1.30% |
+| Resistance 1 | $674.19 | N/A% |
+| Support 1 | $561.20 | N/A% |
+| 200 SMA | $500.45 | N/A% |
+| 50 EMA | $546.18 | N/A% |
+| 10 EMA | $618.04 | N/A% |
 
 ### Strategy Scorecard
 | Strategy | Status | Key Values | Verdict |
 |----------|--------|------------|---------|
-| Connors RSI(2) | RSI(2)=12.4 | RSI(2)=12.4, Price vs 200 SMA=ABOVE | NO SETUP |
-| MACD + RSI | MACD cross=NO | MACD cross=NO, RSI(14)=57.5 | NO SETUP |
-| Bollinger Squeeze | Squeeze=NO | Bandwidth=17.8725, Breakout=NO | NO SETUP |
-| MA Crossover | Crossover=NO | 10 EMA vs 50 EMA=BULLISH | NO SETUP |
-| VIX Fear | N/A | N/A | NO SETUP |
+| Connors RSI(2) | Values | RSI(2)=4.1, Price vs 200 SMA=Above | SETUP CONFIRMED (PASS) |
+| MACD + RSI | Values | MACD cross=No, RSI(14)=52.0 | NO SETUP |
+| Bollinger Squeeze | Values | Bandwidth=16.62, Breakout=No | NO SETUP |
+| MA Crossover | Values | 10 EMA vs EMA50=Bullish | NO SETUP |
 
-### Decision
-**NO SETUP**
-
----
-
-## Ticker: LIN
-
-### Price Data
-| Metric | Value |
-|--------|-------|
-| Current Price | $499.19 |
-| Day Change | N/A% |
-| 20-Day Avg Volume | N/A |
-| Today's Volume | N/A |
-| Relative Volume | 0.95x |
-| ATR(14) | $9.88 |
-
-### Key Levels
-| Level | Price | Distance |
-|-------|-------|----------|
-| Resistance 1 | $510.65 | 2.30% |
-| Support 1 | $444.02 | -11.04% |
-| 200 SMA | $453.92 | -9.07% |
-| 50 EMA | $457.79 | -8.31% |
-| 10 EMA | $498.32 | -0.17% |
-
-### Strategy Scorecard
-| Strategy | Status | Key Values | Verdict |
-|----------|--------|------------|---------|
-| Connors RSI(2) | RSI(2)=20.5 | RSI(2)=20.5, Price vs 200 SMA=ABOVE | NO SETUP |
-| MACD + RSI | MACD cross=NO | MACD cross=NO, RSI(14)=63.7 | NO SETUP |
-| Bollinger Squeeze | Squeeze=NO | Bandwidth=15.4816, Breakout=NO | NO SETUP |
-| MA Crossover | Crossover=NO | EMA10 vs EMA50=BULLISH, Pullback zone=YES, Above EMA10=YES | SETUP CONFIRMED MA Crossover |
-| VIX Fear | N/A | N/A | NO SETUP |
-
-### Suggested Parameters (if setup confirmed)
+### Suggested Parameters
 | Parameter | Value |
 |-----------|-------|
-| Entry | $499.19 |
-| Stop Loss | $484.37 (ATR-based) |
-| Target | $510.65 |
-| R:R Ratio | 0.77:1 |
+| Entry | $600.00 |
+| Stop Loss | $563.62 (ATR-based) |
+| Target | $618.77 |
+| R:R Ratio | 0.52:1 |
 
 ### Decision
-**NO SETUP**
+**SETUP CONFIRMED [Connors RSI(2)]**
 
 ---
 ```
