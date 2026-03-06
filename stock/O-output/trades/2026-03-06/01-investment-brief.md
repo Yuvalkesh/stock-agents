@@ -2,47 +2,45 @@
 # Investment Brief — 2026-03-06
 
 ## Market Regime
-MIXED
+RISK-OFF
 
 ## Macro Dashboard
-| Indicator | Value    | Signal                |
-|-----------|----------|-----------------------|
-| VIX       | 24.83    | Elevated but not alarming |
-| S&P 500   | 6830.71 (-0.56%) | Negative short-term trend |
-| 10Y Yield | 4.15%    | Upward move, rate pressure |
-| BTC       | 70524.39 (-0.45%) | Slight risk-off signal |
+| Indicator | Value | Signal |
+|-----------|-------|--------|
+| VIX | 28.05 | Elevated, indicating increased market volatility and caution |
+| S&P 500 | 6733.38 (-1.42%) | Downtrend, reflecting declining risk sentiment |
+| 10Y Yield | 4.17% | Rising, indicating inflation concerns and higher borrowing costs |
+| BTC | 68,564.18 (-3.21%) | Weakness, suggesting lower risk appetite |
 
 ## Sector Bias
-- **Strongest:** Technology, Energy
-- **Weakest:** Consumer Discretionary, Financials
-- **Rotation Signal:** Strong relative strength in Technology and Energy sectors, favoring defensive and growth plays amidst geopolitical unrest.
+- **Strongest:** Technology, Industrials
+- **Weakest:** Financials, Consumer Discretionary
+- **Rotation Signal:** Market reacting to geopolitical concerns, energy price risk, and a hawkish Fed stance. Industrial strength likely driven by defense sector due to geopolitical tensions.
 
 ## Earnings Watch (Next 5 Days)
-| Date      | Ticker  | Expected Move  |
-|-----------|---------|----------------|
-| -         | -       | No earnings within 5 days |
+| Date | Ticker | Expected Move |
+|------|--------|---------------|
+_None within the next 5 trading days._
 
 ## Tickers for Analysis
-| Ticker | Catalyst                                                                 | Sector   | Suggested Strategy  |
-|--------|--------------------------------------------------------------------------|----------|---------------------|
-| AAPL   | Product innovation, new deals (Apple TV)                                 | Technology | Connors RSI       |
-| MSFT   | Retaining tech supply and favorable AI landscape                         | Technology | MACD + RSI        |
-| GOOGL  | Positive AI developments, strategic expansion                            | Technology | Bollinger Squeeze |
-| AMZN   | Expanding 5G capabilities, maintaining market engagement                  | Consumer/Tech | MA Crossover   |
-| PEP    | Strong relative strength and momentum                                    | Consumer Staples | RSI Momentum    |
-| LIN    | Consistent outperformance, strong sector alignment                       | Materials | MA Crossover    |
-| DE     | Significant monthly performance boost                                    | Industrials | Connors RSI       |
-| SPY    | Overall market proxy, potential volatility play                          | Broad Market | VIX Fear        |
+| Ticker | Catalyst | Sector | Suggested Strategy |
+|--------|----------|--------|-------------------|
+| AAPL | Potential price adjustments due to product announcements | Technology | MACD + RSI |
+| MSFT | Strong AI adoption narrative | Technology | Bollinger Squeeze |
+| GOOGL | Focus on AI and digital platform regulations | Technology | MA Crossover |
+| SPY | General market volatility and geopolitical risks | Broad Market | VIX Fear |
+| QQQ | Tech-heavy volatility, geopolitical impact on tech | Tech-Heavy | VIX Fear |
+| DE | Strong performance, potential defense sector boost | Industrials | MA Crossover |
+| PEP | Strong relative strength, momentum | Consumer Staples | Connors RSI(2) |
 
 ## Active Strategies Today
-- Connors RSI
 - MACD + RSI
 - Bollinger Squeeze
 - MA Crossover
 - VIX Fear
+- Connors RSI(2)
 
 ## Decision
 **PROCEED TO ANALYSIS**
-
-The market regime is mixed with geopolitical tensions affecting sentiment. Technology and Energy sectors show relative strength, and recent news flow suggests specific catalysts for AAPL, MSFT, and AMZN. Rising stars such as PEP and LIN present potential breakout opportunities. Current conditions merit selective engagement with position sizing considerations due to elevated volatility levels.
+Given the elevated VIX indicating heightened volatility and the market's negative tone driven by geopolitical risks, focusing on defensive sectors and those with strong relative performance and catalysts is prudent. The RISK-OFF environment warrants using volatility-adapted strategies such as VIX Fear and focusing on technically resilient sectors like Technology and Industrials.
 ```
