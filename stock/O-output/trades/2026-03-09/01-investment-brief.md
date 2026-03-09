@@ -2,42 +2,46 @@
 # Investment Brief — 2026-03-09
 
 ## Market Regime
-RISK-OFF
+MIXED
 
 ## Macro Dashboard
-| Indicator | Value | Signal |
-|-----------|-------|--------|
-| VIX | 32.43 | Elevated fear, indicative of high volatility |
-| S&P 500 | 6740.02 (-1.33%) | Downtrend |
-| 10Y Yield | 4.13 | Moderately stable, slight decline |
-| BTC | 67491.85 (+2.31%) | Risk asset up, cautious optimism |
+| Indicator | Value  | Signal                   |
+|-----------|--------|--------------------------|
+| VIX       | 27.98  | Elevated but declining   |
+| S&P 500   | 6705.66 (-0.51%) | Slight downtrend          |
+| 10Y Yield | 4.14   | Moderate yield pressure  |
+| BTC       | 69087.38 (+4.73%) | High risk appetite signal |
 
 ## Sector Bias
-- **Strongest:** Energy, Technology
-- **Weakest:** Consumer Discretionary, Financials
-- **Rotation Signal:** Strong performance in Energy due to spiking oil prices; Technology shows resilience with AI and semiconductor plays potentially attractive amid macro shifts.
+- **Strongest:** Technology (driven by AI developments), Energy (surging oil prices)
+- **Weakest:** Financials (rate concerns), Consumer Discretionary (inflation pressure)
+- **Rotation Signal:** Strong rotation into energy and tech, defensive names under pressure
 
 ## Earnings Watch (Next 5 Days)
 | Date | Ticker | Expected Move |
 |------|--------|--------------|
-| 2026-03-10 | None | |
+_None within the next 5 trading days._
 
 ## Tickers for Analysis
-| Ticker | Catalyst | Sector | Suggested Strategy |
-|--------|----------|--------|-------------------|
-| SPY | Elevated VIX and geopolitical tensions | Broad Market | VIX Fear |
-| QQQ | Tech resilience amid macro uncertainty | Tech-Heavy | VIX Fear |
-| EOG | 52-week high, strong relative strength | Energy | MA Crossover |
-| AAPL | AI ecosystem expansion, sector strength | Technology | Bollinger Squeeze |
-| MSFT | AI leadership, market portfolio shifts | Technology | Bollinger Squeeze |
-| NVDA | Cheaper valuations, AI chip demand | Semiconductors | Connors RSI |
+| Ticker | Catalyst                                         | Sector         | Suggested Strategy  |
+|--------|--------------------------------------------------|----------------|---------------------|
+| SPY    | Defensive market breadth, VIX = elevated         | Broad Market   | VIX Fear            |
+| QQQ    | Defensive tech allocation amid AI focus          | Tech-Heavy     | VIX Fear            |
+| AAPL   | Memory chip crunch highlights tech demand        | Technology     | Connors RSI         |
+| MSFT   | AI partnership expansion with Anthropic          | Technology     | MACD + RSI          |
+| GOOGL  | Strategic AI investments, regulatory tailwinds   | Technology     | MA Crossover        |
+| XOM    | Oil price surge amid geopolitical tensions       | Energy         | Bollinger Squeeze   |
+| CVX    | Benefitting from oil spike and geopolitical risks | Energy         | Bollinger Squeeze   |
+| EOG    | Near 52-week high with strong technical alignment | Energy         | MA Crossover        |
 
 ## Active Strategies Today
 - VIX Fear
-- MA Crossover
+- Connors RSI
+- MACD + RSI
 - Bollinger Squeeze
+- MA Crossover
 
 ## Decision
 **PROCEED TO ANALYSIS**
-The market is currently in a RISK-OFF regime, with heightened volatility driven by geopolitical tensions and oil price surges. Given the elevated VIX and macroeconomic uncertainty, focus on defensive plays with strong catalysts and sector strength. Energy and Technology are positioned well, offering potential opportunities through the strategies listed.
+The mixed market regime favors selective risk-taking in strong sectors like technology and energy. Adequate setups have been identified in strong momentum names within these sectors. Ensure alignment with current geopolitical and macroeconomic narratives, particularly in technology and energy due to recent catalysts.
 ```
