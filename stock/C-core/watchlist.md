@@ -55,14 +55,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| PEP | — | — | Added by Rising Stars Scout |
-| LIN | — | — | Added by Rising Stars Scout |
-| MCD | — | — | Added by Rising Stars Scout |
-| DE | — | — | Added by Rising Stars Scout |
-| GE | — | — | Added by Rising Stars Scout |
+| EOG | — | — | Added by Rising Stars Scout |
+| MRVL | — | — | Added by Rising Stars Scout |
+| ABNB | — | — | Added by Rising Stars Scout |
+| RTX | — | — | Added by Rising Stars Scout |
+| LMT | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |
