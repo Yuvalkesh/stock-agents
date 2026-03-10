@@ -1796,5 +1796,31 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-03-10",
+    "ticker": "EOG",
+    "strategy": "ma_crossover",
+    "entry_price": 130.23,
+    "stop_loss": 124.83,
+    "take_profit": 134.36,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-03-10",
+    "ticker": "RTX",
+    "strategy": "ma_crossover",
+    "entry_price": 206.98,
+    "stop_loss": 198.5,
+    "take_profit": 214.5,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
