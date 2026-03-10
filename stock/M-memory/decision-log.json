@@ -1416,8 +1416,16 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 483.6199951171875,
+      "high_since": 497.260009765625,
+      "low_since": 478.8299865722656,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-03-05",
@@ -1429,8 +1437,16 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 259.8800048828125,
+      "high_since": 261.55999755859375,
+      "low_since": 253.67999267578125,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-03-05",
@@ -1442,8 +1458,16 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_WIN",
+    "review_details": {
+      "current_price": 306.3599853515625,
+      "high_since": 306.79998779296875,
+      "low_since": 294.0799865722656,
+      "days_elapsed": 3,
+      "hit_target": true,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-03-05",
@@ -1455,8 +1479,16 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 161.52999877929688,
+      "high_since": 162.42999267578125,
+      "low_since": 156.08999633789062,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-03-05",
@@ -1468,8 +1500,16 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 599.47998046875,
+      "high_since": 610.3599853515625,
+      "low_since": 577.6300048828125,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-03-06",
@@ -1725,6 +1765,32 @@
     "entry_price": 190.21,
     "stop_loss": 184.77,
     "take_profit": 192.41,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-03-10",
+    "ticker": "RTX",
+    "strategy": "ma_crossover",
+    "entry_price": 208.23,
+    "stop_loss": 199.47,
+    "take_profit": 214.5,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-03-10",
+    "ticker": "LMT",
+    "strategy": "ma_crossover",
+    "entry_price": 664.15,
+    "stop_loss": 634.91,
+    "take_profit": 692.0,
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,

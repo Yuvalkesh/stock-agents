@@ -302,6 +302,26 @@ _No entries yet. Will be populated after first trades._
 ### 2026-03-09 11:33
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MCD hit stop $323.44 (-2.41%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
 
+
+### 2026-03-10 11:30
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: LIN hit stop $484.37 (-2.97%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-03-10 11:30
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: AAPL is flat at $259.88 (+0.42%) after 3 days. Strategy: connors_rsi.
+
+
+### 2026-03-10 11:30
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: GOOGL reached target $304.92 (+1.77%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-03-10 11:30
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: PEP is flat at $161.53 (-0.25%) after 3 days. Strategy: connors_rsi.
+
+
+### 2026-03-10 11:30
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: DE is flat at $599.48 (-0.09%) after 3 days. Strategy: connors_rsi.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
