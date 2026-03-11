@@ -322,6 +322,50 @@ _No entries yet. Will be populated after first trades._
 ### 2026-03-10 11:30
 **HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: DE is flat at $599.48 (-0.09%) after 3 days. Strategy: connors_rsi.
 
+
+### 2026-03-11 11:30
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: AAPL is flat at $260.83 (+0.21%) after 3 days. Strategy: connors_rsi.
+
+
+### 2026-03-11 11:30
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: GOOGL reached target $305.17 (+1.43%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-03-11 11:30
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: PEP is flat at $160.78 (+0.05%) after 3 days. Strategy: connors_rsi.
+
+
+### 2026-03-11 11:30
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: LIN dropped to $477.94 (-2.47%) after 3 days. We correctly passed. Strategy: connors_rsi.
+
+
+### 2026-03-11 11:30
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: AAPL reached target $261.40 (+2.23%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-03-11 11:30
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: GOOGL reached target $302.66 (+1.16%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-03-11 11:30
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: SPY reached target $681.09 (+1.31%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-03-11 11:30
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: SPY is flat at $677.18 (+0.73%) after 3 days. Strategy: vix_fear.
+
+
+### 2026-03-11 11:30
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: QQQ is at $607.77 (+1.01% from entry) after 3 days. Hasn't hit target ($617.52) or stop ($583.65) yet. We passed because: Agent 4 PASS — scored below threshold. Strategy: vix_fear.
+
+
+### 2026-03-11 11:30
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: DE is at $592.72 (+1.53% from entry) after 3 days. Hasn't hit target ($607.72) or stop ($546.74) yet. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi.
+
+
+### 2026-03-11 11:30
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: PEP reached target $162.69 (+3.85%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
