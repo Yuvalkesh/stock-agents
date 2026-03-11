@@ -5,41 +5,42 @@
 MIXED
 
 ## Macro Dashboard
-| Indicator | Value | Signal |
-|-----------|-------|--------|
-| VIX | 24.65 | Moderately elevated, signaling caution but not panic |
-| S&P 500 | 6781.48 (-0.21%) | Neutral, slight downward trend |
-| 10Y Yield | 4.14 | Flat, indicating stable long-term interest rates |
-| BTC | 69453.68 (-0.68%) | Diminished risk appetite |
+| Indicator | Value    | Signal          |
+|-----------|----------|-----------------|
+| VIX       | 24.48    | Moderately Elevated |
+| S&P 500   | 6773.93 (-0.11%) | Neutral |
+| 10Y Yield | 4.2      | Rising Yield   |
+| BTC       | 70305.75 (+0.54%) | Positive Risk Appetite |
 
 ## Sector Bias
 - **Strongest:** Technology, Energy
-- **Weakest:** Consumer Staples, Financials
-- **Rotation Signal:** Notable strength in technology driven by AI news and energy due to geopolitical factors.
+- **Weakest:** Financials, Consumer Staples
+- **Rotation Signal:** Persistent strength in Technology and Energy as defensive sectors face pressure from geopolitical tensions and rising yields.
 
 ## Earnings Watch (Next 5 Days)
 | Date | Ticker | Expected Move |
 |------|--------|---------------|
-*No relevant earnings within 3 days.*
+*— No earnings in the next 5 days that prohibit trading within 3 days.*
 
 ## Tickers for Analysis
-| Ticker | Catalyst | Sector | Suggested Strategy |
-|--------|----------|--------|-------------------|
-| MSFT | AI developments, upgrade in ratings | Technology | Connors RSI |
-| GOOGL | Acquisition of Intersect Power | Technology | MA Crossover |
-| AAPL | India production boost, possible antitrust action | Technology | Bollinger Squeeze |
-| SPY | Volatile macro environment | Broad Market | VIX Fear |
-| QQQ | Tech-driven strength amid volatile backdrop | Tech-Heavy | VIX Fear |
-| EOG | Near 52-week high, momentum | Energy | MACD + RSI |
-| RTX | Near 52-week high, defense sector demand | Defense | Connors RSI |
+| Ticker | Catalyst                                                                 | Sector    | Suggested Strategy |
+|--------|--------------------------------------------------------------------------|-----------|---------------------|
+| SPY    | Elevated volatility with mixed macro signals (VIX at 24.48)              | Broad Market | VIX Fear           |
+| QQQ    | EU geopolitical tensions impacting tech-heavy Nasdaq                      | Tech-Heavy | VIX Fear           |
+| AAPL   | Strong production data from India amid geopolitical tariff risks          | Technology | Connors RSI        |
+| MSFT   | Continued AI partnerships and cloud expansion                             | Technology | MA Crossover       |
+| GOOGL  | Completed $32B acquisition in cybersecurity                               | Technology | MA Crossover       |
+| EOG    | Near 52-week high, strong technicals (10 EMA > 50 EMA > 200 SMA)          | Energy    | MA Crossover       |
+| RTX    | Strong defense sector, near 52-week high                                 | Industrial| Bollinger Squeeze  |
 
 ## Active Strategies Today
-1. Connors RSI
-2. MA Crossover
-3. Bollinger Squeeze
-4. VIX Fear
+- VIX Fear
+- Connors RSI
+- MA Crossover
+- Bollinger Squeeze
 
 ## Decision
 **PROCEED TO ANALYSIS**
-The macro environment is mixed with elevated VIX and geopolitical tensions influencing market volatility. However, certain sectors, notably technology and energy, are showing resilience and opportunities tied to AI developments and geopolitical events. This provides scope for strategic trades within these sectors, supplemented by indices capturing broad market moves.
+
+The current macro environment presents a mixed market regime, with elevated VIX levels indicating some caution is warranted. Nevertheless, sectors such as Technology and Energy show relative strength, providing suitable opportunities for swing trading using our active strategies. Notably, geopolitical developments and rising yields contribute to the mixed signals, suggesting a more cautious approach with awareness of sector rotation dynamics.
 ```
