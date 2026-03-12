@@ -1,37 +1,75 @@
 ```markdown
 # Trade Decision — 2026-03-12
 
-## Score: 0/10
+## Trade Candidate: SPY
+
+## Score: 2/10
 
 ### Scoring Breakdown
 | # | Criterion | Score | Evidence |
 |---|-----------|-------|----------|
-| 1 | Strategy confirmed | 0 | No technical setup confirmed for any strategy |
-| 2 | News + tech agree | 0 | News is bullish but no technical confirmation |
-| 3 | Macro aligned | 0 | Geopolitical tensions support bullish view but no technicals |
-| 4 | R:R meets strategy min | 0 | No R:R calculation possible without setup |
-| 5 | Volume confirms | 0 | Volume below average for both EOG (0.86x) and XOM (0.71x) |
-| 6 | Risk rules pass | 0 | Positions not applicable without a strategy setup |
-| 7 | No earnings | 1 | Neither EOG nor XOM have earnings within 3 days |
+| 1 | Strategy confirmed | 0 | No strategy confirmed |
+| 2 | News + tech agree | 2 | Both bearish |
+| 3 | Macro aligned | 1 | Elevated VIX, risk-off sentiment |
+| 4 | R:R meets strategy min | 0 | R:R ratio is 0.32:1, below required |
+| 5 | Volume confirms | 0 | rvol = 0.41x, below 0.8x |
+| 6 | Risk rules pass | 0 | Position exceeds 15% of account |
+| 7 | No earnings | 1 | No earnings within 3 days |
 | 8 | High confidence | 0 | Confidence rating is LOW |
+| **Total** | | **2/10** | |
 
 ## Decision: PASS
 
 ### Trade Parameters
-Not applicable as no trades will be executed without a confirmed setup.
+- Candidate: SPY
+- Recommended Action: PASS
+- Reasoning: Insufficient R:R, low volume, and high exposure relative to account risk limits.
 
 ### Trade Thesis
-The news on energy sector strength due to geopolitical tensions suggests a bullish outlook. However, without technical confirmation, executing a trade would be speculative and not aligned with our disciplined trading strategy. Our process demands alignment across news, technicals, and volume, which is absent here.
+Despite the elevated VIX indicating potential volatility, the lack of a technical setup confirmation and inadequate R:R ratio make this trade unattractive.
 
 ### Kill Conditions
-Not applicable as no trades will be initiated.
+N/A since the trade decision is PASS.
 
 ### Portfolio Context
 - Current positions: 1
-- Total exposure: 15%
-- Correlation with existing positions: Current position in MRVL has no direct correlation with EOG or XOM.
+- Total exposure: 32.6%
+- Correlation with existing positions: Minimal, as current position is MRVL (Long).
 
-### Reference Comparison
-- Similar to past trade: No applicable reference
-- Lesson applied: This decision aligns with our process of not proceeding without confirmed setups, as observed in past reviews.
+---
+
+## Trade Candidate: AAPL
+
+## Score: 4/10
+
+### Scoring Breakdown
+| # | Criterion | Score | Evidence |
+|---|-----------|-------|----------|
+| 1 | Strategy confirmed | 0 | No strategy confirmed |
+| 2 | News + tech agree | 2 | Both bullish |
+| 3 | Macro aligned | 1 | Strong news flow on product launches |
+| 4 | R:R meets strategy min | 0 | R:R ratio is 0.28:1, below required |
+| 5 | Volume confirms | 0 | rvol = 0.27x, well below 0.8x |
+| 6 | Risk rules pass | 0 | Position exceeds 15% of account |
+| 7 | No earnings | 1 | No earnings within 3 days |
+| 8 | High confidence | 0 | Confidence rating is LOW |
+| **Total** | | **4/10** | |
+
+## Decision: PASS
+
+### Trade Parameters
+- Candidate: AAPL
+- Recommended Action: PASS
+- Reasoning: Despite bullish alignment in news and technicals, the absence of setup confirmation, low R:R, and volume issues dictate a pass decision.
+
+### Trade Thesis
+While bullish news flow is promising, lack of technical confirmation and poor volume invalidate the conditions for a trade.
+
+### Kill Conditions
+N/A since the trade decision is PASS.
+
+### Portfolio Context
+- Current positions: 1
+- Total exposure: 32.6%
+- Correlation with existing positions: Low, current position is MRVL (Long).
 ```
