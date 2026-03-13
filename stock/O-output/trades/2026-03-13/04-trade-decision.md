@@ -1,38 +1,39 @@
 ```markdown
-# Trade Decision — None — 2026-03-13
+# Trade Decision — 2026-03-13
 
 ## Score: 0/10
 
 ### Scoring Breakdown
 | # | Criterion | Score | Evidence |
 |---|-----------|-------|----------|
-| 1 | Strategy confirmed | 0 | No setup confirmed for XLE, SPY, EOG, ABNB |
-| 2 | News + tech agree | 0 | Only SPY has direction agreement, but unsuitable risk factors |
-| 3 | Macro aligned | 0 | None support a valid trade setup |
-| 4 | R:R meets strategy min | 0 | SPY's R:R is 0.42:1, below threshold |
-| 5 | Volume confirms | 0 | No candidate meets > 0.8x in relevant context |
-| 6 | Risk rules pass | 0 | SPY position exceeds account risk limits |
-| 7 | No earnings | 1 | No earnings risks for any candidate |
-| 8 | High confidence | 0 | All ratings are LOW |
+| 1 | Strategy confirmed | 0 | No technical setups confirmed by any strategy |
+| 2 | News + tech agree | 0 | No technical analysis confirmed, no alignment with news |
+| 3 | Macro aligned | 0 | No market regime supports trade type without technical setup |
+| 4 | R:R meets strategy min | 0 | Not applicable, no setups available |
+| 5 | Volume confirms | 0 | Not applicable, no setups available |
+| 6 | Risk rules pass | 0 | Not applicable, no setups available |
+| 7 | No earnings | 1 | No earnings within 3 days |
+| 8 | High confidence | 0 | Confidence rating is LOW |
 
 ## Decision: PASS
 
 ### Trade Parameters
-Currently passing on all reviewed trade candidates due to lack of valid setups and misalignment between news sentiment and technical confirmation.
+No trade parameters, as no valid setups were identified.
 
 ### Trade Thesis
-No trade candidate has satisfied the minimum score requirements. The market is displaying significant contradictions between news sentiment and technical analysis, particularly for SPY where risk management issues also arise.
+There are no actionable trade setups today. The market is showing a mix of elevated volatility and sideways movement, with no clear technical signals aligning with macroeconomic conditions.
 
 ### Kill Conditions
-- Not applicable as no trades are being initiated.
+Not applicable as no trade is being initiated.
 
 ### Portfolio Context
 - Current positions: 1
-- Total exposure: $19,051.20
-- Correlation with existing positions: None found relevant
+- Total exposure: Limited to the current MRVL position
+- Correlation with existing positions: Not applicable as no new trade is being initiated
 
 ### Reference Comparison
-- Similar to past trade: None applicable
-- Lesson applied: Continued focus on maintaining strict criteria for trade entry to avoid excessive risk exposure or entering suboptimal setups.
+- Similar to past trade: Not applicable
+- Lesson applied: None applicable as no trade is considered
 
+Since no viable trading plan is supported by underlying data, we will not be opening any new trades today. Patient capital wins.
 ```

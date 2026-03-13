@@ -2118,5 +2118,44 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-03-13",
+    "ticker": "XOM",
+    "strategy": "ma_crossover",
+    "entry_price": 154.16,
+    "stop_loss": 148.49,
+    "take_profit": 159.61,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-03-13",
+    "ticker": "AAPL",
+    "strategy": "connors_rsi",
+    "entry_price": 253.86,
+    "stop_loss": 242.16,
+    "take_profit": 258.23,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-03-13",
+    "ticker": "EOG",
+    "strategy": "ma_crossover",
+    "entry_price": 133.1,
+    "stop_loss": 127.7,
+    "take_profit": 136.14,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]

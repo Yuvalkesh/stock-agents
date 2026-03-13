@@ -2,39 +2,43 @@
 # Investment Brief — 2026-03-13
 
 ## Market Regime
-RISK-OFF
+MIXED
 
 ## Macro Dashboard
 | Indicator | Value | Signal |
 |-----------|-------|--------|
-| VIX | 26.05 | Elevated, indicating volatility but not at extreme fear levels |
-| S&P 500 | 6672.62 (-1.52%) | Downward trend, confirming risk-off sentiment |
-| 10Y Yield | 4.27 | Rising yields indicate inflation concerns, supporting risk-off environment |
-| BTC | 72409.19 (+2.72%) | Risk appetite slightly improving, with BTC's rise suggesting some speculative interest |
+| VIX | 26.52 | Elevated, but below extreme fear levels |
+| S&P 500 | 6671.17 (-0.02%) | Sideways, mixed signals |
+| 10Y Yield | 4.26% | Decreasing interest rates |
+| BTC | 72615.81 (+3.01%) | Increased risk appetite |
 
 ## Sector Bias
-- **Strongest:** Energy, driven by geopolitical tensions and elevated oil prices
-- **Weakest:** Technology, pressured by rising yields and broad market volatility
-- **Rotation Signal:** Expect defensive sectors like Consumer Staples and Healthcare to perform better given risk-off sentiment
+- **Strongest:** Energy, Technology
+- **Weakest:** Consumer Discretionary, Financials
+- **Rotation Signal:** Mixed signals with potential shifts toward Energy and Technology due to rising oil prices and AI innovations
 
 ## Earnings Watch (Next 5 Days)
 | Date | Ticker | Expected Move |
-|------|--------|---------------|
-No earnings within 3 days for tickers under consideration.
+|------|--------|--------------|
+_None within next 5 days_
 
 ## Tickers for Analysis
 | Ticker | Catalyst | Sector | Suggested Strategy |
-|--------|----------|--------|--------------------|
-| XLE | Strength in energy sector amidst geopolitical tensions | Energy | Sector rotation |
-| SPY | Primary VIX Fear target, volatility elevated but not extreme | Broad Market | VIX Fear |
-| EOG | Near 52-week high, strong relative strength | Energy | Rising Star analysis |
-| ABNB | Positive momentum and relative strength | Consumer Discretionary | Rising Star analysis |
+|--------|----------|--------|-------------------|
+| XOM | Rising oil prices, oil proxy in strong sector | Energy | MA Crossover |
+| GOOGL | AI advancements, taking market share from Meta | Technology | Connors RSI |
+| AAPL | Expansion in China and AI models | Technology | Bollinger Squeeze |
+| AMZN | Down 7% YTD, potential recovery | Consumer/Tech | MACD + RSI |
+| EOG | Near 52-week high, strong relative performance | Energy | Connors RSI |
+| RTX | Defense sector strength amid geopolitical tensions | Rising Star | MA Crossover |
 
 ## Active Strategies Today
-- **Sector Rotation**: Focus on Energy as geopolitical tensions drive oil higher.
-- **VIX Fear**: Despite elevated VIX, not at a level to activate aggressive tactics but useful for monitoring.
-  
+- **MA Crossover:** Suitable for potential reversals and trend continuations in a mixed market
+- **Connors RSI:** Appropriate for stocks nearing technical breakout conditions
+- **Bollinger Squeeze:** To identify volatility expansions, particularly relevant for tech stocks
+- **MACD + RSI:** For potential momentum continuation in recovery plays
+
 ## Decision
 **PROCEED TO ANALYSIS**
-The strategic focus will be on sectors poised to benefit from the ongoing geopolitical landscape and rising energy prices. Priority is given to energy sector plays alongside select broad market and rising star opportunities, with caution advised for technology due to interest rate pressures.
+Given the mixed macro regime with sector strength in Energy and Technology, the analysis should focus on companies with significant catalysts in these areas, particularly those without imminent earnings reports. We maintain cautious optimism while recognizing risks from geopolitical tensions and interest rate changes.
 ```
