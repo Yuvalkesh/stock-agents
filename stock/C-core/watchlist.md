@@ -56,14 +56,13 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| EOG | — | — | Added by Rising Stars Scout |
 | MRVL | — | — | Added by Rising Stars Scout |
-| ABNB | — | — | Added by Rising Stars Scout |
-| RTX | — | — | Added by Rising Stars Scout |
-| LMT | — | — | Added by Rising Stars Scout |
+| COP | — | — | Added by Rising Stars Scout |
+| SBUX | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |

@@ -366,6 +366,98 @@ _No entries yet. Will be populated after first trades._
 ### 2026-03-11 11:30
 **HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: PEP reached target $162.69 (+3.85%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
 
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: SPY reached target $681.11 (+1.3%) within 5 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: SPY dropped to $662.29 (-1.50%) after 5 days. We correctly passed. Strategy: vix_fear.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: QQQ dropped to $593.72 (-1.01%) after 5 days. We correctly passed. Strategy: vix_fear.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: AAPL reached target $261.75 (+1.67%) within 5 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: SPY reached target $677.71 (+1.24%) within 5 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: SPY dropped to $662.29 (-1.06%) after 5 days. We correctly passed. Strategy: vix_fear.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: QQQ is flat at $593.72 (-0.87%) after 5 days. Strategy: vix_fear.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: XOM is at $156.12 (+2.56% from entry) after 5 days. Hasn't hit target ($159.61) or stop ($146.30) yet. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: CVX reached target $192.41 (+1.16%) within 5 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: RTX dropped to $204.52 (-1.78%) after 4 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: LMT dropped to $646.00 (-2.73%) after 4 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: EOG reached target $134.36 (+3.17%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: RTX dropped to $204.52 (-1.19%) after 4 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: EOG reached target $134.36 (+5.06%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: RTX dropped to $204.52 (-1.20%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: SPY dropped to $662.29 (-2.07%) after 3 days. We correctly passed. Strategy: none.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: QQQ dropped to $593.72 (-2.38%) after 3 days. We correctly passed. Strategy: none.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: EU is at $2.05 (+1.99% from entry) after 3 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: AAPL dropped to $250.12 (-4.12%) after 3 days. We correctly passed. Strategy: none.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MSFT dropped to $395.55 (-1.90%) after 3 days. We correctly passed. Strategy: none.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: AI dropped to $8.91 (-2.09%) after 3 days. We correctly passed. Strategy: none.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: GOOGL dropped to $302.28 (-2.26%) after 3 days. We correctly passed. Strategy: none.
+
+
+### 2026-03-16 11:43
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: EOG is at $133.60 (+1.50% from entry) after 3 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
