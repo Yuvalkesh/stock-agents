@@ -4,10 +4,10 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Equity | $103,223.15 |
+| Current Equity | $102,511.80 |
 | Cash | $82,009.08 |
-| Buying Power | $387,578.88 |
-| Today's P&L | $-51.13 (-0.05%) |
+| Buying Power | $387,113.20 |
+| Today's P&L | $-596.16 (-0.58%) |
 
 ## Last Updated
-2026-03-26 21:54
+2026-03-27 15:41
