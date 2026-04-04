@@ -8,7 +8,7 @@ load_dotenv()
 
 
 # --- API Keys ---
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 ALPACA_API_KEY = os.getenv("ALPACA_API_KEY", "")
 ALPACA_SECRET_KEY = os.getenv("ALPACA_SECRET_KEY", "")
 NEWS_API_KEY = os.getenv("NEWS_API_KEY", "")  # Finnhub
@@ -27,7 +27,7 @@ REFERENCES_PATH = VAULT_PATH / "R-references"
 STRATEGY_PATH = VAULT_PATH / "S-strategy"
 
 # --- LLM Model ---
-LLM_MODEL = "gpt-4o"
+LLM_MODEL = "claude-opus-4-6-20250514"
 LLM_MAX_TOKENS = 4096
 
 # --- Alpaca ---

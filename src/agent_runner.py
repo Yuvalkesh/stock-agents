@@ -1,10 +1,10 @@
-"""Runs each agent through OpenAI API with vault context."""
+"""Runs each agent through Anthropic Claude API with vault context."""
 
 import json
 import logging
 from typing import Any
 
-from openai import OpenAI
+from anthropic import Anthropic
 
 import config
 from vault_reader import (
@@ -24,23 +24,23 @@ from vault_reader import (
 
 logger = logging.getLogger(__name__)
 
-client = OpenAI(api_key=config.OPENAI_API_KEY)
+client = Anthropic(api_key=config.ANTHROPIC_API_KEY)
 
 
 def _call_llm(system_prompt: str, user_prompt: str) -> str:
-    """Send a prompt to OpenAI and return the response text."""
+    """Send a prompt to Anthropic and return the response text."""
     try:
-        response = client.chat.completions.create(
+        response = client.messages.create(
             model=config.LLM_MODEL,
             max_tokens=config.LLM_MAX_TOKENS,
+            system=system_prompt,
             messages=[
-                {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt},
             ],
         )
-        return response.choices[0].message.content
+        return response.content[0].text
     except Exception as e:
-        logger.error(f"OpenAI API error: {e}")
+        logger.error(f"Anthropic API error: {e}")
         raise
 
 
