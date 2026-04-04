@@ -27,7 +27,7 @@ REFERENCES_PATH = VAULT_PATH / "R-references"
 STRATEGY_PATH = VAULT_PATH / "S-strategy"
 
 # --- LLM Model ---
-LLM_MODEL = "claude-opus-4-6"
+LLM_MODEL = "claude-haiku-4-5-20251001"
 LLM_MAX_TOKENS = 4096
 
 # --- Alpaca ---
