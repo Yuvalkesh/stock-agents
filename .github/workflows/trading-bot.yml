@@ -2,16 +2,10 @@ name: Stock Trading Bot
 
 on:
   schedule:
-    # All times in UTC (EST + 5)
-    - cron: '0 11 * * 1-5'    # 06:00 AM EST — Morning scan + agent pipeline
-    - cron: '30 14 * * 1-5'   # 09:30 AM EST — Execute approved trades
-    - cron: '0 15 * * 1-5'    # 10:00 AM EST — Position check
-    - cron: '0 16 * * 1-5'    # 11:00 AM EST — Position check
-    - cron: '0 17 * * 1-5'    # 12:00 PM EST — Position check
-    - cron: '0 18 * * 1-5'    # 01:00 PM EST — Position check
-    - cron: '0 19 * * 1-5'    # 02:00 PM EST — Position check
-    - cron: '0 20 * * 1-5'    # 03:00 PM EST — Position check
-    - cron: '30 21 * * 1-5'   # 04:30 PM EST — Post-market review
+      # All times in UTC (EST + 5)
+      - cron: '0 11 * * 1-5'    # 06:00 AM EST — Morning scan + execute
+      - cron: '0 17 * * 1-5'    # 12:00 PM EST — Midday position check
+      - cron: '30 21 * * 1-5'   # 04:30 PM EST — Post-market review
   workflow_dispatch: {}         # Manual trigger button
 
 permissions:
@@ -33,13 +27,13 @@ jobs:
 
       - name: Determine mode
         run: |
-          case "${{ github.event.schedule }}" in
-            "0 11 * * 1-5")  echo "BOT_MODE=scan"    >> $GITHUB_ENV ;;
-            "30 14 * * 1-5") echo "BOT_MODE=execute"  >> $GITHUB_ENV ;;
-            "30 21 * * 1-5") echo "BOT_MODE=review"   >> $GITHUB_ENV ;;
-            "")               echo "BOT_MODE=manual"   >> $GITHUB_ENV ;;
-            *)                echo "BOT_MODE=monitor"  >> $GITHUB_ENV ;;
-          esac
+            case "${{ github.event.schedule }}" in
+              "0 11 * * 1-5")  echo "BOT_MODE=scan"    >> $GITHUB_ENV ;;
+              "0 17 * * 1-5")  echo "BOT_MODE=monitor"  >> $GITHUB_ENV ;;
+              "30 21 * * 1-5") echo "BOT_MODE=review"   >> $GITHUB_ENV ;;
+              "")               echo "BOT_MODE=manual"   >> $GITHUB_ENV ;;
+              *)                echo "BOT_MODE=monitor"  >> $GITHUB_ENV ;;
+            esac
 
       - name: Run trading bot
         working-directory: src
