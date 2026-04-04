@@ -458,6 +458,62 @@ _No entries yet. Will be populated after first trades._
 ### 2026-03-16 11:43
 **HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: EOG is at $133.60 (+1.50% from entry) after 3 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
 
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XOM reached target $159.61 (+5.3%) within 16 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: CVX reached target $192.41 (+0.32%) within 16 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: SPY hit stop $649.82 (-2.79%) within 16 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: AAPL reached target $258.89 (+1.35%) within 16 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XLE reached target $58.22 (+1.23%) within 15 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: SPY hit stop $647.24 (-2.83%) within 15 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XOM reached target $159.61 (+3.54%) within 15 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: AAPL is flat at $255.92 (+0.81%) after 15 days. Strategy: connors_rsi.
+
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: EOG reached target $136.14 (+2.28%) within 15 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: AAPL is at $255.92 (+2.32% from entry) after 14 days. Hasn't hit target ($257.48) or stop ($237.86) yet. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi.
+
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: SPY hit target first on day 2 (+1.47%). We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This filter was too strict.
+
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: QQQ hit target first on day 1 (+1.54%). We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This filter was too strict.
+
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: MRVL reached target $95.05 (+8.18%) within 14 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-04-04 20:09
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: COP reached target $122.50 (+0.5%) within 14 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
