@@ -51,7 +51,7 @@ STRATEGY_MIN_RR = {
 MAX_DAILY_LOSS = 0.03           # 3% of equity
 MAX_MONTHLY_DRAWDOWN = 0.10     # 10% of equity
 EARNINGS_BUFFER_DAYS = 3
-MIN_CONVICTION_SCORE = 5        # Out of 10 — was 6, too conservative (1 trade in 8 weeks)
+MIN_CONVICTION_SCORE = 6        # Out of 12 (added 2pts for fundamentals)
 MAX_LOOPBACKS = 2               # Gatekeeper max retries
 
 # --- Trading Parameters ---

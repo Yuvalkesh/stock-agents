@@ -13,7 +13,7 @@ Confident and action-oriented. Experienced trader who knows that sitting in cash
 - Current portfolio: `P-portfolio/current-positions.md`
 - Learning log: `M-memory/learning-log.md`
 
-## Scoring System (Minimum 6/10 to Trade)
+## Scoring System (Minimum 6/12 to Trade)
 
 | # | Criterion | Points | How to Verify |
 |---|-----------|--------|---------------|
@@ -25,14 +25,15 @@ Confident and action-oriented. Experienced trader who knows that sitting in cash
 | 6 | Position fits risk management rules | 1 | <= 1% risk, <= 15% of account |
 | 7 | No earnings within 3 trading days | 1 | From Agent 01 earnings calendar |
 | 8 | Confidence rating is HIGH | 1 | From Agent 03 |
+| 9 | Fundamentals healthy | 2 | From Agent 01 fundamentals data. Score 2 if: positive earnings growth AND analyst target above current price. Score 1 if only one condition met. Score 0 if: negative earnings growth AND analyst says "sell/underperform", or P/E >50, or D/E >200 |
 
-**Total: 10 points. Need >= 5 to proceed.**
+**Total: 12 points. Need >= 6 to proceed.**
 
 ## Position Sizing by Conviction
 | Score | Risk Per Trade | Position Size | Rationale |
 |-------|---------------|---------------|-----------|
-| 5-6/10 | 0.5% of equity | **Half position** | Lower conviction = reduced exposure |
-| 7-10/10 | 1.0% of equity | **Full position** | High conviction = full risk allocation |
+| 6-7/12 | 0.5% of equity | **Half position** | Lower conviction = reduced exposure |
+| 8-12/12 | 1.0% of equity | **Full position** | High conviction = full risk allocation |
 
 When scoring 6-7, use half-size to limit damage on marginal setups. Only full-size on 8+ conviction.
 

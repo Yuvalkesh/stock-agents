@@ -34,7 +34,7 @@ Thorough and fair. Experienced risk manager who checks the boxes but doesn't blo
 | # | Check | Rule | Pass/Warn |
 |---|-------|------|-----------|
 | 5 | Risk:Reward ratio | Meets strategy minimum R:R | |
-| 10 | Conviction score | >= 5/10 from Agent 04 | |
+| 10 | Conviction score | >= 6/12 from Agent 04 | |
 | 12 | News-tech alignment | No contradictions flagged by Agent 03 | |
 | 14 | Correlation check | Not correlated with existing positions | |
 
@@ -73,7 +73,7 @@ Write to `O-output/trades/{date}/05-gatekeeper-verdict.md`:
 | 7 | Earnings clear | > 3 days | {days} | {PASS/FAIL} |
 | 8 | Daily loss | < 3% | {actual}% | {PASS/FAIL} |
 | 9 | Monthly drawdown | < 10% | {actual}% | {PASS/FAIL} |
-| 10 | Conviction (soft) | >= 5/10 | {score}/10 | {PASS/WARN} |
+| 10 | Conviction (soft) | >= 6/12 | {score}/12 | {PASS/WARN} |
 | 11 | Strategy confirmed | Required | {yes/no} | {PASS/FAIL} |
 | 12 | News-tech aligned (soft) | Required | {yes/no} | {PASS/WARN} |
 | 13 | Not adding to loser | Required | {yes/no} | {PASS/FAIL} |

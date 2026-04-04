@@ -54,6 +54,7 @@ def run_agent_1(
     earnings: dict[str, str | None],
     portfolio: str,
     date_str: str,
+    fundamentals: dict[str, dict] | None = None,
 ) -> str:
     """Run the Head of Investment agent."""
     agent_def = read_agent_definition(1)
@@ -80,6 +81,54 @@ def run_agent_1(
         if date
     )
 
+    # Format fundamentals data
+    fundamentals_summary = ""
+    if fundamentals:
+        lines = []
+        for ticker, f in fundamentals.items():
+            if not f:
+                continue
+            pe = f.get("pe_trailing")
+            fwd_pe = f.get("pe_forward")
+            rev_growth = f.get("revenue_growth")
+            earn_growth = f.get("earnings_growth")
+            margin = f.get("profit_margin")
+            debt = f.get("debt_to_equity")
+            target = f.get("analyst_target")
+            rec = f.get("analyst_recommendation")
+            mcap = f.get("market_cap")
+            mcap_str = f"${mcap/1e9:.1f}B" if mcap else "N/A"
+
+            lines.append(
+                f"| {ticker} | {mcap_str} | "
+                f"{pe:.1f} | {fwd_pe:.1f} | "
+                f"{rev_growth*100:.1f}% | {earn_growth*100:.1f}% | "
+                f"{margin*100:.1f}% | {debt:.0f} | "
+                f"${target:.0f} | {rec} |"
+                if pe and fwd_pe and rev_growth is not None
+                and earn_growth is not None and margin is not None
+                and debt is not None and target
+                else f"| {ticker} | {mcap_str} | "
+                f"{pe or 'N/A'} | {fwd_pe or 'N/A'} | "
+                f"{f'{rev_growth*100:.1f}%' if rev_growth is not None else 'N/A'} | "
+                f"{f'{earn_growth*100:.1f}%' if earn_growth is not None else 'N/A'} | "
+                f"{f'{margin*100:.1f}%' if margin is not None else 'N/A'} | "
+                f"{f'{debt:.0f}' if debt is not None else 'N/A'} | "
+                f"{f'${target:.0f}' if target else 'N/A'} | {rec or 'N/A'} |"
+            )
+        if lines:
+            fundamentals_summary = (
+                "## Company Fundamentals\n"
+                "| Ticker | Mkt Cap | P/E | Fwd P/E | Rev Growth | "
+                "Earn Growth | Margin | D/E | Analyst Target | Rating |\n"
+                "|--------|---------|-----|---------|------------|"
+                "------------|--------|-----|----------------|--------|\n"
+                + "\n".join(lines) + "\n\n"
+                "Use fundamentals to filter: avoid stocks with negative earnings growth, "
+                "extreme P/E (>50 or negative), or debt/equity >200. "
+                "Prefer stocks where analyst target is above current price.\n\n"
+            )
+
     system_prompt = (
         "You are the Head of Investment agent in a swing trading system.\n\n"
         f"## Your Agent Definition\n{agent_def}\n\n"
@@ -94,6 +143,7 @@ def run_agent_1(
         f"Current regime signal: **{regime}**\n\n"
         f"## Stock-Specific News (Last 7 Days)\n{news_summary}\n\n"
         f"## General Market News\n{general_summary}\n\n"
+        f"{fundamentals_summary}"
         f"## Upcoming Earnings\n{earnings_summary or 'None in next 5 days for watchlist.'}\n\n"
         f"## Current Portfolio\n{portfolio}\n\n"
         f"## Watchlist\n{watchlist}\n\n"

@@ -116,6 +116,7 @@ class TradingOrchestrator:
             earnings=data["earnings"],
             portfolio=portfolio,
             date_str=self.date_str,
+            fundamentals=data.get("fundamentals", {}),
         )
         save_agent_output(self.date_str, 1, agent1_output)
         logger.info("Agent 1 complete.")

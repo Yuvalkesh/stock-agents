@@ -221,6 +221,41 @@ class DataFetcher:
             return {"vix": None, "sma_10": None, "spike_pct": None}
 
     # ------------------------------------------------------------------ #
+    # Company Fundamentals
+    # ------------------------------------------------------------------ #
+    def fetch_fundamentals(self, tickers: list[str] | None = None) -> dict[str, dict]:
+        """Fetch key fundamental metrics per ticker using yFinance."""
+        tickers = tickers or DEFAULT_WATCHLIST
+        fundamentals: dict[str, dict] = {}
+
+        for ticker in tickers:
+            try:
+                t = yf.Ticker(ticker)
+                info = t.info or {}
+                fundamentals[ticker] = {
+                    "market_cap": info.get("marketCap"),
+                    "pe_trailing": info.get("trailingPE"),
+                    "pe_forward": info.get("forwardPE"),
+                    "peg_ratio": info.get("pegRatio"),
+                    "revenue_growth": info.get("revenueGrowth"),
+                    "earnings_growth": info.get("earningsGrowth"),
+                    "profit_margin": info.get("profitMargins"),
+                    "debt_to_equity": info.get("debtToEquity"),
+                    "free_cash_flow": info.get("freeCashflow"),
+                    "analyst_target": info.get("targetMeanPrice"),
+                    "analyst_recommendation": info.get("recommendationKey"),
+                    "short_percent": info.get("shortPercentOfFloat"),
+                    "sector": info.get("sector"),
+                    "industry": info.get("industry"),
+                }
+            except Exception as e:
+                logger.error(f"Error fetching fundamentals for {ticker}: {e}")
+                fundamentals[ticker] = {}
+
+        logger.info(f"Fetched fundamentals for {len(fundamentals)} tickers")
+        return fundamentals
+
+    # ------------------------------------------------------------------ #
     # Full Data Package
     # ------------------------------------------------------------------ #
     def fetch_all(
@@ -236,5 +271,6 @@ class DataFetcher:
             "macro": self.fetch_macro(),
             "earnings": self.fetch_earnings_calendar(tickers),
             "vix_data": self.fetch_vix_data(),
+            "fundamentals": self.fetch_fundamentals(tickers),
             "timestamp": datetime.now().isoformat(),
         }
