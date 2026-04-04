@@ -51,12 +51,12 @@ STRATEGY_MIN_RR = {
 MAX_DAILY_LOSS = 0.03           # 3% of equity
 MAX_MONTHLY_DRAWDOWN = 0.10     # 10% of equity
 EARNINGS_BUFFER_DAYS = 3
-MIN_CONVICTION_SCORE = 6        # Out of 10
+MIN_CONVICTION_SCORE = 5        # Out of 10 — was 6, too conservative (1 trade in 8 weeks)
 MAX_LOOPBACKS = 2               # Gatekeeper max retries
 
 # --- Trading Parameters ---
 MIN_STOCK_PRICE = 10.0
-MIN_AVG_VOLUME = 1_000_000
+MIN_AVG_VOLUME = 500_000        # Was 1M — too restrictive
 TARGET_TRADES_PER_MONTH = (6, 10)  # min, max
 
 # --- Schedule (EST times as UTC cron) ---
