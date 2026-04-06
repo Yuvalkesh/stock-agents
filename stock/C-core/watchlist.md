@@ -57,12 +57,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
 | MRVL | — | — | Added by Rising Stars Scout |
-| COP | — | — | Added by Rising Stars Scout |
-| SBUX | — | — | Added by Rising Stars Scout |
+| SEDG | — | — | Added by Rising Stars Scout |
+| PFE | — | — | Added by Rising Stars Scout |
+| MRK | — | — | Added by Rising Stars Scout |
+| C | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |
