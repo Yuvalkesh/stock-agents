@@ -2778,5 +2778,18 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-04-08",
+    "ticker": "JNJ",
+    "strategy": "connors_rsi",
+    "entry_price": 238.41,
+    "stop_loss": 230.27,
+    "take_profit": 242.2,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
