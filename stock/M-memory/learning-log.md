@@ -514,6 +514,46 @@ _No entries yet. Will be populated after first trades._
 ### 2026-04-04 20:09
 **HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: COP reached target $122.50 (+0.5%) within 14 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
 
+
+### 2026-04-09 11:53
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JNJ hit stop $236.94 (-2.51%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-04-09 11:53
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JNJ hit stop $236.94 (-2.51%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-04-09 11:53
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: XOM dropped to $156.22 (-2.78%) after 3 days. We correctly passed. Strategy: connors_rsi.
+
+
+### 2026-04-09 11:53
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: COP hit stop $124.81 (-4.37%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-04-09 11:53
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JNJ hit stop $236.94 (-2.51%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-04-09 11:53
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JNJ hit stop $236.94 (-2.51%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-04-09 11:53
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: COP hit stop $124.81 (-4.37%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-04-09 11:53
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: WMT hit target first on day 1 (+0.91%). We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This filter was too strict.
+
+
+### 2026-04-09 11:53
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: WMT hit target first on day 1 (+0.91%). We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This filter was too strict.
+
+
+### 2026-04-09 11:53
+**STAND DOWN**: Agent 1 recommended no trading on 2026-04-09. Macro regime: RISK-ON
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
