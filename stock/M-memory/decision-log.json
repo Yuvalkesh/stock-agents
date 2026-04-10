@@ -2863,5 +2863,18 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-04-10",
+    "ticker": "JNJ",
+    "strategy": "ma_crossover",
+    "entry_price": 241.31,
+    "stop_loss": 234.92,
+    "take_profit": 247.21,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
