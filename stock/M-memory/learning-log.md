@@ -554,6 +554,58 @@ _No entries yet. Will be populated after first trades._
 ### 2026-04-09 11:53
 **STAND DOWN**: Agent 1 recommended no trading on 2026-04-09. Macro regime: RISK-ON
 
+
+### 2026-04-13 12:00
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JNJ hit stop $236.94 (-2.51%) within 5 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-04-13 12:00
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JNJ hit stop $236.94 (-2.51%) within 5 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-04-13 12:00
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: XOM dropped to $152.51 (-5.09%) after 5 days. We correctly passed. Strategy: connors_rsi.
+
+
+### 2026-04-13 12:00
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: XLE dropped to $56.94 (-4.59%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-04-13 12:00
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: XLF is at $50.77 (+1.78% from entry) after 4 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-04-13 12:00
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: XLK is at $142.62 (+4.27% from entry) after 4 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-04-13 12:00
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: AI dropped to $8.28 (-5.59%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-04-13 12:00
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: GLP is flat at $45.96 (+0.88%) after 4 days. Strategy: none.
+
+
+### 2026-04-13 12:00
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: GS is at $907.80 (+4.82% from entry) after 4 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-04-13 12:00
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: JPM is at $309.87 (+4.88% from entry) after 4 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-04-13 12:00
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JNJ dropped to $238.46 (-1.04%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-04-13 12:00
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: JNJ reached target $242.20 (+1.59%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-04-13 12:01
+**STAND DOWN**: Agent 1 recommended no trading on 2026-04-13. Macro regime: MIXED
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
