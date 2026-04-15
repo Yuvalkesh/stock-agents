@@ -606,6 +606,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-04-13 12:01
 **STAND DOWN**: Agent 1 recommended no trading on 2026-04-13. Macro regime: MIXED
 
+
+### 2026-04-15 11:54
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JNJ hit stop $234.92 (-2.65%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 

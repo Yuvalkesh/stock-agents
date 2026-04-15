@@ -2970,8 +2970,16 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 240.10000610351562,
+      "high_since": 242.25999450683594,
+      "low_since": 233.25,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-04-14",
@@ -2980,6 +2988,32 @@
     "entry_price": 890.79,
     "stop_loss": 848.85,
     "take_profit": 918.12,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-04-15",
+    "ticker": "PPI",
+    "strategy": "ma_crossover",
+    "entry_price": 21.94,
+    "stop_loss": 21.48,
+    "take_profit": 21.97,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-04-15",
+    "ticker": "JNJ",
+    "strategy": "ma_crossover",
+    "entry_price": 240.1,
+    "stop_loss": 233.29,
+    "take_profit": 247.21,
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
