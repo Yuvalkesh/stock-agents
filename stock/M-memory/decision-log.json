@@ -3110,5 +3110,18 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-04-17",
+    "ticker": "AMAT",
+    "strategy": "ma_crossover",
+    "entry_price": 389.9,
+    "stop_loss": 366.77,
+    "take_profit": 407.29,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
