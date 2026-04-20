@@ -610,6 +610,18 @@ _No entries yet. Will be populated after first trades._
 ### 2026-04-15 11:54
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JNJ hit stop $234.92 (-2.65%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
 
+
+### 2026-04-20 12:01
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: GS reached target $918.12 (+3.07%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-04-20 12:02
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: PPI is flat at $21.83 (-0.50%) after 3 days. Strategy: ma_crossover.
+
+
+### 2026-04-20 12:02
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JNJ hit stop $233.29 (-2.84%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 

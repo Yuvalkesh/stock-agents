@@ -59,14 +59,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| AMD | — | — | Added by Rising Stars Scout |
 | TXN | — | — | Added by Rising Stars Scout |
-| AMAT | — | — | Added by Rising Stars Scout |
 | LRCX | — | — | Added by Rising Stars Scout |
 | KLAC | — | — | Added by Rising Stars Scout |
+| RIVN | — | — | Added by Rising Stars Scout |
+| CAT | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |
