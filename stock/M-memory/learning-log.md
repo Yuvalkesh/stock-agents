@@ -622,6 +622,34 @@ _No entries yet. Will be populated after first trades._
 ### 2026-04-20 12:02
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JNJ hit stop $233.29 (-2.84%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
 
+
+### 2026-04-21 11:58
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: MSFT is at $418.07 (+1.67% from entry) after 3 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-04-21 11:58
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: GOOGL is flat at $337.42 (+0.09%) after 3 days. Strategy: none.
+
+
+### 2026-04-21 11:58
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: AMZN is flat at $248.28 (-0.09%) after 3 days. Strategy: none.
+
+
+### 2026-04-21 11:58
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: META is flat at $670.91 (-0.10%) after 3 days. Strategy: none.
+
+
+### 2026-04-21 11:58
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: AAPL is at $273.05 (+2.48% from entry) after 3 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-04-21 11:58
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: AMD is at $274.95 (+6.52% from entry) after 3 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-04-21 11:58
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: TXN is at $233.70 (+8.05% from entry) after 3 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
