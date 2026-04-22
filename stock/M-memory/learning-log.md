@@ -650,6 +650,14 @@ _No entries yet. Will be populated after first trades._
 ### 2026-04-21 11:58
 **HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: TXN is at $233.70 (+8.05% from entry) after 3 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
 
+
+### 2026-04-22 11:58
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: AMAT is at $394.33 (+1.14% from entry) after 3 days. Hasn't hit target ($407.29) or stop ($366.77) yet. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover.
+
+
+### 2026-04-22 11:58
+**STAND DOWN**: Agent 1 recommended no trading on 2026-04-22. Macro regime: MIXED
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
