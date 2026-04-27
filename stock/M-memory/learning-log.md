@@ -662,6 +662,18 @@ _No entries yet. Will be populated after first trades._
 ### 2026-04-24 11:55
 **STAND DOWN**: Agent 1 recommended no trading on 2026-04-24. Macro regime: MIXED
 
+
+### 2026-04-27 12:19
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JNJ hit stop $225.10 (-3.88%) within 5 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-04-27 12:19
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: LRCX reached target $273.50 (+3.93%) within 4 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-04-27 12:19
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MTD hit stop $1269.46 (-4.17%) within 4 days. We correctly passed. Reason: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
