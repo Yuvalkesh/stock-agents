@@ -3285,8 +3285,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 267.6099853515625,
+      "high_since": 275.7699890136719,
+      "low_since": 265.07000732421875,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-04-23",
@@ -3298,8 +3306,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 424.82000732421875,
+      "high_since": 427.1099853515625,
+      "low_since": 411.4100036621094,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-04-23",
@@ -3311,8 +3327,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_PARTIAL",
+    "review_details": {
+      "current_price": 350.3399963378906,
+      "high_since": 353.17999267578125,
+      "low_since": 335.3900146484375,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-04-23",
@@ -3324,8 +3348,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_PARTIAL",
+    "review_details": {
+      "current_price": 269.5,
+      "high_since": 287.8299865722656,
+      "low_since": 259.30999755859375,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-04-23",
@@ -3337,8 +3369,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 259.4700012207031,
+      "high_since": 275.8399963378906,
+      "low_since": 253.27999877929688,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-04-23",
@@ -3350,8 +3390,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_PARTIAL",
+    "review_details": {
+      "current_price": 1900.0,
+      "high_since": 1939.3599853515625,
+      "low_since": 1788.530029296875,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-04-23",
@@ -3363,8 +3411,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 148.19000244140625,
+      "high_since": 151.22999572753906,
+      "low_since": 146.9499969482422,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-04-23",
@@ -3376,8 +3432,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 184.77999877929688,
+      "high_since": 188.4199981689453,
+      "low_since": 183.1999969482422,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-04-27",

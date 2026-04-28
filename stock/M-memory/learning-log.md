@@ -674,6 +674,42 @@ _No entries yet. Will be populated after first trades._
 ### 2026-04-27 12:19
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MTD hit stop $1269.46 (-4.17%) within 4 days. We correctly passed. Reason: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
 
+
+### 2026-04-28 12:22
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: AAPL dropped to $267.61 (-2.04%) after 3 days. We correctly passed. Strategy: none.
+
+
+### 2026-04-28 12:22
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MSFT dropped to $424.82 (-1.87%) after 3 days. We correctly passed. Strategy: none.
+
+
+### 2026-04-28 12:22
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: GOOGL is at $350.34 (+3.25% from entry) after 3 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-04-28 12:22
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: TXN is at $269.50 (+14.05% from entry) after 3 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-04-28 12:22
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: LRCX dropped to $259.47 (-2.29%) after 3 days. We correctly passed. Strategy: none.
+
+
+### 2026-04-28 12:22
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: KLAC is at $1900.00 (+4.85% from entry) after 3 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-04-28 12:22
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: XOM is flat at $148.19 (-0.88%) after 3 days. Strategy: none.
+
+
+### 2026-04-28 12:22
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: CVX is flat at $184.78 (-0.83%) after 3 days. Strategy: none.
+
+
+### 2026-04-28 12:23
+**STAND DOWN**: Agent 1 recommended no trading on 2026-04-28. Macro regime: MIXED
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
