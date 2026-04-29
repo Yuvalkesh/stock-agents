@@ -3,14 +3,14 @@
 ## Open Positions
 | Ticker | Direction | Shares | Entry Price | Entry Date | Stop Loss | Target | Strategy | Unrealized P&L |
 |--------|-----------|--------|-------------|------------|-----------|--------|----------|----------------|
-| MRVL | PositionSide.LONG | 216 | $93.85 | — | — | — | — | $13000.42 |
+| MRVL | PositionSide.LONG | 216 | $93.85 | — | — | — | — | $14288.86 |
 
 ## Position Summary
 | Metric | Value |
 |--------|-------|
 | Total Positions | 1 |
-| Total Exposure | $33,271.56 |
-| Unrealized P&L | $13,000.42 |
+| Total Exposure | $34,560.00 |
+| Unrealized P&L | $14,288.86 |
 
 ## Last Updated
-2026-04-29 18:18
+2026-04-29 22:33
