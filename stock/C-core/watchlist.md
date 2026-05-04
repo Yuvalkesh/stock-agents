@@ -61,14 +61,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| AMD | — | — | Added by Rising Stars Scout |
-| LIN | — | — | Added by Rising Stars Scout |
-| AMAT | — | — | Added by Rising Stars Scout |
-| LRCX | — | — | Added by Rising Stars Scout |
 | ROKU | — | — | Added by Rising Stars Scout |
+| AVGO | — | — | Added by Rising Stars Scout |
+| CAT | — | — | Added by Rising Stars Scout |
+| SBUX | — | — | Added by Rising Stars Scout |
+| MS | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |

@@ -3453,8 +3453,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_WIN",
+    "review_details": {
+      "current_price": 720.6500244140625,
+      "high_since": 724.8699951171875,
+      "low_since": 708.3699951171875,
+      "days_elapsed": 5,
+      "hit_target": true,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-04-27",
@@ -3466,8 +3474,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_WIN",
+    "review_details": {
+      "current_price": 280.1400146484375,
+      "high_since": 287.2200012207031,
+      "low_since": 265.07000732421875,
+      "days_elapsed": 5,
+      "hit_target": true,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-05-01",
@@ -3502,6 +3518,45 @@
     "entry_price": 257.86,
     "stop_loss": 239.79,
     "take_profit": 275.84,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-05-04",
+    "ticker": "NVDA",
+    "strategy": "connors_rsi",
+    "entry_price": 198.45,
+    "stop_loss": 185.89,
+    "take_profit": 207.41,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-05-04",
+    "ticker": "WMT",
+    "strategy": "ma_crossover",
+    "entry_price": 131.6,
+    "stop_loss": 127.44,
+    "take_profit": 133.37,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-05-04",
+    "ticker": "SPY",
+    "strategy": "ma_crossover",
+    "entry_price": 720.65,
+    "stop_loss": 708.98,
+    "take_profit": 724.87,
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,

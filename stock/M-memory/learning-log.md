@@ -718,6 +718,14 @@ _No entries yet. Will be populated after first trades._
 ### 2026-04-30 12:13
 **STAND DOWN**: Agent 1 recommended no trading on 2026-04-30. Macro regime: MIXED
 
+
+### 2026-05-04 12:20
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: SPY reached target $714.47 (+0.07%) within 5 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-05-04 12:20
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: AAPL reached target $275.77 (+1.74%) within 5 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
