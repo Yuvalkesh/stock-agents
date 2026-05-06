@@ -726,6 +726,22 @@ _No entries yet. Will be populated after first trades._
 ### 2026-05-04 12:20
 **HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: AAPL reached target $275.77 (+1.74%) within 5 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
 
+
+### 2026-05-06 12:26
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: AAPL reached target $276.00 (+1.71%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-05-06 12:26
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: AMAT is at $410.82 (+4.14% from entry) after 3 days. Hasn't hit target ($420.50) or stop ($372.10) yet. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover.
+
+
+### 2026-05-06 12:26
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: LRCX reached target $275.84 (+6.97%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-05-06 12:26
+**STAND DOWN**: Agent 1 recommended no trading on 2026-05-06. Macro regime: RISK-ON
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
