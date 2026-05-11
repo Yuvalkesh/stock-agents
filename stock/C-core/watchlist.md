@@ -62,14 +62,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
+| CSCO | — | — | Added by Rising Stars Scout |
+| FTNT | — | — | Added by Rising Stars Scout |
+| ABNB | — | — | Added by Rising Stars Scout |
 | ROKU | — | — | Added by Rising Stars Scout |
-| AVGO | — | — | Added by Rising Stars Scout |
 | CAT | — | — | Added by Rising Stars Scout |
-| SBUX | — | — | Added by Rising Stars Scout |
-| MS | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |

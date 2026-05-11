@@ -742,6 +742,22 @@ _No entries yet. Will be populated after first trades._
 ### 2026-05-06 12:26
 **STAND DOWN**: Agent 1 recommended no trading on 2026-05-06. Macro regime: RISK-ON
 
+
+### 2026-05-11 13:45
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: NVDA reached target $207.41 (+4.51%) within 6 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-05-11 13:45
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: WMT dropped to $129.06 (-1.93%) after 6 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-05-11 13:46
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: SPY reached target $724.87 (+0.59%) within 6 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-05-11 13:46
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: AAPL reached target $287.22 (+3.75%) within 5 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
