@@ -758,6 +758,18 @@ _No entries yet. Will be populated after first trades._
 ### 2026-05-11 13:46
 **HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: AAPL reached target $287.22 (+3.75%) within 5 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
 
+
+### 2026-05-12 13:02
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JPM hit stop $305.93 (-2.85%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-05-12 13:02
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MS dropped to $191.10 (-1.16%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-05-12 13:02
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: CVX is flat at $184.74 (-0.23%) after 3 days. Strategy: connors_rsi.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 

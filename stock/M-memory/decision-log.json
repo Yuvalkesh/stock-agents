@@ -3642,8 +3642,16 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 300.0,
+      "high_since": 316.29998779296875,
+      "low_since": 298.8800048828125,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-05-07",
@@ -3655,8 +3663,16 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 191.10000610351562,
+      "high_since": 194.25,
+      "low_since": 189.6699981689453,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-05-07",
@@ -3668,8 +3684,16 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 184.74000549316406,
+      "high_since": 185.1999969482422,
+      "low_since": 179.52999877929688,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-05-08",
