@@ -770,6 +770,22 @@ _No entries yet. Will be populated after first trades._
 ### 2026-05-12 13:02
 **HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: CVX is flat at $184.74 (-0.23%) after 3 days. Strategy: connors_rsi.
 
+
+### 2026-05-13 13:08
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MSFT dropped to $407.77 (-3.09%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-05-13 13:08
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: WMT hit stop $126.43 (-2.9%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-05-13 13:08
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: PEP hit stop $151.61 (-2.99%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-05-13 13:09
+**STAND DOWN**: Agent 1 recommended no trading on 2026-05-13. Macro regime: MIXED
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
