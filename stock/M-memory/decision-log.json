@@ -3783,5 +3783,31 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-05-14",
+    "ticker": "CAT",
+    "strategy": "ma_crossover",
+    "entry_price": 902.3,
+    "stop_loss": 859.59,
+    "take_profit": 931.35,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-05-14",
+    "ticker": "XOM",
+    "strategy": "ma_crossover",
+    "entry_price": 151.57,
+    "stop_loss": 145.3,
+    "take_profit": 155.69,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
