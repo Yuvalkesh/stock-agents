@@ -790,6 +790,14 @@ _No entries yet. Will be populated after first trades._
 ### 2026-05-15 12:29
 **STAND DOWN**: Agent 1 recommended no trading on 2026-05-15. Macro regime: RISK-ON
 
+
+### 2026-05-18 14:28
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: NVDA reached target $219.62 (+0.07%) within 6 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-05-18 14:28
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: ABNB hit stop $136.61 (-4.79%) within 6 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
