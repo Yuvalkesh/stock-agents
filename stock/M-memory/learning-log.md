@@ -798,6 +798,18 @@ _No entries yet. Will be populated after first trades._
 ### 2026-05-18 14:28
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: ABNB hit stop $136.61 (-4.79%) within 6 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
 
+
+### 2026-05-19 13:54
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: CAT hit stop $859.59 (-4.73%) within 4 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-05-19 13:54
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XOM reached target $155.69 (+2.72%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-05-19 13:54
+**STAND DOWN**: Agent 1 recommended no trading on 2026-05-19. Macro regime: MIXED
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
