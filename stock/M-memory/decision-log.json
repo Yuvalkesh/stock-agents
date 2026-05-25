@@ -3852,8 +3852,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 215.3300018310547,
+      "high_since": 230.0,
+      "low_since": 214.8000030517578,
+      "days_elapsed": 5,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-05-18",
@@ -3865,8 +3873,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_WIN",
+    "review_details": {
+      "current_price": 467.510009765625,
+      "high_since": 481.4100036621094,
+      "low_since": 393.3599853515625,
+      "days_elapsed": 5,
+      "hit_target": true,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-05-18",
@@ -3878,8 +3894,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_WIN",
+    "review_details": {
+      "current_price": 309.2099914550781,
+      "high_since": 315.57000732421875,
+      "low_since": 291.95001220703125,
+      "days_elapsed": 5,
+      "hit_target": true,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-05-18",
@@ -3891,8 +3915,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 388.4700012207031,
+      "high_since": 394.989990234375,
+      "low_since": 380.5400085449219,
+      "days_elapsed": 5,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-05-21",
@@ -3981,6 +4013,32 @@
     "take_profit": 163.68,
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-05-25",
+    "ticker": "AI",
+    "strategy": "macd_rsi",
+    "entry_price": 9.29,
+    "stop_loss": 8.55,
+    "take_profit": 9.88,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-05-25",
+    "ticker": "QCOM",
+    "strategy": "macd_rsi",
+    "entry_price": 238.16,
+    "stop_loss": 215.45,
+    "take_profit": 247.9,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
     "score": null,
     "reviewed": false,
     "review_result": null

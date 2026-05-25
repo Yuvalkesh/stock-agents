@@ -64,14 +64,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| AMD | — | — | Added by Rising Stars Scout |
-| CSCO | — | — | Added by Rising Stars Scout |
-| TXN | — | — | Added by Rising Stars Scout |
 | QCOM | — | — | Added by Rising Stars Scout |
+| CRWD | — | — | Added by Rising Stars Scout |
+| ENPH | — | — | Added by Rising Stars Scout |
 | SEDG | — | — | Added by Rising Stars Scout |
+| LLY | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |

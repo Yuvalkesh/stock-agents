@@ -814,6 +814,22 @@ _No entries yet. Will be populated after first trades._
 ### 2026-05-20 13:37
 **STAND DOWN**: Agent 1 recommended no trading on 2026-05-20. Macro regime: RISK-ON
 
+
+### 2026-05-25 13:58
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: NVDA dropped to $215.33 (-3.37%) after 5 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-05-25 13:58
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: AMD reached target $437.08 (+4.61%) within 5 days. We passed because: Gatekeeper NO-GO. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-05-25 13:58
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: TXN reached target $310.29 (+3.0%) within 5 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-05-25 13:58
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: UNH is flat at $388.47 (+0.68%) after 5 days. Strategy: ma_crossover.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
