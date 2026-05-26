@@ -830,6 +830,26 @@ _No entries yet. Will be populated after first trades._
 ### 2026-05-25 13:58
 **HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: UNH is flat at $388.47 (+0.68%) after 5 days. Strategy: ma_crossover.
 
+
+### 2026-05-26 13:51
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: TXN reached target $310.29 (+3.08%) within 3 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-05-26 13:51
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: MSFT is flat at $416.04 (-0.58%) after 3 days. Strategy: ma_crossover.
+
+
+### 2026-05-26 13:51
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: XLE is flat at $59.42 (-0.94%) after 3 days. Strategy: ma_crossover.
+
+
+### 2026-05-26 13:51
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: XOM dropped to $154.27 (-1.80%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-05-26 13:51
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: CVX dropped to $190.00 (-1.32%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
