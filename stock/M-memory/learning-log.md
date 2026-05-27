@@ -850,6 +850,14 @@ _No entries yet. Will be populated after first trades._
 ### 2026-05-26 13:51
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: CVX dropped to $190.00 (-1.32%) after 3 days. We correctly passed. Strategy: ma_crossover.
 
+
+### 2026-05-27 14:24
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: TXN reached target $310.29 (+3.99%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-05-27 14:24
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: XOM hit stop $148.39 (-4.44%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
