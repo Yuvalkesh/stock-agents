@@ -65,14 +65,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
 | QCOM | — | — | Added by Rising Stars Scout |
-| CRWD | — | — | Added by Rising Stars Scout |
-| ENPH | — | — | Added by Rising Stars Scout |
-| SEDG | — | — | Added by Rising Stars Scout |
-| LLY | — | — | Added by Rising Stars Scout |
+| AMAT | — | — | Added by Rising Stars Scout |
+| LRCX | — | — | Added by Rising Stars Scout |
+| KLAC | — | — | Added by Rising Stars Scout |
+| MRVL | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |

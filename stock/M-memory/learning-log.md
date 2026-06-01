@@ -858,6 +858,62 @@ _No entries yet. Will be populated after first trades._
 ### 2026-05-27 14:24
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: XOM hit stop $148.39 (-4.44%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
 
+
+### 2026-06-01 16:36
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: AI reached target $9.88 (+6.35%) within 5 days. We passed because: Gatekeeper NO-GO. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-06-01 16:37
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: QCOM reached target $247.90 (+4.09%) within 5 days. We passed because: Gatekeeper NO-GO. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-06-01 16:37
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: NVDA is at $221.55 (+2.76% from entry) after 5 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-06-01 16:37
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: META is flat at $612.07 (+0.90%) after 5 days. Strategy: none.
+
+
+### 2026-06-01 16:37
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: MSFT is at $461.84 (+11.04% from entry) after 5 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-06-01 16:37
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: LLY is at $1076.95 (+1.25% from entry) after 5 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-06-01 16:37
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: CRWD is at $764.80 (+14.81% from entry) after 5 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-06-01 16:37
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: ENPH dropped to $63.73 (-3.13%) after 5 days. We correctly passed. Strategy: none.
+
+
+### 2026-06-01 16:37
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: SEDG is at $73.33 (+8.83% from entry) after 5 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-06-01 16:37
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: XOM dropped to $149.23 (-3.26%) after 5 days. We correctly passed. Strategy: none.
+
+
+### 2026-06-01 16:37
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: AI reached target $9.88 (+3.35%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-06-01 16:37
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: GOOGL hit stop $376.76 (-3.63%) within 4 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-06-01 16:37
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XLK reached target $186.26 (+1.58%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-06-01 16:37
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: XLE is at $57.57 (+1.71% from entry) after 4 days. Hasn't hit target ($58.58) or stop ($53.80) yet. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
