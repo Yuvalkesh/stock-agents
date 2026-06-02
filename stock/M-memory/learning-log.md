@@ -914,6 +914,14 @@ _No entries yet. Will be populated after first trades._
 ### 2026-06-01 16:37
 **HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: XLE is at $57.57 (+1.71% from entry) after 4 days. Hasn't hit target ($58.58) or stop ($53.80) yet. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi.
 
+
+### 2026-06-02 14:48
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: GS reached target $1016.54 (+2.79%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-06-02 14:49
+**STAND DOWN**: Agent 1 recommended no trading on 2026-06-02. Macro regime: MIXED
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
