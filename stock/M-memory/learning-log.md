@@ -922,6 +922,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-06-02 14:49
 **STAND DOWN**: Agent 1 recommended no trading on 2026-06-02. Macro regime: MIXED
 
+
+### 2026-06-03 15:25
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: META hit stop $605.39 (-3.65%) within 4 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was CORRECT — keep applying this filter.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
