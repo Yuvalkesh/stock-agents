@@ -930,6 +930,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-06-04 13:57
 **STAND DOWN**: Agent 1 recommended no trading on 2026-06-04. Macro regime: MIXED
 
+
+### 2026-06-05 13:51
+**STAND DOWN**: Agent 1 recommended no trading on 2026-06-05. Macro regime: MIXED
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
