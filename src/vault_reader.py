@@ -87,8 +87,17 @@ def read_trading_identity() -> str:
     return read_core_file("trading-identity")
 
 
-def read_learning_log() -> str:
-    return read_file(MEMORY_PATH / "learning-log.md")
+def read_learning_log(max_chars: int = 4000) -> str:
+    """Return the learning log, capped to the most recent `max_chars`.
+
+    The log is append-only (newest at the end) and grows unbounded, so it was
+    adding ~12k tokens to every Agent 1 and Agent 4 prompt. Only the recent
+    lessons are useful; tail-cap keeps token cost flat over time.
+    """
+    text = read_file(MEMORY_PATH / "learning-log.md")
+    if len(text) > max_chars:
+        text = "...(older entries trimmed)...\n" + text[-max_chars:]
+    return text
 
 
 def read_portfolio_positions() -> str:

@@ -64,10 +64,10 @@ def run_agent_1(
 
     news_summary = "\n".join(
         f"- [{a['ticker']}] {a['headline']} ({a['source']})"
-        for a in news[:30]
+        for a in news[:12]
     )
     general_summary = "\n".join(
-        f"- {a['headline']} ({a['source']})" for a in general_news[:10]
+        f"- {a['headline']} ({a['source']})" for a in general_news[:5]
     )
     macro_summary = "\n".join(
         f"- {k}: value={v.get('value')}, change={v.get('change_pct')}%"

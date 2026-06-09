@@ -355,6 +355,7 @@ class TradingOrchestrator:
             logger.info(
                 f"Loaded {len(approved_trades)} approved trade(s) from morning scan."
             )
+            scan_result = {"status": "approved", "trades": approved_trades}
         else:
             logger.info("No approved trades JSON found. Running scan first...")
             scan_result = self.run_scan()
@@ -389,7 +390,7 @@ class TradingOrchestrator:
         # Update portfolio files
         self.monitor.update_portfolio_files()
 
-        return {"status": "executed", "results": results}
+        return {"status": "executed", "results": results, "scan_result": scan_result}
 
     # ------------------------------------------------------------------ #
     # Mode: MONITOR — Check positions
@@ -507,10 +508,15 @@ def main():
             send_morning_report(date_str, result)
 
         elif mode == "execute":
+            # Runs the full agent pipeline AND places approved trades, then
+            # reports. This is the scheduled morning job (scan-only never traded).
             result = orchestrator.run_execute()
+            scan_for_summary = result.get("scan_result", {})
+            send_morning_report(date_str, scan_for_summary)
             exec_results = result.get("results", [])
             if exec_results:
                 send_trade_executed_alert(date_str, exec_results)
+            send_daily_summary(date_str, scan_for_summary, result)
 
         elif mode == "monitor":
             result = orchestrator.run_monitor()

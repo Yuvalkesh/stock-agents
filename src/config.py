@@ -27,8 +27,8 @@ REFERENCES_PATH = VAULT_PATH / "R-references"
 STRATEGY_PATH = VAULT_PATH / "S-strategy"
 
 # --- LLM Model ---
-LLM_MODEL = "claude-haiku-4-5-20251001"
-LLM_MAX_TOKENS = 4096
+LLM_MODEL = "claude-haiku-4-5-20251001"  # cheapest capable model — keep
+LLM_MAX_TOKENS = 3000  # output cap; agent briefs/verdicts fit well under this
 
 # --- Alpaca ---
 ALPACA_PAPER = True  # Always paper trading
@@ -52,7 +52,7 @@ MAX_DAILY_LOSS = 0.03           # 3% of equity
 MAX_MONTHLY_DRAWDOWN = 0.10     # 10% of equity
 EARNINGS_BUFFER_DAYS = 3
 MIN_CONVICTION_SCORE = 6        # Out of 12 (added 2pts for fundamentals)
-MAX_LOOPBACKS = 2               # Gatekeeper max retries
+MAX_LOOPBACKS = 1               # Gatekeeper max retries (was 2 — saves up to 2 LLM calls/run)
 
 # --- Trading Parameters ---
 MIN_STOCK_PRICE = 10.0
