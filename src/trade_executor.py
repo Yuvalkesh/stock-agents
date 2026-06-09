@@ -239,40 +239,56 @@ class TradeExecutor:
     # ------------------------------------------------------------------ #
     @staticmethod
     def parse_trade_params(gatekeeper_output: str) -> dict[str, Any] | None:
-        """Extract trade parameters from Gatekeeper GO output."""
+        """Extract trade parameters from Gatekeeper GO output.
+
+        The Gatekeeper emits an "APPROVED FOR EXECUTION" markdown table where
+        each parameter is a row like ``| **Symbol** | AAPL |``. Match that
+        table layout first, then fall back to the legacy ``Label: value`` style.
+        """
         text = gatekeeper_output
         params: dict[str, Any] = {}
 
-        # Extract symbol
-        symbol_match = re.search(r"Symbol:\s*(\w+)", text)
-        if symbol_match:
-            params["symbol"] = symbol_match.group(1)
+        def field(label: str, value_pat: str) -> str | None:
+            # Markdown table row: | **Label** | value |  (bold/$ optional)
+            m = re.search(
+                r"\|\s*\*{0,2}\s*" + label + r"\s*\*{0,2}\s*\|\s*\*{0,2}\s*\$?\s*("
+                + value_pat + r")",
+                text, re.IGNORECASE,
+            )
+            if m:
+                return m.group(1)
+            # Legacy "Label: value" style.
+            m = re.search(
+                label + r"\s*:\s*\*{0,2}\s*\$?\s*(" + value_pat + r")",
+                text, re.IGNORECASE,
+            )
+            return m.group(1) if m else None
 
-        # Extract direction
-        dir_match = re.search(r"Direction:\s*(LONG|SHORT|BUY|SELL)", text, re.IGNORECASE)
-        if dir_match:
-            direction = dir_match.group(1).upper()
+        sym = field("Symbol", r"[A-Za-z]{1,5}")
+        if sym:
+            params["symbol"] = sym.upper()
+
+        direction = field("Direction", r"LONG|SHORT|BUY|SELL")
+        if direction:
+            direction = direction.upper()
             params["side"] = "buy" if direction in ("LONG", "BUY") else "sell"
 
-        # Extract entry price
-        entry_match = re.search(r"Entry:\s*\$?([\d,.]+)", text)
-        if entry_match:
-            params["entry_price"] = float(entry_match.group(1).replace(",", ""))
+        entry = field("Entry", r"[\d,.]+")
+        if entry:
+            params["entry_price"] = float(entry.replace(",", ""))
 
-        # Extract stop price
-        stop_match = re.search(r"Stop(?:\s*Loss)?:\s*\$?([\d,.]+)", text)
-        if stop_match:
-            params["stop_loss"] = float(stop_match.group(1).replace(",", ""))
+        stop = field(r"Stop(?:\s*Loss)?", r"[\d,.]+")
+        if stop:
+            params["stop_loss"] = float(stop.replace(",", ""))
 
-        # Extract target price
-        target_match = re.search(r"Target:\s*\$?([\d,.]+)", text)
-        if target_match:
-            params["take_profit"] = float(target_match.group(1).replace(",", ""))
+        # "Target" or "Take Profit"
+        target = field("Target", r"[\d,.]+") or field(r"Take\s*Profit", r"[\d,.]+")
+        if target:
+            params["take_profit"] = float(target.replace(",", ""))
 
-        # Extract shares
-        shares_match = re.search(r"Shares:\s*(\d+)", text)
-        if shares_match:
-            params["qty"] = int(shares_match.group(1))
+        shares = field("Shares", r"\d+")
+        if shares:
+            params["qty"] = int(shares)
 
         # Validate we have all required fields
         required = ["symbol", "side", "stop_loss", "take_profit", "qty"]

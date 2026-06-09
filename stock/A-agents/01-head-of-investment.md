@@ -63,7 +63,11 @@ Write to `O-output/trades/{date}/01-investment-brief.md`:
 ## Decision
 **{PROCEED TO ANALYSIS / STAND DOWN}**
 {Reasoning}
+
+SELECTED_TICKERS: {comma-separated tickers for NEW entries only — exclude held/monitor-only positions}
 ```
+
+**The `SELECTED_TICKERS:` line is mandatory and machine-parsed.** It is the exact list handed to the Stock Analyst (Agent 2). List only tickers you want screened for new entries this session. Do NOT include positions marked "monitor only" / "currently held". If this line is missing or contains non-tickers, the pipeline cannot trade.
 
 ## Key Rules
 - Never recommend more than 8 tickers in a single brief

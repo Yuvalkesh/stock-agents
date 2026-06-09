@@ -158,7 +158,16 @@ def run_agent_1(
             "analysis if their sector aligns with today's macro bias.\n\n"
         )
 
-    user_prompt += "Now produce your Investment Brief. Follow your output format exactly."
+    user_prompt += (
+        "Now produce your Investment Brief. Follow your output format exactly.\n\n"
+        "CRITICAL: After the Decision section, output one final machine-readable "
+        "line listing ONLY the tickers you want analyzed for NEW entries this "
+        "session (exclude any held/monitor-only positions), comma-separated, "
+        "exactly in this format:\n"
+        "SELECTED_TICKERS: AAA, BBB, CCC\n"
+        "This line is parsed programmatically and handed to the Stock Analyst — "
+        "if it is missing or wrong, no trades can happen."
+    )
 
     return _call_llm(system_prompt, user_prompt)
 
@@ -392,40 +401,103 @@ def parse_gatekeeper_verdict(verdict_text: str) -> dict[str, Any]:
 
 
 def parse_agent1_decision(agent1_output: str) -> dict[str, Any]:
-    """Parse Agent 1 output to determine PROCEED/STAND DOWN and extract tickers."""
-    text_upper = agent1_output.upper()
+    """Parse Agent 1 output to determine PROCEED/STAND DOWN and extract tickers.
 
-    if "STAND DOWN" in text_upper:
+    Ticker extraction is structured, not prose-scraping. In priority order:
+      1. An explicit ``SELECTED_TICKERS: AAA, BBB, ...`` line.
+      2. The first column of the ``## Tickers for Analysis`` markdown table.
+      3. Legacy whole-document regex scrape (last-resort fallback only).
+
+    Rows whose catalyst/strategy marks them as held / monitor-only (e.g. the
+    current MRVL position) are excluded so Agent 2 spends its budget on
+    genuinely new candidates, not names we already hold.
+    """
+    import re
+
+    if "STAND DOWN" in agent1_output.upper():
         return {"proceed": False, "tickers": [], "raw_text": agent1_output}
 
-    # Extract tickers from the output — look for common stock ticker patterns
-    import re
-    # Look for tickers in table rows or lists
-    tickers = []
-    for line in agent1_output.split("\n"):
-        # Match common ticker patterns (1-5 uppercase letters)
-        matches = re.findall(r'\b([A-Z]{1,5})\b', line)
-        for m in matches:
-            if m in config.DEFAULT_WATCHLIST or len(m) >= 2:
-                # Filter out common words
-                skip_words = {
-                    "THE", "AND", "FOR", "NOT", "YES", "BUY", "SELL",
-                    "EST", "AM", "PM", "ETF", "SMA", "RSI", "ATR",
-                    "EMA", "VIX", "USD", "DAY", "HIGH", "LOW",
-                    "RISK", "MIXED", "STAND", "DOWN", "PROCEED",
-                    "SETUP", "NO", "ON", "OFF", "TO", "OR", "IF",
-                    "TODAY", "DATE", "NONE", "ALL",
-                    "MACD", "VWAP", "BB", "ADX", "BTC", "MA",
-                    "ABOVE", "BELOW", "BULLISH", "BEARISH",
-                    "SIGNAL", "STRONG", "WEAK", "MODERATE",
-                    "STABLE", "SECTOR", "CATALYST", "STRATEGY",
-                    "MOVE", "EXPECTED", "TREND", "BIAS",
-                }
-                if m not in skip_words and m not in tickers:
-                    tickers.append(m)
+    def _clean(sym: str) -> str | None:
+        sym = sym.strip().strip("*`_ ").upper()
+        return sym if re.fullmatch(r"[A-Z]{1,5}", sym) else None
 
+    def _dedupe(seq: list[str]) -> list[str]:
+        out: list[str] = []
+        for s in seq:
+            if s and s not in out:
+                out.append(s)
+        return out
+
+    MONITOR_FLAGS = ("MONITOR", "CURRENTLY HELD", "POSITION MANAGEMENT", "HOLD ONLY")
+
+    # --- 1. Explicit machine-readable line (most robust) ---------------- #
+    line_match = re.search(r"SELECTED_TICKERS\s*[:=]\s*(.+)", agent1_output, re.IGNORECASE)
+    if line_match:
+        raw = re.split(r"[,\s/|]+", line_match.group(1).strip())
+        tickers = _dedupe(t for t in (_clean(x) for x in raw) if t)
+        if tickers:
+            return {"proceed": True, "tickers": tickers[:8], "raw_text": agent1_output}
+
+    # --- 2. "Tickers for Analysis" markdown table ---------------------- #
+    tickers = []
+    in_table = False
+    for line in agent1_output.split("\n"):
+        low = line.lower()
+        if "tickers for analysis" in low:
+            in_table = True
+            continue
+        if in_table:
+            stripped = line.strip()
+            # Table ends at the next blank line or new heading.
+            if stripped.startswith("#") or stripped == "":
+                if tickers:  # only stop once we've collected the table body
+                    break
+                continue
+            if not stripped.startswith("|"):
+                continue
+            cells = [c.strip() for c in stripped.strip("|").split("|")]
+            if not cells:
+                continue
+            first = cells[0]
+            # Skip header row and the |---|---| separator.
+            if first.lower() in ("ticker", "symbol") or set(first) <= set("-: "):
+                continue
+            # Skip held / monitor-only rows so we surface NEW candidates.
+            rowtext = " ".join(cells).upper()
+            if any(flag in rowtext for flag in MONITOR_FLAGS):
+                continue
+            sym = _clean(first)
+            if sym:
+                tickers.append(sym)
+    tickers = _dedupe(tickers)
+    if tickers:
+        return {"proceed": True, "tickers": tickers[:8], "raw_text": agent1_output}
+
+    # --- 3. Legacy fallback: whole-document scrape (rarely needed) ------ #
+    skip_words = {
+        "THE", "AND", "FOR", "NOT", "YES", "BUY", "SELL", "AI",
+        "EST", "AM", "PM", "ETF", "SMA", "RSI", "ATR", "AVOID",
+        "EMA", "VIX", "USD", "DAY", "HIGH", "LOW", "GDP", "FED",
+        "RISK", "MIXED", "STAND", "DOWN", "PROCEED", "CPI", "ISM",
+        "SETUP", "NO", "ON", "OFF", "TO", "OR", "IF", "PMI", "PE",
+        "TODAY", "DATE", "NONE", "ALL", "ADD", "NEW",
+        "MACD", "VWAP", "BB", "ADX", "BTC", "MA",
+        "ABOVE", "BELOW", "BULLISH", "BEARISH",
+        "SIGNAL", "STRONG", "WEAK", "MODERATE",
+        "STABLE", "SECTOR", "CATALYST", "STRATEGY",
+        "MOVE", "EXPECTED", "TREND", "BIAS",
+    }
+    known = set(config.DEFAULT_WATCHLIST)
+    fallback = []
+    for line in agent1_output.split("\n"):
+        for m in re.findall(r"\b([A-Z]{1,5})\b", line):
+            if m in skip_words:
+                continue
+            # Prefer known-universe names; otherwise require >=2 chars.
+            if (m in known or len(m) >= 2) and m not in fallback:
+                fallback.append(m)
     return {
         "proceed": True,
-        "tickers": tickers[:8],  # Max 8 tickers
+        "tickers": fallback[:8],
         "raw_text": agent1_output,
     }
