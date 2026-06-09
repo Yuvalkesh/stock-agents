@@ -4419,8 +4419,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 211.4199981689453,
+      "high_since": 254.1513045467482,
+      "low_since": 210.3000030517578,
+      "days_elapsed": 7,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-06-01",
@@ -4432,8 +4440,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 188.1750030517578,
+      "high_since": 191.47999572753906,
+      "low_since": 184.02000427246094,
+      "days_elapsed": 7,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-06-01",
@@ -4445,8 +4461,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_WIN",
+    "review_details": {
+      "current_price": 722.0599975585938,
+      "high_since": 748.6500244140625,
+      "low_since": 704.3200073242188,
+      "days_elapsed": 7,
+      "hit_target": true,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-06-03",
@@ -4455,6 +4479,27 @@
     "entry_price": 358.95,
     "stop_loss": 339.39,
     "take_profit": 373.53,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": true,
+    "review_result": "MISSED_PARTIAL",
+    "review_details": {
+      "current_price": 369.3599853515625,
+      "high_since": 373.0271992966173,
+      "low_since": 357.8662353535933,
+      "days_elapsed": 5,
+      "hit_target": false,
+      "hit_stop": false
+    }
+  },
+  {
+    "date": "2026-06-09",
+    "ticker": "LRCX",
+    "strategy": "macd_rsi",
+    "entry_price": 343.73,
+    "stop_loss": 318.31,
+    "take_profit": 346.19,
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,

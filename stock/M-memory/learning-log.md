@@ -934,6 +934,22 @@ _No entries yet. Will be populated after first trades._
 ### 2026-06-05 13:51
 **STAND DOWN**: Agent 1 recommended no trading on 2026-06-05. Macro regime: MIXED
 
+
+### 2026-06-09 13:42
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: QCOM dropped to $211.42 (-8.56%) after 7 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-06-09 13:42
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: CVX is flat at $188.18 (+0.63%) after 7 days. Strategy: ma_crossover.
+
+
+### 2026-06-09 13:42
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: QQQ hit target first on day 1 (+0.06%). We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This filter was too strict.
+
+
+### 2026-06-09 13:42
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: GOOGL is at $369.36 (+2.90% from entry) after 5 days. Hasn't hit target ($373.53) or stop ($339.39) yet. We passed because: Gatekeeper NO-GO. Strategy: connors_rsi.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
