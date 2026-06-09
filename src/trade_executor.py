@@ -9,7 +9,9 @@ from alpaca.trading.requests import (
     MarketOrderRequest,
     StopLossRequest,
     TakeProfitRequest,
+    TrailingStopOrderRequest,
 )
+import time
 from alpaca.trading.enums import OrderSide, TimeInForce, OrderClass
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
@@ -101,6 +103,98 @@ class TradeExecutor:
     # ------------------------------------------------------------------ #
     # Order Placement
     # ------------------------------------------------------------------ #
+    def place_entry(
+        self,
+        symbol: str,
+        qty: int,
+        side: str,
+        take_profit_price: float,
+        stop_loss_price: float,
+        trail_percent: float | None = None,
+    ) -> dict[str, Any]:
+        """Route to the configured exit style.
+
+        LET_WINNERS_RUN → market entry + a trailing stop (no fixed target),
+        so trends ride instead of being scratched at the target.
+        Otherwise → the classic fixed-target bracket order.
+        """
+        if getattr(config, "LET_WINNERS_RUN", False):
+            tp = trail_percent if trail_percent is not None else getattr(
+                config, "LIVE_TRAILING_STOP_PCT", 12.0
+            )
+            return self.place_trailing_entry(symbol, qty, side, stop_loss_price, tp)
+        return self.place_bracket_order(
+            symbol, qty, side, take_profit_price, stop_loss_price
+        )
+
+    def place_trailing_entry(
+        self,
+        symbol: str,
+        qty: int,
+        side: str,
+        stop_loss_price: float,
+        trail_percent: float,
+    ) -> dict[str, Any]:
+        """Market entry, then a GTC trailing stop on the position (let winners run).
+
+        The trailing stop is placed only after the entry fills, so the protective
+        order always has shares behind it (a sell with no position is rejected).
+        """
+        if qty <= 0:
+            return {"success": False, "error": "Invalid quantity"}
+        try:
+            order_side = OrderSide.BUY if side.lower() == "buy" else OrderSide.SELL
+            entry = MarketOrderRequest(
+                symbol=symbol, qty=qty, side=order_side,
+                time_in_force=TimeInForce.DAY,
+            )
+            o = self.trading_client.submit_order(entry)
+            logger.info(f"ENTRY (let-run): {side.upper()} {qty} {symbol}")
+
+            # Wait briefly for the entry to fill (instant during market hours).
+            filled = False
+            for _ in range(10):
+                od = self.trading_client.get_order_by_id(o.id)
+                if str(od.status).upper().endswith("FILLED") and od.filled_qty:
+                    filled = True
+                    break
+                time.sleep(1)
+
+            trail_id = None
+            if filled:
+                exit_side = OrderSide.SELL if order_side == OrderSide.BUY else OrderSide.BUY
+                trail = TrailingStopOrderRequest(
+                    symbol=symbol, qty=qty, side=exit_side,
+                    time_in_force=TimeInForce.GTC,
+                    trail_percent=round(trail_percent, 2),
+                )
+                t = self.trading_client.submit_order(trail)
+                trail_id = str(t.id)
+                logger.info(
+                    f"TRAILING STOP: {trail_percent}% on {qty} {symbol} (id {trail_id})"
+                )
+            else:
+                logger.warning(
+                    f"{symbol} entry not filled yet — trailing stop deferred. "
+                    f"position_monitor should attach it on the next monitor pass."
+                )
+
+            return {
+                "success": True,
+                "order_id": str(o.id),
+                "symbol": symbol,
+                "qty": qty,
+                "side": side,
+                "status": str(o.status),
+                "exit_style": "trailing",
+                "trailing_stop_pct": round(trail_percent, 2),
+                "trailing_stop_id": trail_id,
+                "initial_stop_ref": round(stop_loss_price, 2),
+            }
+        except Exception as e:
+            logger.error(f"Trailing entry failed for {symbol}: {e}")
+            return {"success": False, "error": str(e)}
+
     def place_bracket_order(
         self,
         symbol: str,

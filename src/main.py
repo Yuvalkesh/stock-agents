@@ -368,7 +368,7 @@ class TradingOrchestrator:
                 f"Executing: {trade['side'].upper()} {trade['qty']} "
                 f"{trade['symbol']}"
             )
-            result = self.executor.place_bracket_order(
+            result = self.executor.place_entry(
                 symbol=trade["symbol"],
                 qty=trade["qty"],
                 side=trade["side"],

@@ -59,6 +59,25 @@ MIN_STOCK_PRICE = 10.0
 MIN_AVG_VOLUME = 500_000        # Was 1M — too restrictive
 TARGET_TRADES_PER_MONTH = (6, 10)  # min, max
 
+# --- Exit / hold management ---
+TIME_STOP_STAGNANT_DAYS = 10    # exit if position goes nowhere (<0.5%) after N days
+TIME_STOP_MAX_HOLD_DAYS = 40    # hard max hold (fixed-target mode)
+
+# "Let winners run" mode: drop the fixed take-profit cap and ride a trailing
+# stop instead, so a trend like MRVL isn't scratched at +3%. Off by default;
+# the backtest flips it on to compare. Trailing arms once the trade is up
+# TRAILING_STOP_TRIGGER_R (in R multiples), then trails by a per-strategy %.
+LET_WINNERS_RUN = True           # backtested +60% vs fixed targets (2024-2026)
+LIVE_TRAILING_STOP_PCT = 12.0    # live trailing-stop distance for new entries
+TRAILING_STOP_TRIGGER_R = 1.0    # arm trailing once trade is up 1R (backtest mode)
+TRAILING_STOP_DEFAULTS = {       # trail distance (% below high) once armed
+    "connors_rsi":       6.0,
+    "macd_rsi":          10.0,
+    "bollinger_squeeze": 12.0,
+    "ma_crossover":      14.0,
+    "vix_fear":          6.0,
+}
+
 # --- Schedule (EST times as UTC cron) ---
 SCHEDULE = {
     "morning_scan": "06:00",    # EST

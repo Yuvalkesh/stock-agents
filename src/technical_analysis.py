@@ -12,6 +12,17 @@ import config
 logger = logging.getLogger(__name__)
 
 
+# Which strategies are appropriate per market regime. Used by the optional
+# regime filter (backtest + live). Trend strategies in risk-on, mean-reversion
+# / fear strategies in risk-off, everything allowed when unknown.
+REGIME_STRATEGY_MAP = {
+    "RISK-ON":  ["ma_crossover", "macd_rsi", "bollinger_squeeze", "connors_rsi"],
+    "RISK-OFF": ["connors_rsi", "vix_fear"],
+    "MIXED":    ["connors_rsi", "macd_rsi", "ma_crossover", "vix_fear"],
+    "UNKNOWN":  ["connors_rsi", "macd_rsi", "bollinger_squeeze", "ma_crossover", "vix_fear"],
+}
+
+
 class TechnicalAnalyzer:
     """Runs the 5 verified trading strategies on OHLCV data."""
 
