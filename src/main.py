@@ -45,6 +45,7 @@ from email_notifier import (
     send_trade_executed_alert,
     send_end_of_day_report,
     send_rising_stars_report,
+    send_daily_summary,
 )
 
 # Logging setup
@@ -531,6 +532,10 @@ def main():
             if exec_results:
                 send_trade_executed_alert(date_str, exec_results)
             send_end_of_day_report(date_str)
+            # One-line glance: what was decided + whether it actually traded.
+            send_daily_summary(
+                date_str, result.get("scan", {}), result.get("execute", {})
+            )
         else:
             result = orchestrator.run_full()
 

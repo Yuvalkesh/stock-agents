@@ -20,6 +20,90 @@ FROM_EMAIL = "Stock Trading Bot <noreply@uxwritinghub.com>"
 TO_EMAIL = config.NOTIFICATION_EMAIL
 
 
+def _daily_glance(
+    date_str: str,
+    scan_result: dict[str, Any],
+    exec_result: dict[str, Any] | None,
+) -> tuple[str, str]:
+    """Build a one-line (emoji, headline) summary of the day's decision.
+
+    Crucially distinguishes 'decided a trade AND placed it' from 'decided a
+    trade but the order failed to place' — the silent failure mode that kept
+    the bot from trading for months.
+    """
+    import re
+
+    status = scan_result.get("status", "unknown")
+
+    if status == "approved":
+        results = (exec_result or {}).get("results") or []
+        placed = [r for r in results if r.get("success")]
+        failed = [r for r in results if not r.get("success")]
+        if failed:
+            why = failed[0].get("error", "unknown error")
+            return "⚠️", f"DECIDED TRADE BUT ORDER FAILED — {why}"
+        if placed:
+            syms = ", ".join(
+                f"{r.get('side','?').upper()} {r.get('symbol','?')} ×{r.get('qty','?')}"
+                for r in placed
+            )
+            return "✅", f"TRADE PLACED — {syms}"
+        # Approved by scan but execute hasn't run yet (e.g. scan-only mode).
+        trades = scan_result.get("trades", [])
+        syms = ", ".join(
+            f"{t.get('side','?').upper()} {t.get('symbol','?')} ×{t.get('qty','?')}"
+            for t in trades
+        )
+        return "✅", f"TRADE APPROVED (awaiting execution) — {syms}"
+
+    if status == "rejected":
+        return "⛔", "NO TRADE — Gatekeeper blocked the setup"
+    if status == "stand_down":
+        return "💤", "STAND DOWN — no trading regime today"
+    if status == "error":
+        return "⚠️", f"PIPELINE ERROR — {scan_result.get('reason', 'see logs')}"
+
+    if status in ("pass", "no_setups"):
+        if status == "no_setups":
+            n = scan_result.get("tickers_analyzed", "?")
+            return "⏸️", f"NO TRADE — no technical setup ({n} tickers screened)"
+        # status == "pass": surface the best score + ticker so you see HOW close.
+        a4 = read_previous_agent_output(date_str, 4) or ""
+        m = re.search(r"Score[:\s\*]*([0-9]+)\s*/\s*([0-9]+)", a4)
+        score = f"{m.group(1)}/{m.group(2)}" if m else "n/a"
+        tm = re.search(r"Trade Decision\s*[—\-–]\s*([A-Z]{1,5})", a4)
+        tk = f" on {tm.group(1)}" if tm else ""
+        return "⏸️", f"NO TRADE — best score {score}{tk}, below threshold"
+
+    return "ℹ️", f"Status: {status}"
+
+
+def send_daily_summary(
+    date_str: str,
+    scan_result: dict[str, Any],
+    exec_result: dict[str, Any] | None = None,
+) -> bool:
+    """Send a single glanceable line: what the bot decided and whether it traded."""
+    emoji, headline = _daily_glance(date_str, scan_result, exec_result)
+    color = (
+        "#22c55e" if headline.startswith("TRADE PLACED")
+        else "#ef4444" if ("FAILED" in headline or "ERROR" in headline)
+        else "#6b7280"
+    )
+    html = f"""
+    <div style="font-family: -apple-system, sans-serif; max-width: 600px; margin: 0 auto;">
+        <div style="background: {color}; color: white; padding: 18px 24px; border-radius: 8px;">
+            <p style="margin: 0; font-size: 13px; opacity: 0.85;">Daily Trading Summary • {date_str}</p>
+            <p style="margin: 6px 0 0; font-size: 20px; font-weight: bold;">{emoji} {headline}</p>
+        </div>
+        <p style="color:#6b7280; font-size:12px; margin-top:10px;">
+            Full reasoning: stock/O-output/trades/{date_str}/05-gatekeeper-verdict.md
+        </p>
+    </div>
+    """
+    return send_email(f"{emoji} {headline} — {date_str}", html)
+
+
 def send_email(subject: str, html_body: str) -> bool:
     """Send an email via Resend."""
     if not config.RESEND_API_KEY:
