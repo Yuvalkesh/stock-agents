@@ -1,0 +1,10 @@
+[
+  {
+    "symbol": "MRVL",
+    "side": "buy",
+    "entry_price": 263.67,
+    "stop_loss": 225.14,
+    "take_profit": 324.2,
+    "qty": 36
+  }
+]
