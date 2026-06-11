@@ -950,6 +950,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-06-09 13:42
 **HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: GOOGL is at $369.36 (+2.90% from entry) after 5 days. Hasn't hit target ($373.53) or stop ($339.39) yet. We passed because: Gatekeeper NO-GO. Strategy: connors_rsi.
 
+
+### 2026-06-11 14:33
+**STAND DOWN**: Agent 1 recommended no trading on 2026-06-11. Macro regime: RISK-ON
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
