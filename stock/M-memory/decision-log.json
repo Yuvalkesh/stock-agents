@@ -4503,8 +4503,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_WIN",
+    "review_details": {
+      "current_price": 390.17498779296875,
+      "high_since": 393.07000732421875,
+      "low_since": 306.010009765625,
+      "days_elapsed": 5,
+      "hit_target": true,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-06-12",

@@ -1,0 +1,9 @@
+[
+  {
+    "symbol": "NVDA",
+    "side": "buy",
+    "stop_loss": 200.51,
+    "take_profit": 232.01,
+    "qty": 98
+  }
+]

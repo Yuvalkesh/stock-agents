@@ -66,14 +66,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| QCOM | — | — | Added by Rising Stars Scout |
-| AMAT | — | — | Added by Rising Stars Scout |
+| ROKU | — | — | Added by Rising Stars Scout |
 | LRCX | — | — | Added by Rising Stars Scout |
-| KLAC | — | — | Added by Rising Stars Scout |
+| CDNS | — | — | Added by Rising Stars Scout |
 | MRVL | — | — | Added by Rising Stars Scout |
+| GE | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |
