@@ -958,6 +958,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-06-15 16:14
 **HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: LRCX hit target first on day 1 (+0.72%). We passed because: Gatekeeper NO-GO. Strategy: macd_rsi. LESSON: This filter was too strict.
 
+
+### 2026-06-16 15:50
+**STAND DOWN**: Agent 1 recommended no trading on 2026-06-16. Macro regime: RISK-ON
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
