@@ -962,6 +962,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-06-16 15:50
 **STAND DOWN**: Agent 1 recommended no trading on 2026-06-16. Macro regime: RISK-ON
 
+
+### 2026-06-17 14:24
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: LRCX reached target $364.81 (+0.16%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
