@@ -4534,5 +4534,18 @@
       "hit_target": true,
       "hit_stop": false
     }
+  },
+  {
+    "date": "2026-06-18",
+    "ticker": "MRVL",
+    "strategy": "macd_rsi",
+    "entry_price": 315.32,
+    "stop_loss": 274.04,
+    "take_profit": 324.2,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
