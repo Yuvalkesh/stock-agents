@@ -966,6 +966,14 @@ _No entries yet. Will be populated after first trades._
 ### 2026-06-17 14:24
 **HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: LRCX reached target $364.81 (+0.16%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
 
+
+### 2026-06-23 13:42
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: MRVL reached target $324.20 (+2.82%) within 3 days. We passed because: Gatekeeper NO-GO. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-06-23 13:42
+**STAND DOWN**: Agent 1 recommended no trading on 2026-06-23. Macro regime: RISK-OFF
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
