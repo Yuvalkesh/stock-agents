@@ -974,6 +974,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-06-23 13:42
 **STAND DOWN**: Agent 1 recommended no trading on 2026-06-23. Macro regime: RISK-OFF
 
+
+### 2026-06-24 13:18
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MRVL dropped to $279.04 (-10.16%) after 2 days. We correctly passed. Strategy: macd_rsi.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 

@@ -4566,7 +4566,15 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 279.0400085449219,
+      "high_since": 314.1700134277344,
+      "low_since": 276.25,
+      "days_elapsed": 2,
+      "hit_target": false,
+      "hit_stop": false
+    }
   }
 ]
