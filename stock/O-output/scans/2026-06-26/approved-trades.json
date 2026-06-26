@@ -1,0 +1,9 @@
+[
+  {
+    "symbol": "ROKU",
+    "side": "buy",
+    "stop_loss": 127.18,
+    "take_profit": 148.88,
+    "qty": 18
+  }
+]
