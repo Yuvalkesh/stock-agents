@@ -978,6 +978,14 @@ _No entries yet. Will be populated after first trades._
 ### 2026-06-24 13:18
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MRVL dropped to $279.04 (-10.16%) after 2 days. We correctly passed. Strategy: macd_rsi.
 
+
+### 2026-06-30 13:07
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: LRCX reached target $409.75 (+9.32%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-06-30 13:07
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: ROKU is flat at $136.53 (+0.44%) after 3 days. Strategy: ma_crossover.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
