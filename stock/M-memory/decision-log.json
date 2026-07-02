@@ -4696,5 +4696,31 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-07-02",
+    "ticker": "AMAT",
+    "strategy": "ma_crossover",
+    "entry_price": 650.91,
+    "stop_loss": 584.28,
+    "take_profit": 739.67,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-07-02",
+    "ticker": "KLAC",
+    "strategy": "ma_crossover",
+    "entry_price": 266.19,
+    "stop_loss": 237.18,
+    "take_profit": 307.37,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
