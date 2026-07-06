@@ -986,6 +986,34 @@ _No entries yet. Will be populated after first trades._
 ### 2026-06-30 13:07
 **HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: ROKU is flat at $136.53 (+0.44%) after 3 days. Strategy: ma_crossover.
 
+
+### 2026-07-06 14:22
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: MO hit target first on day 1 (+0.65%). We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This filter was too strict.
+
+
+### 2026-07-06 14:22
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: ABNB is flat at $148.43 (+0.86%) after 4 days. Strategy: none.
+
+
+### 2026-07-06 14:22
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: AMAT dropped to $615.00 (-11.46%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-07-06 14:22
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: XOM is flat at $136.62 (+0.41%) after 4 days. Strategy: none.
+
+
+### 2026-07-06 14:22
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: NVDA is flat at $196.02 (+0.54%) after 4 days. Strategy: none.
+
+
+### 2026-07-06 14:22
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: ABNB is at $148.43 (+1.69% from entry) after 3 days. Hasn't hit target ($150.19) or stop ($139.11) yet. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover.
+
+
+### 2026-07-06 14:22
+**STAND DOWN**: Agent 1 recommended no trading on 2026-07-06. Macro regime: MIXED
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
