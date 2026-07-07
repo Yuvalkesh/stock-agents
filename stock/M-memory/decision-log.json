@@ -4755,8 +4755,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 592.7899780273438,
+      "high_since": 657.0,
+      "low_since": 581.9000244140625,
+      "days_elapsed": 2,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-07-02",
@@ -4768,8 +4776,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 233.30999755859375,
+      "high_since": 267.3299865722656,
+      "low_since": 228.00999450683594,
+      "days_elapsed": 2,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-07-03",
@@ -4778,6 +4794,19 @@
     "entry_price": 72.71,
     "stop_loss": 70.32,
     "take_profit": 74.15,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-07-07",
+    "ticker": "ABNB",
+    "strategy": "ma_crossover",
+    "entry_price": 147.65,
+    "stop_loss": 140.87,
+    "take_profit": 150.19,
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
