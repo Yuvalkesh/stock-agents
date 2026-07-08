@@ -1022,6 +1022,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-07-07 13:16
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: KLAC hit stop $237.18 (-10.9%) within 2 days. We correctly passed. Reason: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
 
+
+### 2026-07-08 12:17
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: MO is flat at $72.96 (+0.34%) after 2 days. Strategy: ma_crossover.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
