@@ -1026,6 +1026,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-07-08 12:17
 **HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: MO is flat at $72.96 (+0.34%) after 2 days. Strategy: ma_crossover.
 
+
+### 2026-07-09 13:47
+**STAND DOWN**: Agent 1 recommended no trading on 2026-07-09. Macro regime: RISK-ON
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
