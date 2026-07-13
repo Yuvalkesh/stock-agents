@@ -4818,8 +4818,16 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 148.6199951171875,
+      "high_since": 150.02000427246094,
+      "low_since": 141.24000549316406,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-07-10",
