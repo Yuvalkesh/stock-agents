@@ -4839,6 +4839,40 @@
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 146.5399932861328,
+      "high_since": 149.9600067138672,
+      "low_since": 143.7899932861328,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
+  },
+  {
+    "date": "2026-07-15",
+    "ticker": "ABNB",
+    "strategy": "ma_crossover",
+    "entry_price": 146.54,
+    "stop_loss": 139.7,
+    "take_profit": 150.19,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-07-15",
+    "ticker": "ROKU",
+    "strategy": "ma_crossover",
+    "entry_price": 141.76,
+    "stop_loss": 136.78,
+    "take_profit": 145.88,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
     "reviewed": false,
     "review_result": null
   }
