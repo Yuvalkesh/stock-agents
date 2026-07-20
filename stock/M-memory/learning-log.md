@@ -1046,6 +1046,14 @@ _No entries yet. Will be populated after first trades._
 ### 2026-07-15 12:11
 **HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: ABNB is flat at $146.54 (-0.24%) after 3 days. Strategy: ma_crossover.
 
+
+### 2026-07-20 13:02
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: ABNB reached target $150.19 (+2.49%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-07-20 13:02
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: ROKU is at $144.43 (+1.88% from entry) after 3 days. Hasn't hit target ($145.88) or stop ($136.78) yet. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 

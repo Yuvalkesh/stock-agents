@@ -71,14 +71,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| AMD | — | — | Added by Rising Stars Scout |
-| ABNB | — | — | Added by Rising Stars Scout |
-| ROKU | — | — | Added by Rising Stars Scout |
-| V | — | — | Added by Rising Stars Scout |
-| ABBV | — | — | Added by Rising Stars Scout |
+| PANW | — | — | Added by Rising Stars Scout |
+| CRWD | — | — | Added by Rising Stars Scout |
+| FTNT | — | — | Added by Rising Stars Scout |
+| DDOG | — | — | Added by Rising Stars Scout |
+| NET | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |
