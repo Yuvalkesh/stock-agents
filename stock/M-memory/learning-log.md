@@ -1066,6 +1066,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-07-21 12:21
 **HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: ROKU reached target $143.56 (+0.17%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
 
+
+### 2026-07-22 12:22
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: ABNB dropped to $144.10 (-2.50%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
