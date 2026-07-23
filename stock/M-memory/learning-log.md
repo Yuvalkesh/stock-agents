@@ -1070,6 +1070,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-07-22 12:22
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: ABNB dropped to $144.10 (-2.50%) after 3 days. We correctly passed. Strategy: ma_crossover.
 
+
+### 2026-07-23 12:22
+**STAND DOWN**: Agent 1 recommended no trading on 2026-07-23. Macro regime: MIXED
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
