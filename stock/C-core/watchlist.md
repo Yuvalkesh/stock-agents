@@ -72,14 +72,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| PANW | — | — | Added by Rising Stars Scout |
-| CRWD | — | — | Added by Rising Stars Scout |
-| FTNT | — | — | Added by Rising Stars Scout |
-| DDOG | — | — | Added by Rising Stars Scout |
+| SNOW | — | — | Added by Rising Stars Scout |
 | NET | — | — | Added by Rising Stars Scout |
+| V | — | — | Added by Rising Stars Scout |
+| BMY | — | — | Added by Rising Stars Scout |
+| COP | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |

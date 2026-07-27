@@ -1074,6 +1074,54 @@ _No entries yet. Will be populated after first trades._
 ### 2026-07-23 12:22
 **STAND DOWN**: Agent 1 recommended no trading on 2026-07-23. Macro regime: MIXED
 
+
+### 2026-07-27 13:36
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: PANW dropped to $326.51 (-8.97%) after 5 days. We correctly passed. Strategy: none.
+
+
+### 2026-07-27 13:36
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: CRWD dropped to $184.85 (-8.98%) after 5 days. We correctly passed. Strategy: none.
+
+
+### 2026-07-27 13:36
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: NET dropped to $267.95 (-3.50%) after 5 days. We correctly passed. Strategy: none.
+
+
+### 2026-07-27 13:36
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: DDOG dropped to $253.18 (-2.13%) after 5 days. We correctly passed. Strategy: none.
+
+
+### 2026-07-27 13:36
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: AAPL is flat at $336.17 (+0.73%) after 5 days. Strategy: none.
+
+
+### 2026-07-27 13:36
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: PANW hit stop $323.73 (-7.15%) within 4 days. We correctly passed. Reason: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-07-27 13:36
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: CRWD hit stop $182.91 (-7.85%) within 4 days. We correctly passed. Reason: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-07-27 13:36
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: NET dropped to $267.95 (-1.64%) after 4 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-07-27 13:36
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: DDOG hit stop $242.83 (-7.74%) within 4 days. We correctly passed. Reason: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-07-27 13:36
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: CRWD dropped to $184.85 (-3.30%) after 3 days. We correctly passed. Strategy: connors_rsi.
+
+
+### 2026-07-27 13:36
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: NET dropped to $267.95 (-1.60%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-07-27 13:36
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: META hit stop $606.65 (-5.77%) within 3 days. We correctly passed. Reason: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
