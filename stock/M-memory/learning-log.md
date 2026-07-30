@@ -1122,6 +1122,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-07-27 13:36
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: META hit stop $606.65 (-5.77%) within 3 days. We correctly passed. Reason: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
 
+
+### 2026-07-30 12:26
+**STAND DOWN**: Agent 1 recommended no trading on 2026-07-30. Macro regime: RISK-OFF
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
