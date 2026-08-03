@@ -73,14 +73,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
 | SNOW | — | — | Added by Rising Stars Scout |
-| NET | — | — | Added by Rising Stars Scout |
-| V | — | — | Added by Rising Stars Scout |
+| ADP | — | — | Added by Rising Stars Scout |
+| HON | — | — | Added by Rising Stars Scout |
+| MA | — | — | Added by Rising Stars Scout |
 | BMY | — | — | Added by Rising Stars Scout |
-| COP | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |

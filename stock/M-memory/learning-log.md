@@ -1126,6 +1126,26 @@ _No entries yet. Will be populated after first trades._
 ### 2026-07-30 12:26
 **STAND DOWN**: Agent 1 recommended no trading on 2026-07-30. Macro regime: RISK-OFF
 
+
+### 2026-08-03 13:38
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: NET reached target $291.00 (+8.14%) within 6 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-08-03 13:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: SNOW hit stop first on day 2, then later recovered. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-08-03 13:38
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: SNOW hit stop first on day 1, then later recovered. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-08-03 13:38
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: V reached target $371.16 (+1.25%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-08-03 13:38
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: SNOW reached target $279.49 (+3.38%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
