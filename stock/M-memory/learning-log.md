@@ -1146,6 +1146,18 @@ _No entries yet. Will be populated after first trades._
 ### 2026-08-03 13:38
 **HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: SNOW reached target $279.49 (+3.38%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
 
+
+### 2026-08-05 12:49
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: AAPL hit stop $321.34 (-3.63%) within 3 days. We correctly passed. Reason: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-08-05 12:49
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: V is flat at $369.59 (+0.91%) after 3 days. Strategy: macd_rsi.
+
+
+### 2026-08-05 12:49
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: V is flat at $369.59 (+0.91%) after 3 days. Strategy: ma_crossover.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
