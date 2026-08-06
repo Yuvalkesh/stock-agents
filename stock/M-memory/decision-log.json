@@ -5499,5 +5499,44 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-08-06",
+    "ticker": "MA",
+    "strategy": "ma_crossover",
+    "entry_price": 570.48,
+    "stop_loss": 552.05,
+    "take_profit": 583.71,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-08-06",
+    "ticker": "GOOGL",
+    "strategy": "ma_crossover",
+    "entry_price": 362.43,
+    "stop_loss": 341.54,
+    "take_profit": 384.48,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-08-06",
+    "ticker": "XOM",
+    "strategy": "connors_rsi",
+    "entry_price": 151.63,
+    "stop_loss": 143.91,
+    "take_profit": 154.61,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
