@@ -5538,5 +5538,44 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "MA",
+    "strategy": "ma_crossover",
+    "entry_price": 575.95,
+    "stop_loss": 557.77,
+    "take_profit": 583.71,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "BMY",
+    "strategy": "ma_crossover",
+    "entry_price": 64.15,
+    "stop_loss": 61.26,
+    "take_profit": 68.1,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-08-07",
+    "ticker": "GOOGL",
+    "strategy": "ma_crossover",
+    "entry_price": 357.75,
+    "stop_loss": 337.57,
+    "take_profit": 384.48,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
