@@ -1158,6 +1158,38 @@ _No entries yet. Will be populated after first trades._
 ### 2026-08-05 12:49
 **HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: V is flat at $369.59 (+0.91%) after 3 days. Strategy: ma_crossover.
 
+
+### 2026-08-10 11:43
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: JPM reached target $359.30 (+1.41%) within 5 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-08-10 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: AMZN dropped to $274.48 (-3.36%) after 4 days. We correctly passed. Strategy: macd_rsi.
+
+
+### 2026-08-10 11:43
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: GOOGL hit target first on day 1 (+0.85%). We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This filter was too strict.
+
+
+### 2026-08-10 11:43
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: SNOW reached target $315.42 (+2.57%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-08-10 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MA dropped to $562.95 (-1.40%) after 4 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-08-10 11:43
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: NVDA reached target $214.39 (+1.16%) within 3 days. We passed because: Gatekeeper NO-GO. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-08-10 11:43
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MA dropped to $562.95 (-1.43%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-08-10 11:43
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: JPM is flat at $357.52 (-0.00%) after 3 days. Strategy: ma_crossover.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 

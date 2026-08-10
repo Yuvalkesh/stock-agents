@@ -74,14 +74,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| SNOW | — | — | Added by Rising Stars Scout |
-| ADP | — | — | Added by Rising Stars Scout |
-| HON | — | — | Added by Rising Stars Scout |
-| MA | — | — | Added by Rising Stars Scout |
-| BMY | — | — | Added by Rising Stars Scout |
+| AMGN | — | — | Added by Rising Stars Scout |
+| AVGO | — | — | Added by Rising Stars Scout |
+| CRWD | — | — | Added by Rising Stars Scout |
+| ABNB | — | — | Added by Rising Stars Scout |
+| BA | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |
