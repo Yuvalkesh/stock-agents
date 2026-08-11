@@ -1190,6 +1190,18 @@ _No entries yet. Will be populated after first trades._
 ### 2026-08-10 11:43
 **HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: JPM is flat at $357.52 (-0.00%) after 3 days. Strategy: ma_crossover.
 
+
+### 2026-08-11 11:40
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MA dropped to $563.17 (-1.28%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-08-11 11:40
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: GOOGL dropped to $357.52 (-1.35%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-08-11 11:40
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XOM reached target $154.61 (+1.97%) within 3 days. We passed because: Gatekeeper NO-GO. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
