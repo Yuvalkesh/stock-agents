@@ -1202,6 +1202,18 @@ _No entries yet. Will be populated after first trades._
 ### 2026-08-11 11:40
 **HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XOM reached target $154.61 (+1.97%) within 3 days. We passed because: Gatekeeper NO-GO. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
 
+
+### 2026-08-12 11:42
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MA dropped to $561.44 (-2.52%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-08-12 11:42
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: BMY is flat at $63.61 (-0.84%) after 3 days. Strategy: ma_crossover.
+
+
+### 2026-08-12 11:42
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: GOOGL dropped to $343.80 (-3.90%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
