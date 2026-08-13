@@ -1,0 +1,9 @@
+[
+  {
+    "symbol": "JPM",
+    "side": "buy",
+    "stop_loss": 358.58,
+    "take_profit": 380.0,
+    "qty": 29
+  }
+]
