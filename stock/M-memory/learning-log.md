@@ -1214,6 +1214,38 @@ _No entries yet. Will be populated after first trades._
 ### 2026-08-12 11:42
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: GOOGL dropped to $343.80 (-3.90%) after 3 days. We correctly passed. Strategy: ma_crossover.
 
+
+### 2026-08-17 11:20
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: JPM reached target $363.00 (+1.53%) within 5 days. We passed because: Gatekeeper NO-GO. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-08-17 11:20
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: JPM reached target $363.00 (+1.53%) within 5 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-08-17 11:20
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XOM reached target $160.37 (+0.36%) within 4 days. We passed because: Gatekeeper NO-GO. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-08-17 11:20
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: CVX reached target $197.69 (+1.43%) within 4 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-08-17 11:20
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: AMZN dropped to $262.65 (-3.53%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-08-17 11:20
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: XOM is flat at $160.10 (+0.19%) after 3 days. Strategy: macd_rsi.
+
+
+### 2026-08-17 11:20
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: JPM reached target $363.12 (+0.3%) within 3 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-08-17 11:20
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: AVGO hit stop $391.91 (-5.81%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
