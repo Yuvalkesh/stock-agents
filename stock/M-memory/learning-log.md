@@ -1246,6 +1246,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-08-17 11:20
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: AVGO hit stop $391.91 (-5.81%) within 3 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
 
+
+### 2026-08-19 11:21
+**STAND DOWN**: Agent 1 recommended no trading on 2026-08-19. Macro regime: MIXED
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
