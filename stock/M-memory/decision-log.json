@@ -6000,5 +6000,31 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "MSFT",
+    "strategy": "ma_crossover",
+    "entry_price": 484.31,
+    "stop_loss": 464.39,
+    "take_profit": 513.73,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-08-20",
+    "ticker": "SNOW",
+    "strategy": "ma_crossover",
+    "entry_price": 325.01,
+    "stop_loss": 305.36,
+    "take_profit": 341.95,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
