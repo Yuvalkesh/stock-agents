@@ -5868,8 +5868,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_WIN",
+    "review_details": {
+      "current_price": 165.11000061035156,
+      "high_since": 168.63999938964844,
+      "low_since": 159.08999633789062,
+      "days_elapsed": 5,
+      "hit_target": true,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-08-17",
@@ -5881,8 +5889,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 351.5799865722656,
+      "high_since": 365.75,
+      "low_since": 350.3699951171875,
+      "days_elapsed": 5,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-08-17",
@@ -5894,8 +5910,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 351.5799865722656,
+      "high_since": 365.75,
+      "low_since": 350.3699951171875,
+      "days_elapsed": 5,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-08-18",
@@ -5907,8 +5931,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 214.72000122070312,
+      "high_since": 222.8699951171875,
+      "low_since": 214.5,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-08-18",
@@ -5920,8 +5952,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 165.11000061035156,
+      "high_since": 168.63999938964844,
+      "low_since": 163.25,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-08-18",
@@ -5933,8 +5973,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 205.27000427246094,
+      "high_since": 208.97999572753906,
+      "low_since": 201.94757085501675,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-08-18",
@@ -5946,8 +5994,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 483.239990234375,
+      "high_since": 488.3806080919379,
+      "low_since": 476.2534434403709,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-08-18",
@@ -5959,8 +6015,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 549.9000244140625,
+      "high_since": 560.6599731445312,
+      "low_since": 537.27001953125,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-08-18",
@@ -5972,8 +6036,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 187.3000030517578,
+      "high_since": 189.1999969482422,
+      "low_since": 180.0800018310547,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-08-18",
@@ -5985,8 +6057,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 223.49000549316406,
+      "high_since": 225.947998046875,
+      "low_since": 212.66000366210938,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-08-18",
@@ -5998,8 +6078,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 765.719970703125,
+      "high_since": 772.469970703125,
+      "low_since": 762.0399780273438,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-08-20",
@@ -6021,6 +6109,45 @@
     "entry_price": 325.01,
     "stop_loss": 305.36,
     "take_profit": 341.95,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-08-24",
+    "ticker": "TMO",
+    "strategy": "macd_rsi",
+    "entry_price": 629.27,
+    "stop_loss": 605.16,
+    "take_profit": 634.7,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-08-24",
+    "ticker": "BKNG",
+    "strategy": "ma_crossover",
+    "entry_price": 209.62,
+    "stop_loss": 199.41,
+    "take_profit": 216.42,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-08-24",
+    "ticker": "JPM",
+    "strategy": "connors_rsi",
+    "entry_price": 351.58,
+    "stop_loss": 339.12,
+    "take_profit": 356.92,
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
