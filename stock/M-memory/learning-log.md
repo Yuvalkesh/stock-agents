@@ -1298,6 +1298,14 @@ _No entries yet. Will be populated after first trades._
 ### 2026-08-24 11:23
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: SPY hit stop $0.00 (nan%) within 4 days. We correctly passed. Reason: No technical setup confirmed by any strategy. Strategy: none. LESSON: This type of pass was CORRECT — keep applying this filter.
 
+
+### 2026-08-25 11:22
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: MSFT is flat at $487.31 (+0.62%) after 3 days. Strategy: ma_crossover.
+
+
+### 2026-08-25 11:22
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: SNOW is flat at $322.78 (-0.69%) after 3 days. Strategy: ma_crossover.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
