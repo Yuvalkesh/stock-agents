@@ -6208,5 +6208,31 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "MSFT",
+    "strategy": "ma_crossover",
+    "entry_price": 491.71,
+    "stop_loss": 474.05,
+    "take_profit": 512.76,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-08-26",
+    "ticker": "XOM",
+    "strategy": "connors_rsi",
+    "entry_price": 160.64,
+    "stop_loss": 153.46,
+    "take_profit": 164.14,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
