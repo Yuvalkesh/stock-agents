@@ -1306,6 +1306,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-08-25 11:22
 **HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: SNOW is flat at $322.78 (-0.69%) after 3 days. Strategy: ma_crossover.
 
+
+### 2026-08-27 20:54
+**STAND DOWN**: Agent 1 recommended no trading on 2026-08-27. Macro regime: RISK-ON
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
