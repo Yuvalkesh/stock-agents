@@ -6234,5 +6234,57 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-08-28",
+    "ticker": "XLF",
+    "strategy": "ma_crossover",
+    "entry_price": 58.1,
+    "stop_loss": 57.19,
+    "take_profit": 58.41,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-08-28",
+    "ticker": "XLE",
+    "strategy": "ma_crossover",
+    "entry_price": 62.68,
+    "stop_loss": 60.94,
+    "take_profit": 64.7,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-08-28",
+    "ticker": "JNJ",
+    "strategy": "ma_crossover",
+    "entry_price": 268.04,
+    "stop_loss": 259.88,
+    "take_profit": 275.11,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-08-28",
+    "ticker": "SPY",
+    "strategy": "ma_crossover",
+    "entry_price": 769.35,
+    "stop_loss": 759.87,
+    "take_profit": 779.37,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
