@@ -77,14 +77,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| TMO | — | — | Added by Rising Stars Scout |
-| BKNG | — | — | Added by Rising Stars Scout |
-| MRVL | — | — | Added by Rising Stars Scout |
+| SLB | — | — | Added by Rising Stars Scout |
+| CRWD | — | — | Added by Rising Stars Scout |
 | ABNB | — | — | Added by Rising Stars Scout |
 | DASH | — | — | Added by Rising Stars Scout |
+| ROKU | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |

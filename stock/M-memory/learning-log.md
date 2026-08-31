@@ -1310,6 +1310,42 @@ _No entries yet. Will be populated after first trades._
 ### 2026-08-27 20:54
 **STAND DOWN**: Agent 1 recommended no trading on 2026-08-27. Macro regime: RISK-ON
 
+
+### 2026-08-31 17:51
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: TMO reached target $634.70 (+0.86%) within 6 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-08-31 17:51
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: BKNG reached target $216.42 (+3.24%) within 6 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-08-31 17:51
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: JPM reached target $356.92 (+1.52%) within 6 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: connors_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for connors_rsi setups.
+
+
+### 2026-08-31 17:51
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: TMO reached target $634.70 (+0.95%) within 5 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-08-31 17:51
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: BKNG hit target first on day 1 (+1.43%). We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This filter was too strict.
+
+
+### 2026-08-31 17:51
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: MSFT reached target $512.76 (+5.22%) within 5 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-08-31 17:51
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: MSFT reached target $512.76 (+4.28%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-08-31 17:51
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: XOM is flat at $160.29 (-0.22%) after 4 days. Strategy: connors_rsi.
+
+
+### 2026-08-31 17:51
+**STAND DOWN**: Agent 1 recommended no trading on 2026-08-31. Macro regime: MIXED
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
