@@ -6499,5 +6499,57 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "MSFT",
+    "strategy": "ma_crossover",
+    "entry_price": 508.86,
+    "stop_loss": 491.4,
+    "take_profit": 517.78,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "NVDA",
+    "strategy": "macd_rsi",
+    "entry_price": 226.07,
+    "stop_loss": 215.01,
+    "take_profit": 230.47,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "XOM",
+    "strategy": "ma_crossover",
+    "entry_price": 165.01,
+    "stop_loss": 160.03,
+    "take_profit": 168.64,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-03",
+    "ticker": "CRWD",
+    "strategy": "ma_crossover",
+    "entry_price": 210.99,
+    "stop_loss": 192.14,
+    "take_profit": 233.88,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
