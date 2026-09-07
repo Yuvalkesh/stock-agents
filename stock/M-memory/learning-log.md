@@ -1362,6 +1362,42 @@ _No entries yet. Will be populated after first trades._
 ### 2026-09-02 14:55
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: SPY hit stop $759.87 (-1.23%) within 4 days. We correctly passed. Reason: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
 
+
+### 2026-09-07 16:15
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: XOM dropped to $159.47 (-2.32%) after 4 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-09-07 16:15
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: CVX reached target $209.81 (+0.38%) within 4 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-09-07 16:15
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: JPM is flat at $358.64 (+0.07%) after 4 days. Strategy: ma_crossover.
+
+
+### 2026-09-07 16:15
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: CRWD is flat at $213.10 (-0.47%) after 4 days. Strategy: macd_rsi.
+
+
+### 2026-09-07 16:15
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: CRWD is flat at $213.10 (-0.47%) after 4 days. Strategy: ma_crossover.
+
+
+### 2026-09-07 16:15
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: MSFT is flat at $499.70 (+0.28%) after 3 days. Strategy: ma_crossover.
+
+
+### 2026-09-07 16:15
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: JPM is flat at $358.64 (-0.64%) after 3 days. Strategy: ma_crossover.
+
+
+### 2026-09-07 16:15
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: XOM dropped to $159.47 (-2.35%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-09-07 16:15
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: CRWD is at $213.10 (+4.11% from entry) after 3 days. Hasn't hit target ($233.88) or stop ($185.75) yet. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 

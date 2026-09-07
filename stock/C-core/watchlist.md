@@ -78,14 +78,14 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| SLB | — | — | Added by Rising Stars Scout |
-| CRWD | — | — | Added by Rising Stars Scout |
-| ABNB | — | — | Added by Rising Stars Scout |
-| DASH | — | — | Added by Rising Stars Scout |
-| ROKU | — | — | Added by Rising Stars Scout |
+| DE | — | — | Added by Rising Stars Scout |
+| MRK | — | — | Added by Rising Stars Scout |
+| GILD | — | — | Added by Rising Stars Scout |
+| COP | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |
