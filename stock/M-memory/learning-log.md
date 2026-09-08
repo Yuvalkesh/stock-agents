@@ -1398,6 +1398,22 @@ _No entries yet. Will be populated after first trades._
 ### 2026-09-07 16:15
 **HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: CRWD is at $213.10 (+4.11% from entry) after 3 days. Hasn't hit target ($233.88) or stop ($185.75) yet. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi.
 
+
+### 2026-09-08 14:51
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MSFT hit stop $491.40 (-3.43%) within 3 days. We correctly passed. Reason: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-09-08 14:51
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: NVDA reached target $230.47 (+1.95%) within 3 days. We passed because: Gatekeeper NO-GO. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-09-08 14:51
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: XOM hit stop $160.03 (-3.02%) within 3 days. We correctly passed. Reason: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-09-08 14:51
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: CRWD dropped to $208.10 (-1.37%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
