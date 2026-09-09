@@ -6666,8 +6666,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 493.5299987792969,
+      "high_since": 511.0,
+      "low_since": 489.79998779296875,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-04",
@@ -6679,8 +6687,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 224.47000122070312,
+      "high_since": 234.75999450683594,
+      "low_since": 223.5500030517578,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-04",
@@ -6692,8 +6708,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_PARTIAL",
+    "review_details": {
+      "current_price": 57.779998779296875,
+      "high_since": 59.25,
+      "low_since": 56.2400016784668,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-04",
@@ -6705,8 +6729,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 209.75999450683594,
+      "high_since": 218.30999755859375,
+      "low_since": 205.39999389648438,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-04",
@@ -6718,8 +6750,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 355.75,
+      "high_since": 362.8599853515625,
+      "low_since": 348.69000244140625,
+      "days_elapsed": 3,
+      "hit_target": false,
+      "hit_stop": true
+    }
   },
   {
     "date": "2026-09-04",
@@ -6731,8 +6771,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_WIN",
+    "review_details": {
+      "current_price": 65.18000030517578,
+      "high_since": 65.91500091552734,
+      "low_since": 63.380001068115234,
+      "days_elapsed": 3,
+      "hit_target": true,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-07",
@@ -6821,6 +6869,84 @@
     "take_profit": 234.76,
     "decision": "pass",
     "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "XLE",
+    "strategy": "macd_rsi",
+    "entry_price": 65.21,
+    "stop_loss": 63.45,
+    "take_profit": 65.92,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "XLE",
+    "strategy": "ma_crossover",
+    "entry_price": 65.21,
+    "stop_loss": 63.45,
+    "take_profit": 65.92,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "COP",
+    "strategy": "ma_crossover",
+    "entry_price": 137.19,
+    "stop_loss": 132.63,
+    "take_profit": 137.87,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "DE",
+    "strategy": "ma_crossover",
+    "entry_price": 679.7,
+    "stop_loss": 651.23,
+    "take_profit": 705.88,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "MRK",
+    "strategy": "connors_rsi",
+    "entry_price": 147.46,
+    "stop_loss": 139.76,
+    "take_profit": 150.05,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-09",
+    "ticker": "GILD",
+    "strategy": "connors_rsi",
+    "entry_price": 145.69,
+    "stop_loss": 138.33,
+    "take_profit": 148.83,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
     "score": null,
     "reviewed": false,
     "review_result": null

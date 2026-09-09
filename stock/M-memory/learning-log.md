@@ -1414,6 +1414,30 @@ _No entries yet. Will be populated after first trades._
 ### 2026-09-08 14:51
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: CRWD dropped to $208.10 (-1.37%) after 3 days. We correctly passed. Strategy: ma_crossover.
 
+
+### 2026-09-09 15:00
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MSFT dropped to $493.53 (-1.68%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-09-09 15:00
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: NVDA dropped to $224.47 (-3.86%) after 3 days. We correctly passed. Strategy: macd_rsi.
+
+
+### 2026-09-09 15:00
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: SLB is at $57.78 (+1.98% from entry) after 3 days. Hasn't hit target ($60.15) or stop ($53.85) yet. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover.
+
+
+### 2026-09-09 15:00
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: CRWD dropped to $209.76 (-2.63%) after 3 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-09-09 15:00
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: JPM hit stop $349.05 (-2.45%) within 3 days. We correctly passed. Reason: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-09-09 15:00
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XLE reached target $65.52 (+2.22%) within 3 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
