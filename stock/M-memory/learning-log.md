@@ -1438,6 +1438,58 @@ _No entries yet. Will be populated after first trades._
 ### 2026-09-09 15:00
 **HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XLE reached target $65.52 (+2.22%) within 3 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
 
+
+### 2026-09-14 16:45
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: AAPL reached target $330.81 (+3.39%) within 5 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-09-14 16:45
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: CVX reached target $213.20 (+2.21%) within 5 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-09-14 16:45
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: GILD hit stop $145.57 (-3.6%) within 5 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-09-14 16:45
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: DE is flat at $685.04 (+0.18%) after 5 days. Strategy: ma_crossover.
+
+
+### 2026-09-14 16:45
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: COP reached target $137.50 (+1.1%) within 5 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-09-14 16:45
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: NVDA hit stop $216.08 (-4.85%) within 5 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-09-14 16:45
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: NVDA hit stop $216.08 (-4.85%) within 5 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-09-14 16:45
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XLE reached target $65.92 (+1.09%) within 4 days. We passed because: Gatekeeper NO-GO. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-09-14 16:45
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XLE reached target $65.92 (+1.09%) within 4 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-09-14 16:45
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: COP reached target $137.87 (+0.5%) within 4 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-09-14 16:45
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: DE is flat at $685.04 (+0.79%) after 4 days. Strategy: ma_crossover.
+
+
+### 2026-09-14 16:45
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: MRK dropped to $145.33 (-1.44%) after 4 days. We correctly passed. Strategy: connors_rsi.
+
+
+### 2026-09-14 16:45
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: GILD is flat at $145.76 (+0.04%) after 4 days. Strategy: connors_rsi.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
