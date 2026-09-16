@@ -1490,6 +1490,22 @@ _No entries yet. Will be populated after first trades._
 ### 2026-09-14 16:45
 **HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: GILD is flat at $145.76 (+0.04%) after 4 days. Strategy: connors_rsi.
 
+
+### 2026-09-16 15:19
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: CVX reached target $217.40 (+2.06%) within 4 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-09-16 15:19
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: COP reached target $138.89 (+2.39%) within 4 days. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-09-16 15:19
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: DE dropped to $675.85 (-1.84%) after 4 days. We correctly passed. Strategy: ma_crossover.
+
+
+### 2026-09-16 15:19
+**STAND DOWN**: Agent 1 recommended no trading on 2026-09-16. Macro regime: RISK-ON
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 

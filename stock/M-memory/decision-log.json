@@ -7065,8 +7065,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_WIN",
+    "review_details": {
+      "current_price": 211.97500610351562,
+      "high_since": 217.77999877929688,
+      "low_since": 210.77000427246094,
+      "days_elapsed": 4,
+      "hit_target": true,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-11",
@@ -7078,8 +7086,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_WIN",
+    "review_details": {
+      "current_price": 134.14999389648438,
+      "high_since": 141.6199951171875,
+      "low_since": 133.3300018310547,
+      "days_elapsed": 4,
+      "hit_target": true,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-11",
@@ -7091,8 +7107,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 675.8499755859375,
+      "high_since": 692.6900024414062,
+      "low_since": 668.0,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-14",
