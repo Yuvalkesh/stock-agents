@@ -1510,6 +1510,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-09-17 15:25
 **STAND DOWN**: Agent 1 recommended no trading on 2026-09-17. Macro regime: RISK-ON
 
+
+### 2026-09-18 14:46
+**STAND DOWN**: Agent 1 recommended no trading on 2026-09-18. Macro regime: MIXED
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
