@@ -80,14 +80,15 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
-| CRM | — | — | Added by Rising Stars Scout |
+| AMD | — | — | Added by Rising Stars Scout |
+| FTNT | — | — | Added by Rising Stars Scout |
 | QCOM | — | — | Added by Rising Stars Scout |
 | CRWD | — | — | Added by Rising Stars Scout |
-| FTNT | — | — | Added by Rising Stars Scout |
-| DE | — | — | Added by Rising Stars Scout |
+| NET | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)
 | Ticker | Name | Purpose |

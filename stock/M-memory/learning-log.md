@@ -1514,6 +1514,30 @@ _No entries yet. Will be populated after first trades._
 ### 2026-09-18 14:46
 **STAND DOWN**: Agent 1 recommended no trading on 2026-09-18. Macro regime: MIXED
 
+
+### 2026-09-21 16:46
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: XLE hit stop $63.21 (-2.81%) within 6 days. We correctly passed. Reason: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was CORRECT — keep applying this filter.
+
+
+### 2026-09-21 16:46
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XOM hit target first on day 2 (+2.2%). We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This filter was too strict.
+
+
+### 2026-09-21 16:46
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: XOM hit target first on day 2 (+2.2%). We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This filter was too strict.
+
+
+### 2026-09-21 16:46
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: CVX hit target first on day 2 (+1.38%). We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This filter was too strict.
+
+
+### 2026-09-21 16:46
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: CRWD reached target $239.37 (+0.42%) within 5 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
+
+### 2026-09-21 16:46
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: FTNT reached target $173.89 (+2.35%) within 5 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
