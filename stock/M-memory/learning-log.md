@@ -1538,6 +1538,10 @@ _No entries yet. Will be populated after first trades._
 ### 2026-09-21 16:46
 **HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: FTNT reached target $173.89 (+2.35%) within 5 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: macd_rsi. LESSON: This type of pass was WRONG — consider loosening criteria for macd_rsi setups.
 
+
+### 2026-09-23 15:16
+**STAND DOWN**: Agent 1 recommended no trading on 2026-09-23. Macro regime: MIXED
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
