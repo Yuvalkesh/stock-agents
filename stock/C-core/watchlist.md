@@ -81,13 +81,14 @@
 
 
 
+
 ### Rising Stars (Auto-Discovered)
 | Ticker | Name | Sector | Notes |
 |--------|------|--------|-------|
 | AMD | — | — | Added by Rising Stars Scout |
-| FTNT | — | — | Added by Rising Stars Scout |
-| QCOM | — | — | Added by Rising Stars Scout |
-| CRWD | — | — | Added by Rising Stars Scout |
+| TMO | — | — | Added by Rising Stars Scout |
+| MRVL | — | — | Added by Rising Stars Scout |
+| DDOG | — | — | Added by Rising Stars Scout |
 | NET | — | — | Added by Rising Stars Scout |
 
 ## Macro Indicators (Monitor Only — Not Traded)

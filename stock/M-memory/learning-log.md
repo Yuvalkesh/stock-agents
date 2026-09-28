@@ -1542,6 +1542,42 @@ _No entries yet. Will be populated after first trades._
 ### 2026-09-23 15:16
 **STAND DOWN**: Agent 1 recommended no trading on 2026-09-23. Macro regime: MIXED
 
+
+### 2026-09-28 18:23
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: AMD dropped to $605.04 (-1.01%) after 6 days. We correctly passed. Strategy: none.
+
+
+### 2026-09-28 18:23
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: CRWD is at $259.32 (+5.07% from entry) after 6 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-09-28 18:23
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: NET is at $354.00 (+2.17% from entry) after 6 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-09-28 18:23
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: NVDA is at $230.00 (+1.70% from entry) after 6 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-09-28 18:23
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: META is flat at $721.69 (-0.92%) after 6 days. Strategy: none.
+
+
+### 2026-09-28 18:23
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: FTNT is at $175.69 (+1.16% from entry) after 6 days. Hasn't hit target ($0.00) or stop ($0.00) yet. We passed because: No technical setup confirmed by any strategy. Strategy: none.
+
+
+### 2026-09-28 18:23
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: QCOM dropped to $188.28 (-1.72%) after 6 days. We correctly passed. Strategy: none.
+
+
+### 2026-09-28 18:23
+**HINDSIGHT REVIEW (MISSED_WIN)**: MISSED OPPORTUNITY: FTNT reached target $176.10 (+2.29%) within 5 days. We passed because: Agent 4 PASS — scored below threshold. Strategy: ma_crossover. LESSON: This type of pass was WRONG — consider loosening criteria for ma_crossover setups.
+
+
+### 2026-09-28 18:23
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: NVDA is flat at $230.01 (+0.59%) after 5 days. Strategy: macd_rsi.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
