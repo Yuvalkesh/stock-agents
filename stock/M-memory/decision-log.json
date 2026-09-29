@@ -7443,8 +7443,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 611.0,
+      "high_since": 639.0,
+      "low_since": 596.0700073242188,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-24",
@@ -7456,8 +7464,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "NEUTRAL",
+    "review_details": {
+      "current_price": 258.65008544921875,
+      "high_since": 263.8699951171875,
+      "low_since": 246.50999450683594,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-24",
@@ -7469,8 +7485,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 174.39500427246094,
+      "high_since": 181.3699951171875,
+      "low_since": 169.55999755859375,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-24",
@@ -7482,8 +7506,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 184.25,
+      "high_since": 205.85000610351562,
+      "low_since": 184.16000366210938,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-24",
@@ -7495,8 +7527,16 @@
     "decision": "no_setups",
     "reason": "No technical setup confirmed by any strategy",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "GOOD_PASS",
+    "review_details": {
+      "current_price": 351.57501220703125,
+      "high_since": 367.42999267578125,
+      "low_since": 338.6700134277344,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-25",
@@ -7570,6 +7610,19 @@
     "entry_price": 511.17,
     "stop_loss": 493.28,
     "take_profit": 519.4,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-29",
+    "ticker": "NET",
+    "strategy": "ma_crossover",
+    "entry_price": 351.49,
+    "stop_loss": 325.62,
+    "take_profit": 367.43,
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,

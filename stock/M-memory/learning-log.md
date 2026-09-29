@@ -1578,6 +1578,26 @@ _No entries yet. Will be populated after first trades._
 ### 2026-09-28 18:23
 **HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: NVDA is flat at $230.01 (+0.59%) after 5 days. Strategy: macd_rsi.
 
+
+### 2026-09-29 16:46
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: AMD is flat at $611.00 (-0.17%) after 4 days. Strategy: none.
+
+
+### 2026-09-29 16:46
+**HINDSIGHT REVIEW (NEUTRAL)**: NEUTRAL: CRWD is flat at $258.65 (-0.87%) after 4 days. Strategy: none.
+
+
+### 2026-09-29 16:46
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: FTNT dropped to $174.40 (-2.91%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-09-29 16:46
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: QCOM dropped to $184.25 (-4.64%) after 4 days. We correctly passed. Strategy: none.
+
+
+### 2026-09-29 16:46
+**HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: NET dropped to $351.58 (-2.73%) after 4 days. We correctly passed. Strategy: none.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 
