@@ -1598,6 +1598,14 @@ _No entries yet. Will be populated after first trades._
 ### 2026-09-29 16:46
 **HINDSIGHT REVIEW (GOOD_PASS)**: GOOD CALL: NET dropped to $351.58 (-2.73%) after 4 days. We correctly passed. Strategy: none.
 
+
+### 2026-09-30 16:38
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: FTNT is at $179.99 (+2.95% from entry) after 4 days. Hasn't hit target ($181.37) or stop ($164.66) yet. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover.
+
+
+### 2026-09-30 16:38
+**HINDSIGHT REVIEW (MISSED_PARTIAL)**: PARTIAL MISS: NET is at $351.80 (+1.44% from entry) after 4 days. Hasn't hit target ($367.43) or stop ($320.00) yet. We passed because: Gatekeeper NO-GO. Strategy: ma_crossover.
+
 ## Common Mistakes to Avoid
 <!-- Repeated errors that should trigger extra caution -->
 

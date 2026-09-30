@@ -7548,8 +7548,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_PARTIAL",
+    "review_details": {
+      "current_price": 179.99000549316406,
+      "high_since": 180.48989868164062,
+      "low_since": 169.55999755859375,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-25",
@@ -7561,8 +7569,16 @@
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
     "score": null,
-    "reviewed": false,
-    "review_result": null
+    "reviewed": true,
+    "review_result": "MISSED_PARTIAL",
+    "review_details": {
+      "current_price": 351.79998779296875,
+      "high_since": 364.0,
+      "low_since": 338.6700134277344,
+      "days_elapsed": 4,
+      "hit_target": false,
+      "hit_stop": false
+    }
   },
   {
     "date": "2026-09-28",
@@ -7625,6 +7641,84 @@
     "take_profit": 367.43,
     "decision": "rejected",
     "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "NVDA",
+    "strategy": "ma_crossover",
+    "entry_price": 230.34,
+    "stop_loss": 221.41,
+    "take_profit": 234.5,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "AMD",
+    "strategy": "ma_crossover",
+    "entry_price": 601.36,
+    "stop_loss": 565.0,
+    "take_profit": 639.0,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "MRVL",
+    "strategy": "ma_crossover",
+    "entry_price": 259.2,
+    "stop_loss": 239.52,
+    "take_profit": 267.48,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "NET",
+    "strategy": "ma_crossover",
+    "entry_price": 351.8,
+    "stop_loss": 326.72,
+    "take_profit": 367.43,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "META",
+    "strategy": "ma_crossover",
+    "entry_price": 736.46,
+    "stop_loss": 695.83,
+    "take_profit": 779.82,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-09-30",
+    "ticker": "XLK",
+    "strategy": "ma_crossover",
+    "entry_price": 196.41,
+    "stop_loss": 191.62,
+    "take_profit": 197.04,
+    "decision": "pass",
+    "reason": "Agent 4 PASS \u2014 scored below threshold",
     "score": null,
     "reviewed": false,
     "review_result": null
