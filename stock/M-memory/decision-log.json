@@ -7761,5 +7761,70 @@
     "score": null,
     "reviewed": false,
     "review_result": null
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "NET",
+    "strategy": "ma_crossover",
+    "entry_price": 351.54,
+    "stop_loss": 327.57,
+    "take_profit": 367.43,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "GOOGL",
+    "strategy": "ma_crossover",
+    "entry_price": 342.96,
+    "stop_loss": 329.46,
+    "take_profit": 364.17,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "MSFT",
+    "strategy": "macd_rsi",
+    "entry_price": 514.19,
+    "stop_loss": 496.82,
+    "take_profit": 522.85,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "MSFT",
+    "strategy": "ma_crossover",
+    "entry_price": 514.19,
+    "stop_loss": 496.82,
+    "take_profit": 522.85,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
+  },
+  {
+    "date": "2026-10-02",
+    "ticker": "TSLA",
+    "strategy": "ma_crossover",
+    "entry_price": 370.9,
+    "stop_loss": 352.25,
+    "take_profit": 386.83,
+    "decision": "rejected",
+    "reason": "Gatekeeper NO-GO",
+    "score": null,
+    "reviewed": false,
+    "review_result": null
   }
 ]
